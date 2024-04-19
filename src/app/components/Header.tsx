@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import {
     Navbar,
     NavbarBrand,
@@ -12,9 +13,13 @@ import {
 } from '@nextui-org/react'
 export default function Header() {
     return (
-        <Navbar className="fixed bg-transparent text-white font-bold drop-shadow">
+        <Navbar
+            maxWidth="xl"
+            className="px-6 py-4 fixed bg-transparent  text-white font-bold drop-shadow"
+            isBlurred={false}
+        >
             <NavbarBrand>
-                <p className="font-bold text-inherit">logo</p>
+                <Image src="/OpenHCI_Light_Logo.png" alt="logo" width={230} height={130} />
             </NavbarBrand>
             <NavbarContent className="hidden sm:flex gap-6" justify="end">
                 <NavbarItem>
