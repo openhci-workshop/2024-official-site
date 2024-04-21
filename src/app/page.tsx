@@ -7,7 +7,6 @@ export default function Home() {
         <>
             <Header />
             <Banner />
-            <div className="w-full h-10"></div>
         </>
     )
 }
