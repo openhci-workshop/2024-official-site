@@ -30,7 +30,7 @@ export default function Header() {
     return (
         <>
             <Navbar
-                maxWidth="xl"
+                maxWidth="full"
                 className="hidden md:block px-6 py-4 fixed bg-transparent  text-white font-bold drop-shadow"
                 isBlurred={false}
             >
@@ -49,17 +49,9 @@ export default function Header() {
                         <NavbarItem key={index}>
                             <Link color="foreground" href="#">
                                 {item.name}
-                            </Link>{' '}
+                            </Link>
                         </NavbarItem>
                     ))}
-                </NavbarContent>
-                <NavbarContent className="md:hidden block" justify="end">
-                    <NavbarItem>
-                        <Button
-                            className="md:hidden block bg-transparent text-white"
-                            startContent={<MdMenu size="3rem" />}
-                        ></Button>
-                    </NavbarItem>
                 </NavbarContent>
             </Navbar>
             <Navbar
