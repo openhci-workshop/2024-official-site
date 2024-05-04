@@ -6,9 +6,9 @@ const Enrollment = () => {
     return (
         <>
             <div className="flex flex-col items-center w-full">
-                <div className="flex flex-col items-start w-full gap-[55px] xl:gap-[100px]">
-                    <div className="relative flex flex-col gap-[22px] xl:gap-[40px]">
-                        <span className="font-semibold text-md xl:text-3xl text-[#222]">報名資訊</span>
+                <div className="flex flex-col items-center w-full gap-[55px] xl:gap-[100px]">
+                    <div className="w-full relative flex flex-col gap-[22px] xl:gap-[40px]">
+                        <span className="items-start font-semibold text-md xl:text-3xl text-[#222]">報名資訊</span>
                         <div
                             className={clsx(
                                 'md:pt-16 pb-36 w-full rounded-[50%] z-10 flex justify-center items-center'

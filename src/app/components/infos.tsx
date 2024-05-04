@@ -31,7 +31,7 @@ const Infos = () => {
                             'radial-gradient(ellipse at center, rgba(255,255,255,1) 12%, rgba(202,217,223,1) 35%, rgba(242,212,205,0.85) 55%, rgba(255,255,255,0.5) 70%)',
                     }}
                 >
-                    <div className="flex flex-col w-full gap-3 px-10 text-xs md:px-16 lg:px-24 xl:text-xl xl:gap-5">
+                    <div className="flex flex-col w-full gap-3 px-10 text-xs md:px-16 lg:px-24 xl:text-xl xl:gap-5 xl:px-36">
                         <div className="flex flex-col gap-3">
                             <span className="text-sm font-medium xl:text-2xl">活動時間</span>
                             <div className="flex flex-col gap-1 tracking-wider underline">
