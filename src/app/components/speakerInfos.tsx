@@ -30,7 +30,7 @@ const CustomScrollbar = styled.div`
 const SpeakerInfo = () => {
     return (
         <>
-            <div className="flex flex-col items-start w-[390px] xl:w-[1040px] gap-[22px] xl:gap-[40px] text-[#222] ">
+            <div className="pt-12 flex flex-col items-start w-[390px] xl:w-[1040px] gap-[22px] xl:gap-[40px] text-[#222] ">
                 <span className="font-semibold text-md xl:text-3xl">講者資訊</span>
                 <CustomScrollbar>
                     <div className="flex gap-5 pb-2 w-[390px] xl:w-[1040px] overflow-auto">

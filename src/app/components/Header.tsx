@@ -31,7 +31,7 @@ export default function Header() {
         <>
             <Navbar
                 maxWidth="full"
-                className="hidden md:block px-6 py-4 fixed bg-transparent  text-white font-bold drop-shadow"
+                className="fixed hidden px-6 py-4 font-bold text-white bg-transparent md:block drop-shadow"
             >
                 <NavbarBrand>
                     <Image src="/Light_l_Logo.png" alt="logo" width={80} height={80} className="block md:hidden" />
@@ -40,10 +40,10 @@ export default function Header() {
                         alt="logo"
                         width={230}
                         height={130}
-                        className="md:block hidden"
+                        className="hidden md:block"
                     />
                 </NavbarBrand>
-                <NavbarContent className=" gap-6" justify="end">
+                <NavbarContent className="gap-6 " justify="end">
                     {menuList.map((item, index) => (
                         <NavbarItem key={index}>
                             <Link color="foreground" href={item.link}>
@@ -55,20 +55,22 @@ export default function Header() {
             </Navbar>
             <Navbar
                 maxWidth="full"
-                className=" py-4 fixed bg-transparent  text-white font-bold drop-shadow items-center justify-between md:hidden"
+                className="fixed items-center justify-between py-4 font-bold text-white bg-transparent drop-shadow md:hidden"
             >
                 <Image src="/Light_l_Logo.png" alt="logo" width={80} height={80} className="block md:hidden" />
 
                 <Dropdown>
                     <DropdownTrigger>
                         <Button
-                            className="md:hidden block bg-transparent text-white"
+                            className="block text-white bg-transparent md:hidden"
                             startContent={<MdMenu size="3rem" />}
                         ></Button>
                     </DropdownTrigger>
                     <DropdownMenu>
                         {menuList.map((item, index) => (
-                            <DropdownItem key={index}>{item.name} </DropdownItem>
+                            <DropdownItem key={index}>
+                                <Link href={item.link}>{item.name}</Link>{' '}
+                            </DropdownItem>
                         ))}
                     </DropdownMenu>
                 </Dropdown>

@@ -63,7 +63,7 @@ export default function PreviousWork() {
 
     return (
         <>
-            <div className="flex flex-col items-start w-[390px] xl:w-[1040px] gap-[22px] xl:gap-[40px] text-[#222]">
+            <div className="pt-12 flex flex-col items-start w-[390px] xl:w-[1040px] gap-[22px] xl:gap-[40px] text-[#222]">
                 <span className="font-semibold text-md xl:text-3xl">歷屆作品</span>
                 <Card className="py-3 xl:py-6">
                     <CardBody>
@@ -79,7 +79,7 @@ export default function PreviousWork() {
                             </Button>
 
                             <div className="grid grid-cols-6 gap-5">
-                                <div className="col-span-6 xl:col-start-1 xl:col-end-3 flex justify-center">
+                                <div className="flex justify-center col-span-6 xl:col-start-1 xl:col-end-3">
                                     <Image
                                         src={currentWork.image}
                                         width={3000}
@@ -89,7 +89,7 @@ export default function PreviousWork() {
                                     />
                                 </div>
                                 <div className="col-span-6 xl:col-start-3 xl:col-end-7">
-                                    <h3 className="text-md xl:text-2xl font-medium mb-5">{currentWork.title}</h3>
+                                    <h3 className="mb-5 font-medium text-md xl:text-2xl">{currentWork.title}</h3>
                                     <p className="text-base xl:text-xl">{currentWork.description}</p>
                                 </div>
                             </div>
