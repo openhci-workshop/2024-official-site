@@ -10,6 +10,11 @@ const config: Config = {
     ],
     theme: {
         extend: {
+            dropShadow: {
+                '3xl': '0 35px 60px -15px rgba(255, 255, 255, 1)',
+            },
+            fontFamily: { kompot: ['kompot'] },
+
             backgroundImage: {
                 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
                 'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',

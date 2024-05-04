@@ -1,60 +1,69 @@
-'use client';
+'use client'
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'
 
-import Topics from "../components/topics";
-import SpeakerInfo from "../components/speakerInfos";
-import Infos from "../components/infos";
-import Agenda from "../components/agenda";
-import Enrollment from "../components/enrollment";
-import PreviousWork from "../components/previousWork";
-import FAQ from "../components/faq";
-import Sponsor from "../components/sponsor";
-import Footer from "../components/footer";
-import Student from "../components/student";
+import Topics from './components/topics'
+import SpeakerInfo from './components/speakerInfos'
+import Infos from './components/infos'
+import Agenda from './components/agenda'
+import Enrollment from './components/enrollment'
+import PreviousWork from './components/previousWork'
+import FAQ from './components/faq'
+import Sponsor from './components/sponsor'
+import Footer from './components/footer'
+import Student from './components/student'
+import Banner from './components/Banner'
+import Header from './components/Header'
 
 export default function Home() {
-  const [currentBg, setCurrentBg] = useState("/desktop_bg.png");
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 640) {
-        setCurrentBg("/mobile_bg.png");
-      } else {
-        setCurrentBg("/desktop_bg.png");
-      }
-    };
-    window.addEventListener('resize', handleResize);
-    handleResize();
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+    const [currentBg, setCurrentBg] = useState('/desktop_bg.png')
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth < 640) {
+                setCurrentBg('/mobile_bg.png')
+            } else {
+                setCurrentBg('/desktop_bg.png')
+            }
+        }
+        window.addEventListener('resize', handleResize)
+        handleResize()
+        return () => {
+            window.removeEventListener('resize', handleResize)
+        }
+    }, [])
 
-  const containerStyle = {
-    backgroundImage: `url(${currentBg})`,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center',
-    position: 'relative',
-    top: 0,
-    left: 0,
-    backgroundBlendMode: 'normal',
-  } as const;
+    const containerStyle = {
+        backgroundImage: `url(${currentBg})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        position: 'relative',
+        top: 0,
+        left: 0,
+        backgroundBlendMode: 'normal',
+    } as const
 
-  return (
-    <main className="w-full flex flex-col items-center py-4 gap-[55px] xl:gap-[100px]" style={containerStyle}>
-      <Topics />
-      <SpeakerInfo />
-      <Infos />
-      <Agenda />
-      <div className="w-full flex flex-col items-center">
-        <Enrollment />
-        <FAQ />
-      </div>
-      <PreviousWork />
-      <Student />
-      <Sponsor />
-      <Footer />
-    </main>
-  );
+    return (
+        <>
+            <Header />
+            <Banner />
+            <main
+                className=" overflow-hidden	 w-full flex flex-col items-center py-20 gap-[55px] xl:gap-[100px]"
+                style={containerStyle}
+            >
+                <Topics />
+                <SpeakerInfo />
+                <Infos />
+                <Agenda />
+                <div className="flex flex-col items-center w-full">
+                    <Enrollment />
+                    <FAQ />
+                </div>
+                <PreviousWork />
+                <Student />
+                <Sponsor />
+                <Footer />
+            </main>
+        </>
+    )
 }
