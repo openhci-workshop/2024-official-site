@@ -1,7 +1,7 @@
 'use client'
 import { useState, useRef } from 'react'
 import { Button } from '@nextui-org/react'
-import Sketch from './Sketch'
+import Sketch from './SketchSix'
 import p5Types from 'p5'
 
 let canvas: p5Types.Renderer // 宣告全局變數
@@ -63,31 +63,31 @@ export default function Banner() {
                         立即報名
                     </Button>
                 </div>
-                <div className="md:hidden py-64 px-10 flex absolute z-20 w-full h-screen  text-right  flex-col gap-32 ">
-                    <div className="gap-4 flex flex-col justify-end items-end">
+                <div className="md:hidden py-64  px-10 flex absolute z-20 w-full h-screen  text-right  flex-col gap-32 ">
+                    <div className="gap-4 flex flex-col justify-center items-center">
                         <div
                             style={{ filter: 'blur(0.8px)' }}
-                            className="	 tracking-widest text-[64px] font-kompot text-white drop-shadow-3xl 	"
+                            className="self-end tracking-widest text-6xl font-kompot text-white drop-shadow-3xl 	"
                         >
                             RESILIENCE
                         </div>
 
                         <div
                             style={{ filter: 'blur(0.8px)' }}
-                            className="blur-lg	  text-3xl leading-none tracking-widest text-white font-kompot drop-shadow-3xl  "
+                            className="blur-lg	self-end  text-3xl leading-none tracking-widest text-white font-kompot drop-shadow-3xl  "
                         >
                             24&apos; OPENHCI
                         </div>
                         <div
                             style={{ filter: 'blur(0.8px)' }}
-                            className="blur-lg	text-xl leading-none tracking-widest text-white font-kompot drop-shadow-3xl  "
+                            className="blur-lg self-end	text-xl leading-none tracking-widest text-white font-kompot drop-shadow-3xl  "
                         >
                             第十四屆人機互動工作坊
                         </div>
                         <Button
                             variant="bordered"
                             style={{ filter: 'blur(0.5px)', borderColor: '#F2D4CD' }}
-                            className="w-1/3 text-lg leading-none tracking-widest text-white rounded-full shadow border-3  font-kompot drop-shadow-3xl backdrop-blur "
+                            className="self-end w-1/3 text-lg leading-none tracking-widest text-white rounded-full shadow border-3  font-kompot drop-shadow-3xl backdrop-blur "
                         >
                             立即報名
                         </Button>
@@ -95,31 +95,33 @@ export default function Banner() {
                     <div className="flex flex-col justify-start items-start ">
                         <div
                             style={{ filter: 'blur(0.8px)' }}
-                            className=" pt-6 text-[64px] leading-3 tracking-widest text-left text-white   font-kompot drop-shadow-3xl "
+                            className=" pt-6 text-6xl leading-3 tracking-widest text-left text-white   font-kompot drop-shadow-3xl "
                         >
                             6
                         </div>
                         <div
                             style={{ filter: 'blur(0.8px)' }}
-                            className=" pt-4 pl-10 text-[64px] leading-3 tracking-widest text-left text-white   font-kompot drop-shadow-3xl "
+                            className=" pt-4 pl-10 text-6xl leading-3 tracking-widest text-left text-white   font-kompot drop-shadow-3xl "
                         >
                             22
                         </div>
                         <div
                             style={{ filter: 'blur(0.8px)' }}
-                            className="pt-6 text-[64px] leading-3 tracking-widest text-left text-white   font-kompot drop-shadow-3xl "
+                            className="pt-6 text-6xl leading-3 tracking-widest text-left text-white   font-kompot drop-shadow-3xl "
                         >
                             6
                         </div>
                         <div
                             style={{ filter: 'blur(0.8px)' }}
-                            className="  pt-4 pl-10 text-[64px] leading-3 tracking-widest text-left text-white   font-kompot drop-shadow-3xl "
+                            className="  pt-4 pl-10 text-6xl leading-3 tracking-widest text-left text-white   font-kompot drop-shadow-3xl "
                         >
                             23
                         </div>
                     </div>
                 </div>
-                <div className="absolute z-10 w-full h-screen">{/* <Sketch canvasRef={canvasRef} /> */}</div>
+                <div className="absolute z-10 w-full h-screen">
+                    <Sketch canvasRef={canvasRef} />
+                </div>
                 <div className="w-full h-screen bg-[url('/純背景.png')] bg-cover brightness-90 z-0 absolute" />
             </div>
         </>
