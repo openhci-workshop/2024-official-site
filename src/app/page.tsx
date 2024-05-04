@@ -48,7 +48,7 @@ export default function Home() {
             <Header />
             <Banner />
             <main
-                className=" overflow-hidden	 w-full flex flex-col items-center py-20 gap-[55px] xl:gap-[100px]"
+                className="px-4 md:px-44 overflow-hidden	 w-full flex flex-col items-center py-20 gap-[55px] xl:gap-[100px]"
                 style={containerStyle}
             >
                 <Topics />

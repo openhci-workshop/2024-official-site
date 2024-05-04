@@ -15,7 +15,7 @@ export default function Student() {
     }
 
     return (
-        <div className="pt-12 flex flex-col items-start w-[390px] xl:w-[1040px] gap-[22px] xl:gap-[40px] text-[#222]">
+        <div className="pt-12 flex flex-col items-start w-full gap-[22px] xl:gap-[40px] text-[#222]">
             <span className="font-semibold text-md xl:text-3xl">籌辦團隊</span>
             {/* Teams */}
             <div className="flex flex-wrap gap-2 xl:gap-4">

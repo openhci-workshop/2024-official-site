@@ -10,6 +10,7 @@ const speakersData = [
     { name: '王大明', info: '台大 資工', position: '教授' },
 ]
 const CustomScrollbar = styled.div`
+    width: 100%;
     ::-webkit-scrollbar {
         height: 8px;
     }
@@ -30,10 +31,10 @@ const CustomScrollbar = styled.div`
 const SpeakerInfo = () => {
     return (
         <>
-            <div className="pt-12 flex flex-col items-start w-[390px] xl:w-[1040px] gap-[22px] xl:gap-[40px] text-[#222] ">
+            <div className="pt-12 flex flex-col items-start w-full  gap-[22px] xl:gap-[40px] text-[#222] ">
                 <span className="font-semibold text-md xl:text-3xl">講者資訊</span>
                 <CustomScrollbar>
-                    <div className="flex gap-5 pb-2 w-[390px] xl:w-[1040px] overflow-auto">
+                    <div className="flex w-full gap-5 pb-2 overflow-auto ">
                         {speakersData.map((speaker, index) => {
                             const gradientStyle =
                                 index % 2 !== 0
@@ -41,15 +42,15 @@ const SpeakerInfo = () => {
                                     : 'from-[#CAD9DF] from-0% via-[#F2D4CD] via-49% to-white to-70%'
 
                             return (
-                                <div key={index} className="flex flex-col">
+                                <div key={index} className="flex flex-col w-full">
                                     <div
                                         className={clsx(
-                                            'w-[136px] xl:w-[245px] h-[136px] xl:h-[245px] mb-[11px] xl:mb-[20px] rounded-lg xl:rounded-2xl',
+                                            'min-w-[136px] xl:w-full h-[136px] xl:h-[240px] mb-[11px] xl:mb-[20px] rounded-lg xl:rounded-2xl',
                                             'bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))]',
                                             gradientStyle
                                         )}
                                     ></div>
-                                    <div className="flex flex-col gap-1">
+                                    <div className="flex flex-col ">
                                         <span className="text-xs font-medium xl:text-xl">姓名 {speaker.name}</span>
                                         <span className="text-xxs xl:text-base">學校 科系 {speaker.info}</span>
                                         <span className="text-xxs xl:text-base">職稱 {speaker.position}</span>

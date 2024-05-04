@@ -6,42 +6,40 @@ const Enrollment = () => {
     return (
         <>
             <div className="flex flex-col items-center w-full">
-                <div className="flex flex-col items-start w-[390px] xl:w-[1040px] gap-[55px] xl:gap-[100px]">
+                <div className="flex flex-col items-start w-full gap-[55px] xl:gap-[100px]">
                     <div className="relative flex flex-col gap-[22px] xl:gap-[40px]">
                         <span className="font-semibold text-md xl:text-3xl text-[#222]">報名資訊</span>
                         <div
-                            className={clsx(
-                                'h-[389px] xl:h-[687px] w-[382px] xl:w-[1040px] rounded-[50%] z-10 flex justify-center items-center'
-                            )}
+                            className={clsx('pt-16 pb-36 w-full rounded-[50%] z-10 flex justify-center items-center')}
                             style={{
                                 backgroundImage:
                                     'radial-gradient(ellipse at center, rgba(148,170,193,1) 0%, rgba(229,224,223,1) 45%,rgba(202,217,223,0.26) 100%)',
                             }}
                         >
-                            <div className="flex flex-col w-[324px] xl:w-[864px] h-[362px] xl:h-[607px] relative text-[#222] text-xl gap-3 xl:gap-5">
+                            <div className="flex flex-col w-3/4 py-16 relative text-[#222] text-xl gap-3 xl:gap-5">
                                 <div className="flex flex-col gap-3">
-                                    <span className="text-sm xl:text-2xl font-medium">報名資格</span>
-                                    <span className="text-xs xl:text-xl underline">
+                                    <span className="text-sm font-medium xl:text-2xl">報名資格</span>
+                                    <span className="text-xs underline xl:text-xl">
                                         全國各大專院校升大三以上在學生，含學碩博應屆畢業生及碩博新生。
                                     </span>
                                 </div>
                                 <div className="flex flex-col gap-3">
-                                    <span className="text-sm xl:text-2xl font-medium">報名方式</span>
+                                    <span className="text-sm font-medium xl:text-2xl">報名方式</span>
                                     <span className="text-xs xl:text-xl">
                                         一律填寫線上表單報名。本活動以報名資料填寫內容作為錄取參考依據，
                                         報名先後順序不列入計分標準。
                                     </span>
                                 </div>
                                 <div className="flex flex-col">
-                                    <span className="text-sm xl:text-2xl font-medium">招生時程</span>
+                                    <span className="text-sm font-medium xl:text-2xl">招生時程</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id="FAQ"></div>
-                <div className="relative left-0 top-[-55px] xl:top-[-105px] z-20">
-                    <ol className="w-screen border-white flex justify-center border-t-2">
+                <div className="relative left-0 top-[-55px] xl:top-[0px] z-20">
+                    <ol className="flex justify-center w-screen border-t-2 border-white">
                         {/* 1  */}
                         <li className="ml-[76px] xl:ml-[245px] top-[-115px] xl:top-[-200px] relative">
                             <div className="w-[76px] xl:w-[245px] flex-start items-center block pt-0">

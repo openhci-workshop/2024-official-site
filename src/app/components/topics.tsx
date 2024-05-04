@@ -20,20 +20,20 @@ const topicsData = [
 const Topics = () => {
     return (
         <>
-            <div className="pt-12 flex flex-col items-start w-[390px] xl:w-[1040px] gap-[55px] xl:gap-[100px] text-[#222]">
-                <div className="relative flex flex-col">
+            <div className="pt-12 flex flex-col items-center w-full gap-[55px] xl:gap-[100px] text-[#222]">
+                <div className="flex flex-col ">
                     <span className="font-semibold text-md xl:text-3xl mb-[22px] xl:mb-4">主題介紹</span>
                     <span className="font-semibold text-md xl:text-3xl">What is Resilience?</span>
                     <div
                         className={clsx(
-                            'h-[270px] xl:h-[384px] w-[390px] xl:w-[1040px] rounded-[50%] z-10 flex justify-center items-center bg-white/30'
+                            'mt-4 py-16 w-full  rounded-[50%] z-10 flex justify-center items-center bg-white/30'
                         )}
                         style={{
                             backgroundImage:
                                 'radial-gradient(ellipse at center, rgba(255,255,255,1) 12%, rgba(242,212,205,1) 30%, rgba(202,217,223,0.4) 55%, rgba(255,255,255,0.9) 100%)',
                         }}
                     >
-                        <div className="h-[154px] xl:h-[160px] w-[284px] xl:w-[866px] relative text-xs xl:text-xl text-center">
+                        <div className="w-3/4 pt-4 text-xs text-center xl:text-xl">
                             <span className="font-semibold">
                                 「Resilience，象徵著適應力、韌性、彈性。在新興科技大量衝擊的年代，人性為最不可或缺的關鍵。」{' '}
                             </span>
@@ -49,14 +49,14 @@ const Topics = () => {
                         <span className="font-semibold text-md xl:text-3xl">{topic.title}</span>
                         <div
                             className={clsx(
-                                'h-[263px] xl:h-[384px] w-[390px] xl:w-[1040px] rounded-[50%] z-10 flex justify-center items-center bg-white/30'
+                                'mt-4 py-16  w-full  rounded-[50%]  flex justify-center  items-center bg-white/30'
                             )}
                             style={{
                                 backgroundImage:
                                     'radial-gradient(ellipse at center, rgba(255,255,255,1) 12%, rgba(242,212,205,1) 30%, rgba(202,217,223,0.4) 55%, rgba(255,255,255,0.9) 100%)',
                             }}
                         >
-                            <div className="h-[110px] xl:h-[120px] w-[284px] xl:w-[866px] relative text-xs xl:text-xl text-center">
+                            <div className="w-3/4 pt-4 text-xs text-center xl:text-xl">
                                 <span>{topic.info}</span>
                             </div>
                         </div>

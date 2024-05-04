@@ -120,6 +120,7 @@ const Agenda = () => {
         }
     }
     const CustomScrollbar = styled.div`
+        width: 100%;
         ::-webkit-scrollbar {
             height: 8px;
         }
@@ -138,7 +139,7 @@ const Agenda = () => {
         }
     `
     return (
-        <div className="flex flex-col items-start w-[390px] xl:w-[1040px] gap-[22px] xl:gap-[40px] text-[#222]">
+        <div className="flex flex-col items-start w-full gap-[22px] xl:gap-[40px] text-[#222]">
             <span className="font-semibold text-md xl:text-3xl">詳細日程 Agenda</span>
             <div className="flex flex-col w-full gap-0 xl:flex-row xl:gap-4">
                 <div className="flex justify-start gap-2 xl:gap-4">
@@ -177,7 +178,7 @@ const Agenda = () => {
             </div>
             <CustomScrollbar>
                 <div
-                    className="flex gap-4 xl:gap-6 overflow-x-auto w-[390px] xl:w-[1040px] pr-[180px] xl:pr-[690px] pb-4"
+                    className="flex gap-4 xl:gap-6 overflow-x-auto w-full pr-[180px] xl:pr-[690px] pb-4"
                     ref={scrollContainerRef}
                 >
                     {agendaDatas.map((agenda, index) => (
