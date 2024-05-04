@@ -77,9 +77,8 @@ export default function PreviousWork() {
             <div
                 className={className}
                 style={{
-                    right: '-10px',
+                    right: '-40px',
                     transform: 'scale(1.5)',
-                    backgroundColor: '#C8C8C8',
                     borderRadius: '999px',
                 }}
                 onClick={onClick}
@@ -94,10 +93,8 @@ export default function PreviousWork() {
                 className={className}
                 style={{
                     position: 'absolute',
-                    zIndex: 1,
-                    left: '-10px',
+                    left: '-40px',
                     transform: 'scale(1.5)',
-                    backgroundColor: '#C8C8C8',
                     borderRadius: '999px',
                 }}
                 onClick={onClick}
@@ -106,7 +103,7 @@ export default function PreviousWork() {
     }
     return (
         <>
-            <div className="pt-12 flex flex-col items-start w-full gap-[22px] xl:gap-[40px] text-[#222]">
+            <div className="px-10 md:px-0 pt-12 flex flex-col items-start w-full gap-[22px] xl:gap-[40px] text-[#222]">
                 <span className="font-semibold text-md xl:text-3xl">歷屆作品</span>
                 <Slider {...settings} className="w-full ">
                     {previousWorks.map((work) => (

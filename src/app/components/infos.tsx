@@ -5,18 +5,16 @@ import clsx from 'clsx'
 const Infos = () => {
     return (
         <div className="flex flex-col items-start w-full  gap-[55px] xl:gap-[100px] text-[#222]">
-            <div className="relative flex flex-col gap-[22px] xl:gap-[40px]">
+            <div className=" flex flex-col gap-[22px] xl:gap-[40px]">
                 <span className="font-semibold text-md xl:text-3xl">活動宗旨</span>
                 <div
-                    className={clsx(
-                        'h-[263px] xl:h-[384px] w-full rounded-[50%] z-10 flex justify-center items-center'
-                    )}
+                    className={clsx('mt-4 py-16 w-full rounded-[50%] z-10 flex justify-center items-center')}
                     style={{
                         backgroundImage:
                             'radial-gradient(ellipse at center, rgba(255,255,255,1) 12%, rgba(202,217,223,1) 35%, rgba(242,212,205,0.9) 55%, rgba(255,255,255,0.5) 70%)',
                     }}
                 >
-                    <div className="w-3/4 h-[130px] xl:h-[160px] relative text-xs xl:text-xl text-center">
+                    <div className="w-3/4 text-xs text-center xl:text-xl">
                         <span>
                             本活動希望以推廣 HCI
                             為主要宗旨，招收工程、設計及跨領域背景的學生，共同學習並進行跨領域的合作，探索人類生活空間中與周遭環境、物件或工具的互動模式。為期六天的工作坊，期盼參與者能根據主題體察其日常經驗裡的互動缺口或議題，實際動手解決問題或創造出新的意義，進而尋思更和諧的人機互動遠景。
@@ -24,7 +22,7 @@ const Infos = () => {
                     </div>
                 </div>
             </div>
-            <div className="relative flex flex-col gap-[22px] xl:gap-[40px]">
+            <div className=" flex flex-col gap-[22px] xl:gap-[40px]">
                 <span className="font-semibold text-md xl:text-3xl">活動資訊</span>
                 <div
                     className={clsx('py-16 w-full rounded-[50%] z-10 flex justify-center items-center')}
@@ -33,7 +31,7 @@ const Infos = () => {
                             'radial-gradient(ellipse at center, rgba(255,255,255,1) 12%, rgba(202,217,223,1) 35%, rgba(242,212,205,0.85) 55%, rgba(255,255,255,0.5) 70%)',
                     }}
                 >
-                    <div className="px-24 flex flex-col w-full  h-[292px] xl:h-[425px] relative text-xs xl:text-xl gap-3 xl:gap-5">
+                    <div className="flex flex-col w-full gap-3 px-10 text-xs md:px-16 lg:px-24 xl:text-xl xl:gap-5">
                         <div className="flex flex-col gap-3">
                             <span className="text-sm font-medium xl:text-2xl">活動時間</span>
                             <div className="flex flex-col gap-1 tracking-wider underline">
