@@ -43,7 +43,7 @@ const Topics = () => {
                         }}
                     >
                         <div className="w-3/4 pt-4 text-xs text-center xl:text-xl">
-                            <span className="font-semibold">
+                            <span className="font-bold">
                                 「Resilience，象徵著適應力、韌性、彈性。在新興科技大量衝擊的年代，人性為最不可或缺的關鍵。」{' '}
                             </span>
                             <span>

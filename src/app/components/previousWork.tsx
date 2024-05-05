@@ -136,7 +136,7 @@ export default function PreviousWork() {
                                         </div>
                                         <div className="col-span-6 xl:col-start-3 xl:col-end-7">
                                             <h3 className="mb-5 font-medium text-md xl:text-2xl">{work.title}</h3>
-                                            <p className="text-base xl:text-xl">{work.description}</p>
+                                            <p className="text-base xl:text-lg">{work.description}</p>
                                         </div>
                                     </div>
 

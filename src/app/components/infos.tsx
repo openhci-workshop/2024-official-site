@@ -4,8 +4,8 @@ import clsx from 'clsx'
 
 const Infos = () => {
     return (
-        <div className="md:pt-8 flex flex-col items-start w-full  gap-[55px] xl:gap-[100px] text-[#222]">
-            <div data-aos="fade-up" data-aos-offset="200" className=" flex flex-col gap-[22px] xl:gap-[40px]">
+        <div className="md:pt-8 flex flex-col items-start w-full  gap-[55px] xl:gap-20 text-[#222]">
+            <div data-aos="fade-up" data-aos-offset="200" className=" flex flex-col mb-[22px] xl:mb-4">
                 <span className="font-semibold text-md xl:text-3xl">活動宗旨</span>
                 <div
                     className={clsx('mt-4 py-16 w-full rounded-[50%] z-10 flex justify-center items-center')}
@@ -22,7 +22,7 @@ const Infos = () => {
                     </div>
                 </div>
             </div>
-            <div data-aos="fade-up" className=" flex flex-col gap-[22px] xl:gap-[40px]">
+            <div data-aos="fade-up" className=" flex flex-col mb-[22px] xl:mb-4">
                 <span className="font-semibold text-md xl:text-3xl">活動資訊</span>
                 <div
                     className={clsx('py-16 w-full rounded-[50%] z-10 flex justify-center items-center')}
@@ -33,18 +33,18 @@ const Infos = () => {
                 >
                     <div className="flex flex-col w-full gap-3 px-10 text-xs md:px-16 lg:px-24 xl:text-xl xl:gap-5 xl:px-36">
                         <div className="flex flex-col gap-3">
-                            <span className="text-sm font-medium xl:text-2xl">活動時間</span>
+                            <span className="text-sm font-bold xl:text-2xl">活動時間</span>
                             <div className="flex flex-col gap-1 tracking-wider underline">
                                 <span>前置工作坊：6/22（六）- 6/23（日）</span>
                                 <span>正式工作坊：7/4（四）- 7/7（日）</span>
                             </div>
                         </div>
                         <div className="flex flex-col gap-3">
-                            <span className="text-sm font-medium xl:text-2xl">活動地點</span>
+                            <span className="text-sm font-bold xl:text-2xl">活動地點</span>
                             <span className="tracking-wider">國立台灣大學 學新館（台北市大安區舟山路10巷1弄4號）</span>
                         </div>
                         <div className="flex flex-col gap-3">
-                            <span className="text-sm font-medium xl:text-2xl">活動費用</span>
+                            <span className="text-sm font-bold xl:text-2xl">活動費用</span>
                             <span className="tracking-normal">
                                 為推廣 HCI 學門，本活動免報名費，僅收取保證金、保險費用及其他費用。
                                 獲得錄取資格之學員，請於指定時間內繳交各項費用，方能取得正式資格。為維持完整學習體驗，工作坊實行每日簽到，學員需全程參與以獲得保證金全額退還。
