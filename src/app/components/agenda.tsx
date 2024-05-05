@@ -139,7 +139,7 @@ const Agenda = () => {
         }
     `
     return (
-        <div className="flex flex-col items-start w-full gap-[22px] xl:gap-[40px] text-[#222]">
+        <div data-aos="zoom-in" className="flex flex-col items-start w-full gap-[22px] xl:gap-[40px] text-[#222]">
             <span className="font-semibold text-md xl:text-3xl">詳細日程 Agenda</span>
             <div className="flex flex-col w-full gap-0 xl:flex-row xl:gap-4">
                 <div className="flex justify-start gap-2 xl:gap-4">

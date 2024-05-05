@@ -40,7 +40,7 @@ const Enrollment = () => {
                     </div>
                 </div>
                 <div id="FAQ"></div>
-                <div className="relative left-0 top-[-55px] xl:top-[0px] z-20">
+                <div data-aos="fade-up" className="relative left-0 top-[-55px] xl:top-[0px] z-20">
                     <ol className="flex justify-center w-screen border-t-2 border-white">
                         {/* 1  */}
                         <li className="ml-[76px] xl:ml-[245px] top-[-115px] xl:top-[-200px] relative">

@@ -4,8 +4,8 @@ import clsx from 'clsx'
 
 const Infos = () => {
     return (
-        <div className="flex flex-col items-start w-full  gap-[55px] xl:gap-[100px] text-[#222]">
-            <div className=" flex flex-col gap-[22px] xl:gap-[40px]">
+        <div className="md:pt-8 flex flex-col items-start w-full  gap-[55px] xl:gap-[100px] text-[#222]">
+            <div data-aos="fade-up" data-aos-offset="200" className=" flex flex-col gap-[22px] xl:gap-[40px]">
                 <span className="font-semibold text-md xl:text-3xl">活動宗旨</span>
                 <div
                     className={clsx('mt-4 py-16 w-full rounded-[50%] z-10 flex justify-center items-center')}
@@ -22,7 +22,7 @@ const Infos = () => {
                     </div>
                 </div>
             </div>
-            <div className=" flex flex-col gap-[22px] xl:gap-[40px]">
+            <div data-aos="fade-up" className=" flex flex-col gap-[22px] xl:gap-[40px]">
                 <span className="font-semibold text-md xl:text-3xl">活動資訊</span>
                 <div
                     className={clsx('py-16 w-full rounded-[50%] z-10 flex justify-center items-center')}

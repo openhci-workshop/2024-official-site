@@ -31,7 +31,7 @@ export default function Header() {
         <>
             <Navbar
                 maxWidth="full"
-                className="fixed hidden px-6 py-4 font-bold text-white bg-transparent md:block drop-shadow"
+                className="fixed hidden px-6  font-bold text-white bg-transparent md:block drop-shadow"
             >
                 <NavbarBrand>
                     <Image src="/Light_l_Logo.png" alt="logo" width={80} height={80} className="block md:hidden" />
@@ -55,7 +55,7 @@ export default function Header() {
             </Navbar>
             <Navbar
                 maxWidth="full"
-                className="fixed items-center justify-between py-4 font-bold text-white bg-transparent drop-shadow md:hidden"
+                className="fixed items-center justify-between py-1 font-bold text-white bg-transparent drop-shadow md:hidden"
             >
                 <Image src="/Light_l_Logo.png" alt="logo" width={80} height={80} className="block md:hidden" />
 
