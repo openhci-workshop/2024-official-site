@@ -22,7 +22,7 @@ export default function Header() {
     const menuList = [
         { name: '工作坊介紹', link: '#intro' },
         { name: '主題演講', link: '#speech' },
-        { name: '活動資訊', link: '#inform' },
+        { name: '活動資訊', link: '#info' },
         { name: 'FAQ', link: '#FAQ' },
         { name: '作品成果', link: '#works' },
         { name: '組織成員', link: '#members' },

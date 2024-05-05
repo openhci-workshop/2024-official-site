@@ -114,11 +114,14 @@ const Agenda = () => {
     }, [currentCardWidth])
 
     const handleButtonClick = (index: number) => {
+        console.log('Button clicked:', index) // Log which button was clicked
+        console.log('activeButton:', activeButton)
         const scrollToPosition = index * currentCardWidth
         if (scrollContainerRef.current) {
             scrollContainerRef.current.scrollTo({ left: scrollToPosition, behavior: 'smooth' })
         }
     }
+
     const CustomScrollbar = styled.div`
         width: 100%;
         ::-webkit-scrollbar {

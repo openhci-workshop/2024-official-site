@@ -64,7 +64,7 @@ const SpeakerInfo = () => {
                     </div>
                 </CustomScrollbar>
             </div>
-            <div id="inform"></div>
+            <div id="info"></div>
         </>
     )
 }

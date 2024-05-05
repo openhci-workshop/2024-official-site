@@ -5,7 +5,7 @@ import clsx from 'clsx'
 const Enrollment = () => {
     return (
         <>
-            <div className="flex flex-col items-center w-full">
+            <div className="flex flex-col items-center w-full pt-12">
                 <div className="flex flex-col items-center w-full gap-[55px] xl:gap-[100px]">
                     <div className="w-full relative flex flex-col gap-[22px] xl:gap-[40px]">
                         <span className="items-start font-semibold text-md xl:text-3xl text-[#222]">報名資訊</span>
