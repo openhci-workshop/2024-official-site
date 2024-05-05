@@ -8,10 +8,10 @@ const Infos = () => {
             <div className=" flex flex-col gap-[22px] xl:gap-[40px]">
                 <span className="font-semibold text-md xl:text-3xl">活動宗旨</span>
                 <div
-                    className={clsx('mt-4 py-16 w-full rounded-[50%] z-10 flex justify-center items-center')}
+                    className={clsx('mt-4 py-16 xl:py-24 w-full rounded-[50%] z-10 flex justify-center items-center')}
                     style={{
                         backgroundImage:
-                            'radial-gradient(ellipse at center, rgba(255,255,255,1) 12%, rgba(202,217,223,1) 35%, rgba(242,212,205,0.9) 55%, rgba(255,255,255,0.5) 70%)',
+                            'radial-gradient(ellipse at center, rgba(255,255,255,0.8) 12%, rgba(202,217,223,0.8) 35%, rgba(242,212,205,0.85) 50%, rgba(255,255,255,0.12) 70%)',
                     }}
                 >
                     <div className="w-3/4 text-xs text-center xl:text-xl">
@@ -25,10 +25,10 @@ const Infos = () => {
             <div className=" flex flex-col gap-[22px] xl:gap-[40px]">
                 <span className="font-semibold text-md xl:text-3xl">活動資訊</span>
                 <div
-                    className={clsx('py-16 w-full rounded-[50%] z-10 flex justify-center items-center')}
+                    className={clsx('py-10 w-full rounded-[50%] z-10 flex justify-center items-center')}
                     style={{
                         backgroundImage:
-                            'radial-gradient(ellipse at center, rgba(255,255,255,1) 12%, rgba(202,217,223,1) 35%, rgba(242,212,205,0.85) 55%, rgba(255,255,255,0.5) 70%)',
+                            'radial-gradient(ellipse at center, rgba(255,255,255,0.8) 12%, rgba(202,217,223,0.8) 35%, rgba(242,212,205,0.85) 50%, rgba(255,255,255,0.12) 70%)',
                     }}
                 >
                     <div className="flex flex-col w-full gap-3 px-10 text-xs md:px-16 lg:px-24 xl:text-xl xl:gap-5 xl:px-36">

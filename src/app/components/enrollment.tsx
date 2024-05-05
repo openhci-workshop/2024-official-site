@@ -11,14 +11,14 @@ const Enrollment = () => {
                         <span className="items-start font-semibold text-md xl:text-3xl text-[#222]">報名資訊</span>
                         <div
                             className={clsx(
-                                'md:pt-16 pb-36 w-full rounded-[50%] z-10 flex justify-center items-center'
+                                'pb-36 w-full rounded-[50%] z-10 flex justify-center items-center'
                             )}
                             style={{
                                 backgroundImage:
                                     'radial-gradient(ellipse at center, rgba(148,170,193,1) 0%, rgba(229,224,223,1) 45%,rgba(202,217,223,0.26) 100%)',
                             }}
                         >
-                            <div className="flex flex-col w-3/4 py-16 relative text-[#222] text-xl gap-3 xl:gap-5">
+                            <div className="flex flex-col w-3/4 pb-12 xl:pb-16 relative text-[#222] text-xl gap-3 xl:gap-5">
                                 <div className="flex flex-col gap-3">
                                     <span className="text-sm font-medium xl:text-2xl">報名資格</span>
                                     <span className="text-xs underline xl:text-xl">
