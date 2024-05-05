@@ -5,9 +5,9 @@ import clsx from 'clsx'
 const Enrollment = () => {
     return (
         <>
-            <div className="flex flex-col items-center w-full">
-                <div className="flex flex-col items-center w-full gap-[55px] xl:gap-[100px]">
-                    <div className="w-full relative flex flex-col gap-[22px] xl:gap-[40px]">
+            <div className="flex flex-col items-center w-full pt-12">
+                <div className="flex flex-col items-center w-full gap-[55px] xl:gap-[120px]">
+                    <div className="w-full relative flex flex-col mb-[22px] xl:mb-4 ">
                         <span className="items-start font-semibold text-md xl:text-3xl text-[#222]">報名資訊</span>
                         <div
                             className={clsx(
@@ -20,27 +20,27 @@ const Enrollment = () => {
                         >
                             <div className="flex flex-col w-3/4 pb-12 xl:pb-16 relative text-[#222] text-xl gap-3 xl:gap-5">
                                 <div className="flex flex-col gap-3">
-                                    <span className="text-sm font-medium xl:text-2xl">報名資格</span>
+                                    <span className="text-sm font-bold xl:text-2xl">報名資格</span>
                                     <span className="text-xs underline xl:text-xl">
                                         全國各大專院校升大三以上在學生，含學碩博應屆畢業生及碩博新生。
                                     </span>
                                 </div>
                                 <div className="flex flex-col gap-3">
-                                    <span className="text-sm font-medium xl:text-2xl">報名方式</span>
+                                    <span className="text-sm font-bold xl:text-2xl">報名方式</span>
                                     <span className="text-xs xl:text-xl">
                                         一律填寫線上表單報名。本活動以報名資料填寫內容作為錄取參考依據，
                                         報名先後順序不列入計分標準。
                                     </span>
                                 </div>
                                 <div className="flex flex-col">
-                                    <span className="text-sm font-medium xl:text-2xl">招生時程</span>
+                                    <span className="text-sm font-bold xl:text-2xl">招生時程</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id="FAQ"></div>
-                <div className="relative left-0 top-[-55px] xl:top-[0px] z-20">
+                <div className="relative left-0 top-[-85px] xl:top-[0px] z-20">
                     <ol className="flex justify-center w-screen border-t-2 border-white">
                         {/* 1  */}
                         <li className="ml-[76px] xl:ml-[245px] top-[-115px] xl:top-[-200px] relative">

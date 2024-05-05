@@ -22,7 +22,7 @@ export default function Header() {
     const menuList = [
         { name: '工作坊介紹', link: '#intro' },
         { name: '主題演講', link: '#speech' },
-        { name: '活動資訊', link: '#inform' },
+        { name: '活動資訊', link: '#info' },
         { name: 'FAQ', link: '#FAQ' },
         { name: '作品成果', link: '#works' },
         { name: '組織成員', link: '#members' },
@@ -31,7 +31,7 @@ export default function Header() {
         <>
             <Navbar
                 maxWidth="full"
-                className="fixed hidden px-6 py-4 font-bold text-white bg-transparent md:block drop-shadow"
+                className="fixed hidden px-6  font-bold text-white bg-transparent md:block drop-shadow"
             >
                 <NavbarBrand>
                     <Image src="/Light_l_Logo.png" alt="logo" width={80} height={80} className="block md:hidden" />
@@ -55,7 +55,7 @@ export default function Header() {
             </Navbar>
             <Navbar
                 maxWidth="full"
-                className="fixed items-center justify-between py-4 font-bold text-white bg-transparent drop-shadow md:hidden"
+                className="fixed items-center justify-between py-1 font-bold text-white bg-transparent drop-shadow md:hidden"
             >
                 <Image src="/Light_l_Logo.png" alt="logo" width={80} height={80} className="block md:hidden" />
 

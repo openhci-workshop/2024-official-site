@@ -3,7 +3,11 @@ import Image from 'next/image'
 
 export default function Sponsor() {
     return (
-        <div className="flex flex-col items-start w-full gap-[22px] xl:gap-[40px] text-[#222]">
+        <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            className="flex flex-col items-start w-full gap-[22px] xl:gap-[40px] text-[#222]"
+        >
             <span className="font-semibold text-md xl:text-3xl">贊助單位</span>
             <span className="text-xs font-semibold xl:text-xl">白金級</span>
             <div className="grid grid-cols-6 gap-3 mb-5">

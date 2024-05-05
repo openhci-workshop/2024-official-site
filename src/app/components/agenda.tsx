@@ -133,6 +133,8 @@ const Agenda = () => {
     }, [currentCardWidth])
 
     const handleButtonClick = (index: number) => {
+        console.log('Button clicked:', index) // Log which button was clicked
+        console.log('activeButton:', activeButton)
         const scrollToPosition = index * currentCardWidth
         if (scrollContainerRef.current) {
             scrollContainerRef.current.scrollTo({ left: scrollToPosition, behavior: 'smooth' })
@@ -140,7 +142,7 @@ const Agenda = () => {
     }
     
     return (
-        <div className="flex flex-col items-start w-full gap-[22px] xl:gap-[40px] text-[#222]">
+        <div data-aos="zoom-in" className="flex flex-col items-start w-full gap-[22px] xl:gap-[40px] text-[#222]">
             <span className="font-semibold text-md xl:text-3xl">詳細日程 Agenda</span>
             <div className="flex flex-col w-full gap-0 xl:flex-row xl:gap-4">
                 <div className="flex justify-start gap-2 xl:gap-4">
