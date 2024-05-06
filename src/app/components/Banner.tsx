@@ -10,7 +10,7 @@ export default function Banner() {
     const canvasRef = useRef<HTMLDivElement>(null)
     const TabletLayout = () => {
         return (
-            <div className="absolute z-20 hidden w-full h-screen grid-cols-12 text-right md:grid grid-rows-12">
+            <div className="absolute z-20 hidden w-full h-screen grid-cols-12 text-right md:grid xl:hidden grid-rows-12">
                 <div
                     style={{ filter: 'blur(0.8px)' }}
                     className="	 tracking-widest col-end-11 col-span-12 row-start-5  md:text-[96px] leading-4 font-kompot text-white drop-shadow-3xl 	"
