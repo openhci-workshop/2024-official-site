@@ -33,7 +33,7 @@ const SpeakerInfo = () => {
         <>
             <div
                 data-aos="fade-up"
-                className="pt-12 md:pt-8 flex flex-col items-start w-full  gap-[22px] xl:gap-[40px] text-[#222] "
+                className="pt-12 md:pt-8 flex flex-col items-start w-full  gap-[22px] xl:gap-[40px]  "
             >
                 <span className="font-semibold text-md xl:text-3xl">講者資訊</span>
                 <CustomScrollbar>
@@ -55,7 +55,7 @@ const SpeakerInfo = () => {
                                     ></div>
                                     <div className="flex flex-col ">
                                         <span className="text-xs font-medium xl:text-xl">姓名 {speaker.name}</span>
-                                        <span className="text-xxs xl:text-base">學校 科系 {speaker.info}</span>
+                                        <span className="text-xxs 	 xl:text-base">學校 科系 {speaker.info}</span>
                                         <span className="text-xxs xl:text-base">職稱 {speaker.position}</span>
                                     </div>
                                 </div>

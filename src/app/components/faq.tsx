@@ -10,7 +10,7 @@ const FaqD4 = '/images/faq_d_q4.svg'
 export default function FAQ() {
     return (
         <>
-            <div className="md:pt-16 flex flex-col items-start w-full text-[#222]">
+            <div className="md:pt-16 flex flex-col items-start w-full ">
                 <span className="mb-5 font-semibold text-md xl:text-3xl">FAQ</span>
                 <span className="mb-5 text-sm font-medium xl:text-2xl">報名常見問題</span>
                 <div className="flex justify-center w-full mb-5" data-aos="fade-right">

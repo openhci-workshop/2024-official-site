@@ -8,7 +8,7 @@ import { animate } from 'framer-motion'
 const topicsData = [
     {
         title: '什麼是人機互動?',
-        info: '人機互動（Human Computer Interaction, HCI），過去卅年間對於人機互動相關議題與科技的研發與創新，由國際計算機學會 ACM SIGCHI（Special Interest Group on Computer-Human Interaction）領頭發揮重大影響力，於學術研究與產業實務上都有蓬勃發展。',
+        info: '人機互動（Human Computer Interaction, HCI），過去卅年間對於人機互動相關議題與科技的研發與創新，由國際<br>計算機學會 ACM SIGCHI（Special Interest Group on Computer-Human Interaction）領頭發揮重大影響力，於學術研究與產業實務上都有蓬勃發展。',
         animate: 'fade-right',
     },
     {
@@ -29,7 +29,7 @@ const Topics = () => {
     }, [])
     return (
         <>
-            <div className="pt-4 flex flex-col items-center w-full gap-[55px] xl:gap-[100px] text-[#222]">
+            <div className="pt-4 flex flex-col items-center w-full gap-[55px] xl:gap-[100px] ">
                 <div className="flex flex-col " data-aos="fade-up" data-aos-offset="200">
                     <span className="font-semibold text-md xl:text-3xl mb-[22px] xl:mb-4">主題介紹</span>
                     <span className="font-semibold text-md xl:text-3xl">What is Resilience?</span>
@@ -65,8 +65,11 @@ const Topics = () => {
                                     'radial-gradient(ellipse at center, rgba(255,255,255,1) 12%, rgba(242,212,205,1) 30%, rgba(202,217,223,0.4) 55%, rgba(255,255,255,0.9) 100%)',
                             }}
                         >
-                            <div className="w-3/4 pt-4 text-xs text-center xl:text-xl">
-                                <span>{topic.info}</span>
+                            <div
+                                className="w-3/4 pt-4 text-xs text-center xl:text-xl"
+                                dangerouslySetInnerHTML={{ __html: topic.info }}
+                            >
+                                {/* <span>{topic.info}</span> */}
                             </div>
                         </div>
                     </div>

@@ -6,7 +6,7 @@ export default function Sponsor() {
         <div
             data-aos="fade-up"
             data-aos-offset="200"
-            className="flex flex-col items-start w-full gap-[22px] xl:gap-[40px] text-[#222]"
+            className="flex flex-col items-start w-full gap-[22px] xl:gap-[40px] "
         >
             <span className="font-semibold text-md xl:text-3xl">贊助單位</span>
             <span className="text-xs font-semibold xl:text-xl">白金級</span>

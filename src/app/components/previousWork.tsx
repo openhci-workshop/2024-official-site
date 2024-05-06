@@ -106,7 +106,7 @@ export default function PreviousWork() {
             <div
                 data-aos="fade-up"
                 data-aos-offset="200"
-                className="px-10 md:px-0 pt-8 flex flex-col items-start w-full gap-[22px] xl:gap-[40px] text-[#222]"
+                className="px-10 md:px-0 pt-8 flex flex-col items-start w-full gap-[22px] xl:gap-[40px] "
             >
                 <span className="font-semibold text-md xl:text-3xl">歷屆作品</span>
                 <Slider {...settings} className="w-full ">
@@ -135,8 +135,10 @@ export default function PreviousWork() {
                                             />
                                         </div>
                                         <div className="col-span-6 xl:col-start-3 xl:col-end-7">
-                                            <h3 className="mb-5 font-medium text-md xl:text-2xl">{work.title}</h3>
-                                            <p className="text-base xl:text-lg">{work.description}</p>
+                                            <h3 className="mb-5 font-medium text-md xl:text-2xl text-indigo-950">
+                                                {work.title}
+                                            </h3>
+                                            <p className="text-base xl:text-lg text-indigo-950">{work.description}</p>
                                         </div>
                                     </div>
 
