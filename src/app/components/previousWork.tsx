@@ -8,16 +8,21 @@ import { PreviousIcon } from './previousIcon'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+
 export default function PreviousWork() {
+
     const settings = {
         dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />,
+        // nextArrow: <SampleNextArrow />,
+        nextArrow: <SampleNextArrow className="next-arrow" style={{}} onClick={() => {}} />,
+        // prevArrow: <SamplePrevArrow />,
+        prevArrow: <SamplePrevArrow className="prev-arrow" style={{}} onClick={() => {}} />,
     }
+
     const previousWorks = [
         {
             id: '1',
@@ -71,8 +76,21 @@ export default function PreviousWork() {
         }
         setCurrentWork(previousWorks[counter])
     }
-    function SampleNextArrow(props) {
-        const { className, style, onClick } = props
+    interface Work {
+        id: string;
+        title: string;
+        description: string;
+        image: string;
+    }
+
+    interface SampleArrowProps {
+        className: string;
+        style: React.CSSProperties;
+        onClick: () => void;
+    }
+
+    function SampleNextArrow(props: SampleArrowProps) {
+        const { className, style, onClick } = props;
         return (
             <div
                 className={className}
@@ -83,11 +101,17 @@ export default function PreviousWork() {
                 }}
                 onClick={onClick}
             />
-        )
+        );
     }
 
-    function SamplePrevArrow(props) {
-        const { className, style, onClick } = props
+    interface SamplePrevArrowProps {
+        className: string;
+        style: React.CSSProperties;
+        onClick: () => void;
+    }
+
+    function SamplePrevArrow(props: SamplePrevArrowProps) {
+        const { className, style, onClick } = props;
         return (
             <div
                 className={className}
@@ -99,7 +123,7 @@ export default function PreviousWork() {
                 }}
                 onClick={onClick}
             />
-        )
+        );
     }
     return (
         <>
