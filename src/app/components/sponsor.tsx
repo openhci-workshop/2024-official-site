@@ -23,22 +23,12 @@ export default function Sponsor() {
 
                 {/* Image */}
 
-
-                <div className="col-span-3 md:col-span-2 border-2 border-black h-[105px]">
-                    <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md' />
-                </div>
-                <div className="col-span-3 md:col-span-2 border-2 border-black h-[105px]">
-                    <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md' />
-                </div>
-                <div className="col-span-3 md:col-span-2 border-2 border-black h-[105px]">
-                    <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md' />
-                </div>
-                <div className="col-span-3 md:col-span-2 border-2 border-black h-[105px]">
-                    <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md' />
-                </div>
-                <div className="col-span-3 md:col-span-2 border-2 border-black h-[105px]">
-                    <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md' />
-                </div>
+                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
+                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
+                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
+                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
+                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
+                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
             </div>
             <span className="text-xs font-semibold xl:text-xl">金級</span>
             <div className="grid grid-cols-6 gap-3 mb-5 w-full">
@@ -52,22 +42,12 @@ export default function Sponsor() {
 
                 {/* Image */}
 
-
-                <div className="col-span-3 md:col-span-2 border-2 border-black h-[105px]">
-                    <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md' />
-                </div>
-                <div className="col-span-3 md:col-span-2 border-2 border-black h-[105px]">
-                    <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md' />
-                </div>
-                <div className="col-span-3 md:col-span-2 border-2 border-black h-[105px]">
-                    <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md' />
-                </div>
-                <div className="col-span-3 md:col-span-2 border-2 border-black h-[105px]">
-                    <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md' />
-                </div>
-                <div className="col-span-3 md:col-span-2 border-2 border-black h-[105px]">
-                    <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md' />
-                </div>
+                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
+                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
+                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
+                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
+                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
+                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
             </div>
             <span className="text-xs font-semibold xl:text-xl">銀級</span>
             <div className="grid grid-cols-6 gap-3 mb-5 w-full">
@@ -81,22 +61,12 @@ export default function Sponsor() {
 
                 {/* Image */}
 
-
-                <div className="col-span-3 md:col-span-2 border-2 border-black h-[105px]">
-                    <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md' />
-                </div>
-                <div className="col-span-3 md:col-span-2 border-2 border-black h-[105px]">
-                    <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md' />
-                </div>
-                <div className="col-span-3 md:col-span-2 border-2 border-black h-[105px]">
-                    <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md' />
-                </div>
-                <div className="col-span-3 md:col-span-2 border-2 border-black h-[105px]">
-                    <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md' />
-                </div>
-                <div className="col-span-3 md:col-span-2 border-2 border-black h-[105px]">
-                    <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md' />
-                </div>
+                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
+                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
+                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
+                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
+                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
+                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
             </div>
         </div>
     )
