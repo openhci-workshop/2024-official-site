@@ -113,10 +113,10 @@ const Sketch = () => {
 
                 blobs.forEach((blob) => {
                     for (let sub = 0; sub < substeps; sub++) {
-                        blob.constraints.forEach((constraint) => {
+                        blob.constraints.forEach((constraint: any) => {
                             constraint.update()
                         })
-                        blob.particles.forEach((particle) => {
+                        blob.particles.forEach((particle: any) => {
                             particle.collideWithMouse(p.mouseX, p.mouseY, mouseRadius)
                             particle.update(p, sdt)
                         })
@@ -132,26 +132,29 @@ const Sketch = () => {
                     p.drawingContext.shadowColor = 'white'
                     p.beginShape()
 
-                    blob.particles.forEach((particle) => {
+                    blob.particles.forEach((particle: any) => {
                         p.curveVertex(particle.x, particle.y)
                     })
 
                     p.endShape(p.CLOSE)
                 })
             }
-            function adjustParticlesToArea(particles, targetArea) {
+            function adjustParticlesToArea(particles: any, targetArea: any) {
                 const currentArea = polygonArea(particles)
                 if (currentArea === 0) return // Avoid division by zero
                 const adjustmentFactor = Math.sqrt(targetArea / currentArea)
-                const centroid = particles.reduce((acc, p) => ({ x: acc.x + p.x, y: acc.y + p.y }), { x: 0, y: 0 })
+                const centroid = particles.reduce((acc: any, p: any) => ({ x: acc.x + p.x, y: acc.y + p.y }), {
+                    x: 0,
+                    y: 0,
+                })
                 centroid.x /= particles.length
                 centroid.y /= particles.length
-                particles.forEach((p) => {
+                particles.forEach((p: any) => {
                     p.x = centroid.x + (p.x - centroid.x) * adjustmentFactor
                     p.y = centroid.y + (p.y - centroid.y) * adjustmentFactor
                 })
             }
-            function polygonArea(particles) {
+            function polygonArea(particles: any) {
                 let area = 0
                 for (let i = 0, j = particles.length - 1; i < particles.length; j = i++) {
                     area += (particles[j].x + particles[i].x) * (particles[j].y - particles[i].y)
@@ -159,11 +162,11 @@ const Sketch = () => {
                 return Math.abs(area / 2)
             }
             const geometry = {
-                normalize: (coord) => {
+                normalize: (coord: any) => {
                     let mag = Math.sqrt(coord.x * coord.x + coord.y * coord.y)
                     return mag > 0 ? { x: coord.x / mag, y: coord.y / mag } : { x: 0, y: 0 }
                 },
-                limit: (coord, maxLength) => {
+                limit: (coord: any, maxLength: any) => {
                     let mag = Math.sqrt(coord.x * coord.x + coord.y * coord.y)
                     if (mag > maxLength) {
                         return { x: (coord.x / mag) * maxLength, y: (coord.y / mag) * maxLength }
@@ -171,7 +174,7 @@ const Sketch = () => {
                     return coord
                 },
             }
-            function applyPhysics(particle, dt) {
+            function applyPhysics(particle: any, dt: any) {
                 // 重力加速度
                 const gravity = 9.8
                 particle.vy += gravity * dt // 假设单位是像素/秒²
@@ -278,6 +281,15 @@ const Sketch = () => {
                                 this.y -= adjustY
                             }
                         },
+                        attract: function (other: IParticle, strength: number): void {
+                            throw new Error('Function not implemented.')
+                        },
+                        repel: function (other: IParticle, strength: number): void {
+                            throw new Error('Function not implemented.')
+                        },
+                        applyRestorativeForce: function (): void {
+                            throw new Error('Function not implemented.')
+                        },
                     }
                     particles.push(particle)
                 }
@@ -292,12 +304,22 @@ const Sketch = () => {
                 }
 
                 constraints.push(
-                    new DistanceConstraint(particles[0], particles[numPoints - 1], effectiveVertexDistance)
+                    new DistanceConstraint(particles[0], particles[numPoints - 1], effectiveVertexDistance, 8, 12)
                 )
 
                 // return { particles, color, constraints }
 
-                const blob = { particles, color, constraints }
+                const blob: {
+                    particles: IParticle[]
+                    color: any
+                    constraints: DistanceConstraint[]
+                    initialArea: number
+                } = {
+                    particles,
+                    color,
+                    constraints,
+                    initialArea: 0,
+                }
                 blob.initialArea = polygonArea(blob.particles) // Calculate and store initial area
                 return blob
             }
