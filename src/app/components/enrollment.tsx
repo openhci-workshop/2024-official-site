@@ -10,9 +10,7 @@ const Enrollment = () => {
                     <div className="w-full relative flex flex-col mb-[22px] xl:mb-4 ">
                         <span className="items-start font-semibold text-md xl:text-3xl ">報名資訊</span>
                         <div
-                            className={clsx(
-                                'md:pt-16 pb-36 w-full rounded-[50%] z-10 flex justify-center items-center'
-                            )}
+                            className={clsx('pb-36 w-full rounded-[50%] z-10 flex justify-center items-center')}
                             style={{
                                 backgroundImage:
                                     'radial-gradient(ellipse at center, rgba(148,170,193,1) 0%, rgba(229,224,223,1) 45%,rgba(202,217,223,0.26) 100%)',

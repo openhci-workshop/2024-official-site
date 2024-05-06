@@ -35,11 +35,11 @@ const Topics = () => {
                     <span className="font-semibold text-md xl:text-3xl">What is Resilience?</span>
                     <div
                         className={clsx(
-                            'mt-4 py-16 w-full  rounded-[50%] z-10 flex justify-center items-center bg-white/30'
+                            'mt-4 py-16 xl:py-24 w-full  rounded-[50%] z-10 flex justify-center items-center bg-white/25'
                         )}
                         style={{
                             backgroundImage:
-                                'radial-gradient(ellipse at center, rgba(255,255,255,1) 12%, rgba(242,212,205,1) 30%, rgba(202,217,223,0.4) 55%, rgba(255,255,255,0.9) 100%)',
+                                'radial-gradient(ellipse at center, rgba(255,255,255,1) 12%, rgba(242,212,205,1) 30%, rgba(202,217,223,0.4) 55%, rgba(255,255,255,0.6) 100%)',
                         }}
                     >
                         <div className="w-3/4 pt-4 text-xs text-center xl:text-xl">
@@ -58,11 +58,11 @@ const Topics = () => {
                         <span className="font-semibold text-md xl:text-3xl">{topic.title}</span>
                         <div
                             className={clsx(
-                                'mt-4 py-16  w-full  rounded-[50%]  flex justify-center  items-center bg-white/30'
+                                'mt-4 py-16 xl:py-24 w-full rounded-[50%]  flex justify-center  items-center bg-white/25'
                             )}
                             style={{
                                 backgroundImage:
-                                    'radial-gradient(ellipse at center, rgba(255,255,255,1) 12%, rgba(242,212,205,1) 30%, rgba(202,217,223,0.4) 55%, rgba(255,255,255,0.9) 100%)',
+                                    'radial-gradient(ellipse at center, rgba(255,255,255,1) 12%, rgba(242,212,205,1) 30%, rgba(202,217,223,0.4) 55%, rgba(255,255,255,0.6) 100%)',
                             }}
                         >
                             <div

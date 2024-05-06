@@ -67,6 +67,25 @@ const agendaDatas = [
         ],
     },
 ]
+const CustomScrollbar = styled.div`
+    width: 100%;
+    ::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: rgba(241, 241, 241, 0.6);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #9e9e9e;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+`
 
 const Agenda = () => {
     const scrollContainerRef = useRef<HTMLDivElement | null>(null)
@@ -121,26 +140,7 @@ const Agenda = () => {
             scrollContainerRef.current.scrollTo({ left: scrollToPosition, behavior: 'smooth' })
         }
     }
-
-    const CustomScrollbar = styled.div`
-        width: 100%;
-        ::-webkit-scrollbar {
-            height: 8px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: rgba(241, 241, 241, 0.6);
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #9e9e9e;
-            border-radius: 10px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: #555;
-        }
-    `
+    
     return (
         <div data-aos="zoom-in" className="flex flex-col items-start w-full gap-[22px] xl:gap-[40px] ">
             <span className="font-semibold text-md xl:text-3xl">詳細日程 Agenda</span>
@@ -181,7 +181,7 @@ const Agenda = () => {
             </div>
             <CustomScrollbar>
                 <div
-                    className="flex gap-4 xl:gap-6 overflow-x-auto w-full pr-[180px] xl:pr-[690px] pb-4"
+                    className="flex gap-4 xl:gap-6 overflow-x-auto max-w-[600px] sm:max-w-[680px] md:max-w-[670px] lg:max-w-[1040px] xl:w-[1040px] pr-[300px] sm:pr-[390px] md:pr-[400px] lg:pr-[550px] xl:pr-[690px] pb-4"
                     ref={scrollContainerRef}
                 >
                     {agendaDatas.map((agenda, index) => (
