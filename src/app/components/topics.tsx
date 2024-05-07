@@ -31,8 +31,8 @@ const Topics = () => {
         <>
             <div className="pt-4 flex flex-col items-center w-full gap-[55px] xl:gap-[100px] ">
                 <div className="flex flex-col " data-aos="fade-up" data-aos-offset="200">
-                    <span className="font-semibold text-md xl:text-3xl mb-[22px] xl:mb-4">主題介紹</span>
-                    <span className="font-semibold text-md xl:text-3xl">What is Resilience?</span>
+                    <span className="font-semibold text-md md:text-2xl xl:text-3xl mb-[22px] xl:mb-4">主題介紹</span>
+                    <span className="font-semibold text-md md:text-2xl xl:text-3xl">What is Resilience?</span>
                     <div
                         className={clsx(
                             'mt-4 py-16 xl:py-24 w-full  rounded-[50%] z-10 flex justify-center items-center bg-white/25'
@@ -42,7 +42,7 @@ const Topics = () => {
                                 'radial-gradient(ellipse at center, rgba(255,255,255,1) 12%, rgba(242,212,205,1) 30%, rgba(202,217,223,0.4) 55%, rgba(255,255,255,0.6) 100%)',
                         }}
                     >
-                        <div className="w-3/4 pt-4 text-xs text-center xl:text-xl">
+                        <div className="w-3/4 pt-4 text-xs text-center md:text-base xl:text-xl">
                             <span className="font-bold">
                                 「Resilience，象徵著適應力、韌性、彈性。在新興科技大量衝擊的年代，人性為最不可或缺的關鍵。」{' '}
                             </span>
@@ -55,7 +55,7 @@ const Topics = () => {
                 </div>
                 {topicsData.map((topic, index) => (
                     <div key={index} className="flex flex-col" data-aos={topic.animate}>
-                        <span className="font-semibold text-md xl:text-3xl">{topic.title}</span>
+                        <span className="font-semibold text-md xl:text-3xl md:text-2xl">{topic.title}</span>
                         <div
                             className={clsx(
                                 'mt-4 py-16 xl:py-24 w-full rounded-[50%]  flex justify-center  items-center bg-white/25'
@@ -66,7 +66,7 @@ const Topics = () => {
                             }}
                         >
                             <div
-                                className="w-3/4 pt-4 text-xs text-center xl:text-xl"
+                                className="w-3/4 pt-4 text-xs text-center xl:text-xl md:text-base"
                                 dangerouslySetInnerHTML={{ __html: topic.info }}
                             >
                                 {/* <span>{topic.info}</span> */}

@@ -144,8 +144,8 @@ const Agenda = () => {
     return (
         <div data-aos="zoom-in" className="flex flex-col items-start w-full gap-[22px] xl:gap-[40px] ">
             <span className="font-semibold text-md xl:text-3xl md:text-2xl">詳細日程 Agenda</span>
-            <div className="flex flex-col w-full gap-0 xl:flex-row xl:gap-4">
-                <div className="flex justify-start gap-2 xl:gap-4">
+            <div className="flex flex-col w-full gap-0 md:flex-row md:gap-4">
+                <div className="flex justify-start gap-2 md:gap-4">
                     {['前置 D1', '前置 D2'].map((label, index) => (
                         <Button
                             key={index}
@@ -162,7 +162,7 @@ const Agenda = () => {
                     ))}
                 </div>
 
-                <div className="flex gap-2 xl:gap-4 justify-start mt-[22px] xl:mt-0">
+                <div className="flex gap-2 md:gap-4 justify-start mt-[22px] md:mt-0">
                     {['正式 D1', '正式 D2', '正式 D3', '正式 D4'].map((label, index) => (
                         <Button
                             key={index + 2}

@@ -10,7 +10,6 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
 export default function PreviousWork() {
-
     const settings = {
         dots: true,
         infinite: true,
@@ -77,20 +76,20 @@ export default function PreviousWork() {
         setCurrentWork(previousWorks[counter])
     }
     interface Work {
-        id: string;
-        title: string;
-        description: string;
-        image: string;
+        id: string
+        title: string
+        description: string
+        image: string
     }
 
     interface SampleArrowProps {
-        className: string;
-        style: React.CSSProperties;
-        onClick: () => void;
+        className: string
+        style: React.CSSProperties
+        onClick: () => void
     }
 
     function SampleNextArrow(props: SampleArrowProps) {
-        const { className, style, onClick } = props;
+        const { className, style, onClick } = props
         return (
             <div
                 className={className}
@@ -101,17 +100,17 @@ export default function PreviousWork() {
                 }}
                 onClick={onClick}
             />
-        );
+        )
     }
 
     interface SamplePrevArrowProps {
-        className: string;
-        style: React.CSSProperties;
-        onClick: () => void;
+        className: string
+        style: React.CSSProperties
+        onClick: () => void
     }
 
     function SamplePrevArrow(props: SamplePrevArrowProps) {
-        const { className, style, onClick } = props;
+        const { className, style, onClick } = props
         return (
             <div
                 className={className}
@@ -123,7 +122,7 @@ export default function PreviousWork() {
                 }}
                 onClick={onClick}
             />
-        );
+        )
     }
     return (
         <>
@@ -132,7 +131,7 @@ export default function PreviousWork() {
                 data-aos-offset="200"
                 className="px-10 md:px-0 pt-8 flex flex-col items-start w-full gap-[22px] xl:gap-[40px] "
             >
-                <span className="font-semibold text-md xl:text-3xl">歷屆作品</span>
+                <span className="font-semibold text-md xl:text-3xl md:text-2xl">歷屆作品</span>
                 <Slider {...settings} className="w-full ">
                     {previousWorks.map((work) => (
                         <Card key={work.id} className="px-4 py-3 xl:py-6" shadow="sm">

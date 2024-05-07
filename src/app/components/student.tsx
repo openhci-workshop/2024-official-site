@@ -20,7 +20,7 @@ export default function Student() {
             data-aos-offset="200"
             className="pt-8 flex flex-col items-start w-full gap-[22px] xl:gap-[40px] "
         >
-            <span className="font-semibold text-md xl:text-3xl">籌辦團隊</span>
+            <span className="font-semibold text-md xl:text-3xl md:text-2xl">籌辦團隊</span>
             {/* Teams */}
             <div className="flex flex-wrap gap-2 xl:gap-4">
                 {teams.map((team, index) => (
@@ -30,7 +30,7 @@ export default function Student() {
                         radius="full"
                         onClick={() => handleButtonClick(team)}
                         className={clsx(
-                            'text-xs xl:text-base font-medium',
+                            'text-xs xl:text-base font-medium md:text-sm',
                             selectedTeam === team ? 'bg-[#94AAC1] text-white' : 'bg-[#E9E9E9] text-[#222]'
                         )}
                     >
@@ -53,8 +53,10 @@ export default function Student() {
                                   alt={student.name}
                               />
                               <div className="flex flex-col gap-1">
-                                  <span className="text-xs font-medium xl:text-xl">姓名 {student.name}</span>
-                                  <span className="text-xxs xl:text-base">
+                                  <span className="text-xs font-medium xl:text-xl md:text-base">
+                                      姓名 {student.name}
+                                  </span>
+                                  <span className="text-xxs xl:text-base md:text-xs">
                                       學校 科系 {student.school} {student.department}
                                   </span>
                               </div>
@@ -73,8 +75,10 @@ export default function Student() {
                                       alt={student.name}
                                   />
                                   <div className="flex flex-col gap-1">
-                                      <span className="text-xs font-medium xl:text-xl">姓名 {student.name}</span>
-                                      <span className="text-xxs xl:text-base">
+                                      <span className="text-xs font-medium xl:text-xl md:text-base">
+                                          姓名 {student.name}
+                                      </span>
+                                      <span className="text-xxs xl:text-base md:text-xs">
                                           學校 科系 {student.school} {student.department}
                                       </span>
                                   </div>
