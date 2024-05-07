@@ -8,7 +8,7 @@ import { animate } from 'framer-motion'
 const topicsData = [
     {
         title: '什麼是人機互動?',
-        info: '人機互動（Human Computer Interaction, HCI），過去卅年間對於人機互動相關議題與科技的研發與創新，由國際<br>計算機學會 ACM SIGCHI（Special Interest Group on Computer-Human Interaction）領頭發揮重大影響力，於學術研究與產業實務上都有蓬勃發展。',
+        info: '人機互動（Human Computer Interaction, HCI），過去卅年間對於人機互動相關議題與科技的研發與創新，由國際計算機學會 ACM SIGCHI（Special Interest Group on Computer-Human Interaction）領頭發揮重大影響力，於學術研究與產業實務上都有蓬勃發展。',
         animate: 'fade-right',
     },
     {

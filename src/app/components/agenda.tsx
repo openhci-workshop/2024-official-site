@@ -181,7 +181,7 @@ const Agenda = () => {
             </div>
             <CustomScrollbar>
                 <div
-                    className="flex gap-4 xl:gap-6 overflow-x-auto max-w-[2400px] pr-[50%] sm:pr-[58%] lg:pr-[65%] xl:pr-[75%] pb-4"
+                    className="flex gap-4 xl:gap-6 overflow-x-auto max-w-[2400px] pr-[300px] sm:pr-[410px] lg:pr-[65%] xl:pr-[70%] pb-4"
                     ref={scrollContainerRef}
                 >
                     {agendaDatas.map((agenda, index) => (
@@ -195,11 +195,11 @@ const Agenda = () => {
                             }}
                         >
                             <div className="w-[174px] xl:w-[292px] h-[158px] xl:h-[276px] flex flex-col bg-[#D9D9D9]/25 rounded-2xl px-4 xl:px-7 items-start justify-center text-[#222] py-4">
-                                <div className="flex flex-row items-start w-full gap-1 xl:flex-col xl:justify-end xl:gap-0">
+                                <div className="flex flex-row items-center w-full gap-2 xl:flex-col xl:items-start">
                                     <span className="text-sm font-medium xl:text-2xl">{agenda.title}</span>
                                     <span className="text-xxs xl:text-base">{agenda.date}</span>
                                 </div>
-                                <ul className="pl-4 list-disc xl:pl-8">
+                                <ul className="pl-4 list-disc xl:pl-8 space-y-1 mt-2">
                                     {agenda.contents.map((content, index) => (
                                         <li key={index} className="text-xxs xl:text-base">
                                             {content}
@@ -207,13 +207,13 @@ const Agenda = () => {
                                     ))}
                                 </ul>
                             </div>
-                            <Button
+                            {/* <Button
                                 radius="full"
                                 size="sm"
                                 className="bg-[#E9E9E9] text-[#222] text-xs xl:text-xl font-semibold w-full xl:py-6"
                             >
                                 詳細日程表
-                            </Button>
+                            </Button> */}
                         </div>
                     ))}
                 </div>{' '}
