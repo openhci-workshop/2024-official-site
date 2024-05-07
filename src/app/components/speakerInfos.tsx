@@ -45,10 +45,10 @@ const SpeakerInfo = () => {
                                     : 'from-[#CAD9DF] from-0% via-[#F2D4CD] via-49% to-white to-70%'
 
                             return (
-                                <div key={index} className="flex flex-col w-full">
+                                <div key={index} className="flex flex-col">
                                     <div
                                         className={clsx(
-                                            'min-w-[136px] xl:w-full h-[136px] xl:h-[240px] mb-[11px] xl:mb-[20px] rounded-lg xl:rounded-2xl',
+                                            'w-[136px] lg:w-[245px] h-[136px] lg:h-[240px] mb-[11px] lg:mb-[20px] rounded-lg lg:rounded-2xl',
                                             'bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))]',
                                             gradientStyle
                                         )}

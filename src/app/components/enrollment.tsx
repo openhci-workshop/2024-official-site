@@ -38,7 +38,7 @@ const Enrollment = () => {
                     </div>
                 </div>
                 <div id="FAQ"></div>
-                <div className="relative left-0 top-[-85px] xl:top-[0px] z-20">
+                <div className="relative left-0 top-[-85px] xl:top-[-0px] z-20">
                     <ol className="flex justify-center w-screen border-t-2 border-white">
                         {/* 1  */}
                         <li className="ml-[76px]  xl:ml-[245px] md:ml-[100px] top-[-115px] xl:top-[-200px] relative">
@@ -57,7 +57,7 @@ const Enrollment = () => {
                         <li>
                             <div className="w-[76px] xl:w-[245px] md:w-[150px]  flex-start items-center block pt-0">
                                 <div className="h-[9px] w-[9px] rounded-full bg-white -mt-[5px] me-0 ms-0"></div>
-                                <div className="h-[57px] xl:h-[100px] w-[2px] rounded-full bg-white -mt-[5px] me-0 ms-1"></div>
+                                <div className="h-[48px] xl:h-[80px] w-[2px] rounded-full bg-white -mt-[5px] me-0 ms-1"></div>
                                 <div className="h-[9px] w-[9px] rounded-full bg-white -mt-[5px] me-0 ms-0"></div>
                                 <div className="text-center h-[37px] xl:h-[80px] w-[178px] mt-4 me-0 -ms-[80px]">
                                     <p className="text-xs xl:text-base md:text-base ">2022 年 7 月 18 日（一）</p>
@@ -74,7 +74,7 @@ const Enrollment = () => {
                                     <p className="text-xs xl:text-xl md:text-base">正取名單公布</p>
                                 </div>
                                 <div className="h-[9px] w-[9px] rounded-full bg-white -mt-[5px] me-0 ms-0"></div>
-                                <div className="h-[57px] xl:h-[100px] w-[2px] rounded-full bg-white -mt-[5px] me-0 ms-1"></div>
+                                <div className="h-[48px] xl:h-[80px] w-[2px] rounded-full bg-white -mt-[5px] me-0 ms-1"></div>
                                 <div className="h-[9px] w-[9px] rounded-full bg-white me-0 ms-0"></div>
                             </div>
                         </li>
@@ -83,7 +83,7 @@ const Enrollment = () => {
                         <li>
                             <div className="w-[76px] xl:w-[245px] md:w-[150px] flex-start items-center block pt-0">
                                 <div className="h-[9px] w-[9px] rounded-full bg-white -mt-[5px] me-0 ms-0"></div>
-                                <div className="h-[57px] xl:h-[100px] w-[2px] rounded-full bg-white -mt-[5px] me-0 ms-1"></div>
+                                <div className="h-[48px] xl:h-[80px] w-[2px] rounded-full bg-white -mt-[5px] me-0 ms-1"></div>
                                 <div className="h-[9px] w-[9px] rounded-full bg-white -mt-[5px] me-0 ms-0"></div>
                                 <div className="text-center h-[37px] xl:h-[80px] w-[178px] mt-4 me-0 -ms-[80px]">
                                     <p className="text-xs xl:text-base md:text-base">2022 年 7 月 18 日（一）</p>
