@@ -85,7 +85,7 @@ const Sketch = () => {
             let mouseRadius = 80
 
             p.preload = () => {
-                backgroundImage = p.loadImage('純背景.png')
+                backgroundImage = p.loadImage('GIF_Desktop.gif')
             }
             p.setup = () => {
                 p.createCanvas(window.innerWidth, window.innerHeight).parent(canvasRef.current!)
