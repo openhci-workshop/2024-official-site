@@ -181,7 +181,7 @@ const Agenda = () => {
             </div>
             <CustomScrollbar>
                 <div
-                    className="flex gap-4 xl:gap-6 overflow-x-auto max-w-[2400px] pr-[300px] sm:pr-[410px] lg:pr-[65%] xl:pr-[70%] pb-4"
+                    className="flex gap-4 xl:gap-6 overflow-x-auto max-w-[2400px] pr-[300px] sm:pr-[410px] lg:pr-[65%] xl:pr-[71%] pb-4"
                     ref={scrollContainerRef}
                 >
                     {agendaDatas.map((agenda, index) => (
