@@ -19,7 +19,9 @@ export default function PreviousWork() {
         slidesToScroll: 1,
         // nextArrow: <SampleNextArrow />,
         nextArrow: <SampleNextArrow className="next-arrow" style={{}} onClick={() => { }} />,
+        nextArrow: <SampleNextArrow className="next-arrow" style={{}} onClick={() => { }} />,
         // prevArrow: <SamplePrevArrow />,
+        prevArrow: <SamplePrevArrow className="prev-arrow" style={{}} onClick={() => { }} />,
         prevArrow: <SamplePrevArrow className="prev-arrow" style={{}} onClick={() => { }} />,
     }
 
@@ -34,7 +36,10 @@ export default function PreviousWork() {
         {
             id: '2',
             title: 'Ocean',
+            title: 'Ocean',
             description:
+                '在這個資訊爭奪注意力的時代，你是否曾經禁不起手機震動和螢幕亮起的誘惑頻頻查看通知？就算開啟勿擾模式，你還是會常常看手機怕錯過重要訊息嗎？我們發現目前大學生在線下學習時常常被通知干擾，加上害怕錯過與重要他人的互動所造成的焦慮感，導致學習效率不彰。Ocean是一款結合裝置和App的藝術性產品，動態海浪代表著使用者學習時專注的狀態，而瓶中信則代表了重要聯絡人的訊息通知，不僅改造傳統手機通知呈現，更幫助FOMO大學生找回自己的時間，在資訊汪洋中不再載浮載沉，跟著學習專注航行。Follow me!',
+            image: '/images/previous_work/Ocean.png',
                 '在這個資訊爭奪注意力的時代，你是否曾經禁不起手機震動和螢幕亮起的誘惑頻頻查看通知？就算開啟勿擾模式，你還是會常常看手機怕錯過重要訊息嗎？我們發現目前大學生在線下學習時常常被通知干擾，加上害怕錯過與重要他人的互動所造成的焦慮感，導致學習效率不彰。Ocean是一款結合裝置和App的藝術性產品，動態海浪代表著使用者學習時專注的狀態，而瓶中信則代表了重要聯絡人的訊息通知，不僅改造傳統手機通知呈現，更幫助FOMO大學生找回自己的時間，在資訊汪洋中不再載浮載沉，跟著學習專注航行。Follow me!',
             image: '/images/previous_work/Ocean.png',
         },
@@ -173,6 +178,7 @@ export default function PreviousWork() {
                                             <Image
                                                 src={work.image}
                                                 width={300}
+                                                width={300}
                                                 height={300}
                                                 alt="Album cover"
                                                 className="rounded-lg xl:object-contain"
@@ -182,6 +188,9 @@ export default function PreviousWork() {
                                             <h3 className="mb-5 font-medium text-md xl:text-2xl text-indigo-950">
                                                 {work.title}
                                             </h3>
+                                            <p className="text-base xl:text-lg text-indigo-950 line-clamp-3 md:line-clamp-4 lg:line-clamp-5 xl:line-clamp-6">
+                                                {work.description}
+                                            </p>
                                             <p className="text-base xl:text-lg text-indigo-950 line-clamp-3 md:line-clamp-4 lg:line-clamp-5 xl:line-clamp-6">
                                                 {work.description}
                                             </p>
