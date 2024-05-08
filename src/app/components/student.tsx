@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 
 import { Button, ButtonGroup } from '@nextui-org/react'
@@ -13,12 +13,6 @@ export default function Student() {
     const handleButtonClick = (team: string) => {
         setSelectedTeam(team)
     }
-
-    useEffect(() => {
-        // choose the team randomly from the list of teams
-        const randomTeam = teams[Math.floor(Math.random() * teams.length)]
-        setSelectedTeam(randomTeam)
-    }, [])
 
     return (
         <div
@@ -50,10 +44,7 @@ export default function Student() {
                 {selectedTeam === null
                     ? students.map((student) => (
                           <div key={student.name} className="flex flex-col items-stretch col-span-3 xl:col-span-1">
-                          <div key={student.name} className="flex flex-col items-stretch col-span-3 xl:col-span-1">
                               <Image
-                                  width={245}
-                                  height={245}
                                   width={245}
                                   height={245}
                                   // className='w-[185px] h-[185px]  xl:w-[245px] xl:h-[245px] rounded-lg self-center mb-3'
@@ -75,10 +66,7 @@ export default function Student() {
                           .filter((student) => student.team === selectedTeam)
                           .map((student) => (
                               <div key={student.name} className="flex flex-col items-stretch justify-start col-span-1">
-                              <div key={student.name} className="flex flex-col items-stretch justify-start col-span-1">
                                   <Image
-                                      width={245}
-                                      height={245}
                                       width={245}
                                       height={245}
                                       // className='w-[185px] h-[185px]  xl:w-[245px] xl:h-[245px] rounded-lg self-center mb-3'

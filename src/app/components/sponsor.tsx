@@ -2,7 +2,6 @@ import React from 'react'
 import Image from 'next/image'
 
 import AJA_Logo from '../../../public/images/AJA_Logo.png'
-import LINE_Green from '../../../public/images/LINE_Green.svg'
 import LINE_White from '../../../public/images/LINE_White.svg'
 import NYCU_Logo from '../../../public/images/NYCU_Logo.jpg'
 
@@ -50,8 +49,6 @@ export default function Sponsor() {
                 /> */}
 
                 {/* Image */}
-                <Image src={LINE_White} width={300} height={300} alt='Line_Logo_W' className='rounded-md col-span-3 md:col-span-2 w-full h-full bg-green-500 p-2' />
-                <Image src={AJA_Logo} width={300} height={300} alt='AJA_Logo' className='rounded-md col-span-3 md:col-span-2 w-full h-full bg-white' />
                 <Image src={LINE_White} width={300} height={300} alt='Line_Logo_W' className='rounded-md col-span-3 md:col-span-2 w-full h-full bg-green-500 p-2' />
                 <Image src={AJA_Logo} width={300} height={300} alt='AJA_Logo' className='rounded-md col-span-3 md:col-span-2 w-full h-full bg-white' />
             </div>
