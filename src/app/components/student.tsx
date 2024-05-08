@@ -55,7 +55,7 @@ export default function Student() {
                                   height={245}
                                   // className='w-[185px] h-[185px]  xl:w-[245px] xl:h-[245px] rounded-lg self-center mb-3'
                                   className="self-start object-cover w-full mb-3 bg-cover rounded-lg h-1/3"
-                                  src={student.image}
+                                  src={student.image ? student.image : '/images/album-cover.png'}
                                   alt={student.name}
                               />
                               <div className="flex flex-col gap-1">
@@ -75,7 +75,7 @@ export default function Student() {
                                       height={245}
                                       // className='w-[185px] h-[185px]  xl:w-[245px] xl:h-[245px] rounded-lg self-center mb-3'
                                       className="self-start object-cover w-full mb-3 bg-cover rounded-lg h-1/2"
-                                      src={student.image}
+                                      src={student.image ? student.image : '/images/album-cover.png'}
                                       alt={student.name}
                                   />
                                   <div className="flex flex-col gap-1">
