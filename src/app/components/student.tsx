@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 
 import { Button, ButtonGroup } from '@nextui-org/react'
@@ -13,6 +13,12 @@ export default function Student() {
     const handleButtonClick = (team: string) => {
         setSelectedTeam(team)
     }
+
+    useEffect(() => {
+        // choose the team randomly from the list of teams
+        const randomTeam = teams[Math.floor(Math.random() * teams.length)]
+        setSelectedTeam(randomTeam)
+    }, [])
 
     return (
         <div
@@ -45,17 +51,17 @@ export default function Student() {
                     ? students.map((student) => (
                           <div key={student.id} className="flex flex-col items-stretch col-span-3 xl:col-span-1">
                               <Image
-                                  width={300}
-                                  height={300}
+                                  width={245}
+                                  height={245}
                                   // className='w-[185px] h-[185px]  xl:w-[245px] xl:h-[245px] rounded-lg self-center mb-3'
                                   className="self-start object-cover w-full mb-3 bg-cover rounded-lg h-1/3"
                                   src={student.image}
                                   alt={student.name}
                               />
                               <div className="flex flex-col gap-1">
-                                  <span className="text-xs font-medium xl:text-xl">姓名 {student.name}</span>
+                                  <span className="text-xs font-medium xl:text-xl">{student.name}</span>
                                   <span className="text-xxs xl:text-base">
-                                      學校 科系 {student.school} {student.department}
+                                    {student.school} {student.department}
                                   </span>
                               </div>
                           </div>
@@ -65,17 +71,17 @@ export default function Student() {
                           .map((student) => (
                               <div key={student.id} className="flex flex-col items-stretch justify-start col-span-1">
                                   <Image
-                                      width={300}
-                                      height={300}
+                                      width={245}
+                                      height={245}
                                       // className='w-[185px] h-[185px]  xl:w-[245px] xl:h-[245px] rounded-lg self-center mb-3'
                                       className="self-start object-cover w-full mb-3 bg-cover rounded-lg h-1/2"
                                       src={student.image}
                                       alt={student.name}
                                   />
                                   <div className="flex flex-col gap-1">
-                                      <span className="text-xs font-medium xl:text-xl">姓名 {student.name}</span>
+                                      <span className="text-xs font-medium xl:text-xl">{student.name}</span>
                                       <span className="text-xxs xl:text-base">
-                                          學校 科系 {student.school} {student.department}
+                                        {student.school} {student.department}
                                       </span>
                                   </div>
                               </div>
