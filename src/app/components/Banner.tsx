@@ -4,6 +4,7 @@ import { Button } from '@nextui-org/react'
 import Sketch from './SketchSix'
 import p5Types from 'p5'
 import Image from 'next/image'
+import Link from 'next/link'
 
 let canvas: p5Types.Renderer
 
@@ -19,7 +20,7 @@ export default function Banner() {
                         style={{ borderColor: '#F2D4CD' }}
                         className="w-1/3 p-4 text-base leading-none tracking-widest text-white rounded-full shadow border-3 font-kompot drop-shadow-3xl backdrop-blur"
                     >
-                        立即報名
+                        <Link href="#enroll">立即報名 </Link>
                     </Button>
                 </div>
                 <div className="col-span-3 col-start-2 text-left text-white translate-y-8 row-start-9 font-kompot ">
@@ -33,12 +34,13 @@ export default function Banner() {
             <div className="absolute z-20 items-end justify-end hidden w-full h-screen grid-cols-12 xl:grid grid-rows-10">
                 <div className="flex flex-col items-end justify-end col-span-5 col-end-11 row-span-1 row-start-6 scale-110 translate-y-12 ">
                     <Image src="/banner/合併.png" alt="24OPENHCI" width={600} height={50} />
+
                     <Button
                         variant="bordered"
                         style={{ borderColor: '#F2D4CD' }}
                         className="w-1/3 text-xl leading-none tracking-widest text-white rounded-full shadow border-3 font-kompot drop-shadow-3xl backdrop-blur "
                     >
-                        立即報名
+                        <Link href="#enroll">立即報名 </Link>
                     </Button>
                 </div>
 
@@ -53,12 +55,13 @@ export default function Banner() {
             <div className="absolute z-20 items-end justify-end hidden w-full h-screen grid-cols-12 grid-rows-4 lg:grid xl:hidden">
                 <div className="min-w-[500px] flex flex-col items-end justify-end col-span-5 col-end-11 row-span-1 row-start-2 scale-110 translate-y-20 ">
                     <Image src="/banner/合併.png" alt="24OPENHCI" width={600} height={50} />
+
                     <Button
                         variant="bordered"
                         style={{ borderColor: '#F2D4CD' }}
                         className="w-1/3 text-xl leading-none tracking-widest text-white rounded-full shadow border-3 font-kompot drop-shadow-3xl backdrop-blur "
                     >
-                        立即報名
+                        <Link href="#enroll">立即報名 </Link>
                     </Button>
                 </div>
 
@@ -73,13 +76,12 @@ export default function Banner() {
             <div className="absolute z-20 flex flex-col w-full h-screen gap-32 px-10 py-64 text-right min-[500px]:hidden ">
                 <div className="flex flex-col items-center justify-center gap-4">
                     <Image src="/banner/合併.png" alt="24OPENHCI" width={600} height={50} />
-
                     <Button
                         variant="bordered"
                         style={{ borderColor: '#F2D4CD' }}
                         className="self-end w-1/3 text-base leading-none tracking-widest text-white rounded-full shadow border-3 font-kompot drop-shadow-3xl backdrop-blur "
                     >
-                        立即報名
+                        <Link href="#enroll">立即報名 </Link>
                     </Button>
                 </div>
                 <div className="flex flex-col items-start justify-start ">
@@ -98,7 +100,7 @@ export default function Banner() {
                         style={{ borderColor: '#F2D4CD' }}
                         className="w-1/3 text-base leading-none tracking-widest text-white rounded-full shadow border-3 font-kompot drop-shadow-3xl backdrop-blur"
                     >
-                        立即報名
+                        <Link href="#enroll">立即報名 </Link>
                     </Button>
                 </div>
                 <div className="flex flex-col items-start justify-start ">
