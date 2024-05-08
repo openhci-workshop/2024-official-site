@@ -10,7 +10,9 @@ const Enrollment = () => {
                     <div className="w-full relative flex flex-col mb-[22px] xl:mb-4 ">
                         <span className="items-start font-semibold text-md xl:text-3xl md:text-2xl">報名資訊</span>
                         <div
-                            className={clsx('pb-24 lg:pb-32 xl:pb-48 w-full rounded-[50%] z-10 flex justify-center items-center')}
+                            className={clsx(
+                                'pb-24 lg:pb-32 xl:pb-48 w-full rounded-[50%] z-10 flex justify-center items-center'
+                            )}
                             style={{
                                 backgroundImage:
                                     'radial-gradient(ellipse at center, rgba(148,170,193,1) 0%, rgba(229,224,223,1) 45%,rgba(202,217,223,0.26) 100%)',
@@ -44,7 +46,7 @@ const Enrollment = () => {
                         <li className="ml-[76px] md:ml-[130px] xl:ml-[210px] top-[-105px] md:top-[-123px] xl:top-[-180px] relative">
                             <div className="w-[76px] md:w-[130px] xl:w-[210px] flex-start items-center block pt-0">
                                 <div className="text-center h-[37px] md:h-[54px] xl:h-[80px] w-[178px] mb-4 me-0 -ms-[80px]">
-                                    <p className="text-xs xl:text-base md:text-base">2022 年 7 月 18 日（一）</p>
+                                    <p className="text-xs xl:text-base md:text-base">2024 年 5 月 15 日（三）</p>
                                     <p className="text-xs xl:text-xl md:text-base">報名開始</p>
                                 </div>
                                 <div className="h-[9px] w-[9px] rounded-full bg-white -mt-[5px] me-0 ms-0"></div>
@@ -60,7 +62,7 @@ const Enrollment = () => {
                                 <div className="h-[48px] xl:h-[80px] w-[2px] rounded-full bg-white -mt-[5px] me-0 ms-1"></div>
                                 <div className="h-[9px] w-[9px] rounded-full bg-white -mt-[5px] me-0 ms-0"></div>
                                 <div className="text-center h-[37px] xl:h-[80px] w-[178px] mt-4 me-0 -ms-[80px]">
-                                    <p className="text-xs xl:text-base md:text-base">2022 年 7 月 18 日（一）</p>
+                                    <p className="text-xs xl:text-base md:text-base">2024 年 5 月 21 日（二）</p>
                                     <p className="text-xs xl:text-xl md:text-base">報名結束</p>
                                 </div>
                             </div>
@@ -70,7 +72,7 @@ const Enrollment = () => {
                         <li className="top-[-105px] md:top-[-123px] xl:top-[-180px] relative">
                             <div className="w-[76px] md:w-[130px] xl:w-[210px] flex-start items-center block pt-0">
                                 <div className="text-center h-[37px] md:h-[54px] xl:h-[80px] w-[178px] mb-4 me-0 -ms-[80px]">
-                                    <p className="text-xs xl:text-base md:text-base">2022 年 7 月 18 日（一）</p>
+                                    <p className="text-xs xl:text-base md:text-base">2024 年 6 月 1 日（六）</p>
                                     <p className="text-xs xl:text-xl md:text-base">正取名單公布</p>
                                 </div>
                                 <div className="h-[9px] w-[9px] rounded-full bg-white -mt-[5px] me-0 ms-0"></div>
@@ -86,7 +88,7 @@ const Enrollment = () => {
                                 <div className="h-[48px] xl:h-[80px] w-[2px] rounded-full bg-white -mt-[5px] me-0 ms-1"></div>
                                 <div className="h-[9px] w-[9px] rounded-full bg-white -mt-[5px] me-0 ms-0"></div>
                                 <div className="text-center h-[37px] xl:h-[80px] w-[178px] mt-4 me-0 -ms-[80px]">
-                                    <p className="text-xs xl:text-base md:text-base">2022 年 7 月 18 日（一）</p>
+                                    <p className="text-xs xl:text-base md:text-base">2024 年 6 月 5 日（三）</p>
                                     <p className="text-xs xl:text-xl md:text-base">遞補備取通知</p>
                                 </div>
                             </div>
