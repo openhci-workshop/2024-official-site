@@ -48,7 +48,6 @@ export default function Sponsor() {
                 /> */}
 
                 {/* Image */}
-                <Image src={LINE_Green} width={300} height={300} alt='Line_Logo_G' className='rounded-md col-span-3 md:col-span-2 w-full h-full bg-white p-2' />
                 <Image src={LINE_White} width={300} height={300} alt='Line_Logo_W' className='rounded-md col-span-3 md:col-span-2 w-full h-full bg-green-500 p-2' />
                 <Image src={AJA_Logo} width={300} height={300} alt='AJA_Logo' className='rounded-md col-span-3 md:col-span-2 w-full h-full bg-white' />
             </div>
