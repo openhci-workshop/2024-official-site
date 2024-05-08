@@ -14,12 +14,12 @@ export const metadata: Metadata = {
     title: 'OpenHCI 2024',
     description: 'OpenHCI 2024 是一個專門推廣人機互動學門及促進垮領域合作的密集工作坊。',
     metadataBase: new URL('https://www.2024.openhci.com/'),
-    keywords: ['OpenHCI', '2024', '垮領域', '人機互動'],
+    keywords: ['OpenHCI', 'HCI', '2024', '垮領域', '人機互動'],
     alternates: {
         canonical: '/',
         languages: {
-            'en-US': '/en-US',
-            'zh-Hant': '/zh-Hant',
+            'en-US': 'https://www.2024.openhci.com/',
+            'zh-Hant': 'https://www.2024.openhci.com/',
         },
     },
     openGraph: {
@@ -29,9 +29,6 @@ export const metadata: Metadata = {
         images: '/opengraph-image.png',
         siteName: 'OpenHCI 2024',
         type: 'website',
-    },
-    icons: {
-        icon: '/icon.svg',
     },
 }
 
