@@ -210,7 +210,7 @@ const SpeakerInfo = () => {
                                                 <Image
                                                     src={speaker.img}
                                                     alt={speaker.name}
-                                                    className="object-cover w-full h-full rounded-lg md:rounded-2xl"
+                                                    className="object-cover w-full h-full rounded-lg md:rounded-2xl border-2 border-b-violet-200 border-r-[#CAD9DF]"
                                                     width={300}
                                                     height={300}
                                                 />
@@ -220,7 +220,12 @@ const SpeakerInfo = () => {
                                             <span className="text-xs font-medium xl:text-xl md:text-base">
                                                 {speaker.name}
                                             </span>
-                                            <span className="text-xxs xl:text-base md:text-xs">{speaker.info}</span>
+                                            <span
+                                                className="text-xxs xl:text-base md:text-xs"
+                                                dangerouslySetInnerHTML={{ __html: speaker.info }}
+                                            >
+                                                {/* {speaker.info} */}
+                                            </span>
                                             <span className="text-xxs xl:text-base md:text-xs">{speaker.position}</span>
                                         </div>
                                     </div>
