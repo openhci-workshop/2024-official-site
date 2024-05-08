@@ -1,7 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
 
-import TAICHI_Logo from '../../../public/images/TAICHI_Logo.png'
+import AJA_Logo from '../../../public/images/AJA_Logo.png'
+import LINE_Green from '../../../public/images/LINE_Green.svg'
+import LINE_White from '../../../public/images/LINE_White.svg'
 
 export default function Sponsor() {
     return (
@@ -22,13 +24,6 @@ export default function Sponsor() {
                 /> */}
 
                 {/* Image */}
-
-                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
-                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
-                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
-                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
-                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
-                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
             </div>
             <span className="text-xs font-semibold xl:text-xl">金級</span>
             <div className="grid grid-cols-6 gap-3 mb-5 w-full">
@@ -41,13 +36,6 @@ export default function Sponsor() {
                 /> */}
 
                 {/* Image */}
-
-                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
-                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
-                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
-                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
-                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
-                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
             </div>
             <span className="text-xs font-semibold xl:text-xl">銀級</span>
             <div className="grid grid-cols-6 gap-3 mb-5 w-full">
@@ -60,13 +48,9 @@ export default function Sponsor() {
                 /> */}
 
                 {/* Image */}
-
-                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
-                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
-                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
-                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
-                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
-                <Image src={TAICHI_Logo} width={300} height={300} alt='sponsor' className='rounded-md col-span-3 md:col-span-2 w-full' />
+                <Image src={LINE_Green} width={300} height={300} alt='Line_Logo_G' className='rounded-md col-span-3 md:col-span-2 w-full h-full bg-white p-2' />
+                <Image src={LINE_White} width={300} height={300} alt='Line_Logo_W' className='rounded-md col-span-3 md:col-span-2 w-full h-full bg-green-500 p-2' />
+                <Image src={AJA_Logo} width={300} height={300} alt='AJA_Logo' className='rounded-md col-span-3 md:col-span-2 w-full h-full bg-white' />
             </div>
         </div>
     )
