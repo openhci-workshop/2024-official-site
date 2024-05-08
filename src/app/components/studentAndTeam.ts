@@ -1,6 +1,9 @@
 type Teams = string[];
 
 export const teams: Teams = [
+type Teams = string[];
+
+export const teams: Teams = [
     "總召",
     "行銷",
     "人資",
