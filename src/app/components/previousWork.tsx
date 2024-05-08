@@ -175,7 +175,7 @@ export default function PreviousWork() {
                                                 width={300}
                                                 height={300}
                                                 alt="Album cover"
-                                                className="rounded-lg"
+                                                className="rounded-lg object-contain"
                                             />
                                         </div>
                                         <div className="col-span-6 xl:col-start-3 xl:col-end-7">
