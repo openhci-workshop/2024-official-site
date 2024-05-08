@@ -25,9 +25,9 @@ type Students = {
     image?: string;
 };
 
-export const students: Students[] = [
+const student: Students[] = [
     {
-        "team": "總召",
+        "team": "總召",        
         "name": "張恩愷",
         "school": "陽明交通大學",
         "department": "傳播與科技碩士班",
@@ -357,9 +357,10 @@ export const students: Students[] = [
     }
 ]
 
-// export const studentsWithDynamicImage = students.map(student => {
-//     return {
-//         ...student,
-//         image: `/images/OPENHCI形象照_${student.name}.JPG`
-//     }
-// })
+export const students = student.map(stu => {
+    return {
+        ...stu,
+        image: `/images/stu_pics/${stu.name}.jpg`
+    }
+
+})
