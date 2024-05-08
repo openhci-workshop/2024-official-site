@@ -8,6 +8,7 @@ import { PreviousIcon } from './previousIcon'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import { Suspense } from 'react'
 
 export default function PreviousWork() {
     const settings = {
@@ -153,6 +154,7 @@ export default function PreviousWork() {
                 className=" md:px-0 pt-8 xl:pt-16 md:pt-4 flex flex-col items-start w-full gap-[22px] xl:gap-[40px] "
             >
                 <span className="font-semibold  text-md md:text-2xl xl:text-3xl">歷屆作品</span>
+                <Suspense fallback={<p>Loading feed...</p>}>
                 <div className="px-10 w-full">
                     <Slider {...settings} className=" w-full h-[350px] md:h-[400px] lg:h-[450px] xl:h-full ">
                         {previousWorks.map((work) => (
@@ -204,6 +206,7 @@ export default function PreviousWork() {
                         ))}
                     </Slider>
                 </div>
+                </Suspense>
             </div>
             <div id="members"></div>
         </>
