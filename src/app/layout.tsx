@@ -11,8 +11,8 @@ const notoSansTC = Noto_Sans_TC({ subsets: ['latin'], weight: ['100', '400', '50
 // const GOOGLE_ANALYTICS = process.env.GOOGLE_ANALYTICS;
 
 export const metadata: Metadata = {
-    title: '2024 OPENHCI Official website',
-    description: 'Official website of 2024 OPENHCI workshop',
+    title: 'OpenHCI 2024',
+    description: 'OpenHCI 2024 是一個專門推廣人機互動學門及促進垮領域合作的密集工作坊。',
     metadataBase: new URL('https://www.2024.openhci.com/'),
     alternates: {
         canonical: '/',
