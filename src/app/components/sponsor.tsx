@@ -29,7 +29,7 @@ export default function Sponsor() {
                     width={300}
                     height={300}
                     alt="NYCU_Logo"
-                    className="rounded-md col-span-3 md:col-span-2 w-full h-full bg-white"
+                    className="rounded-md col-span-3 md:col-span-2 bg-white aspect-[2/1] h-[125px] object-contain"
                 />
             </div>
             <span className="text-xs font-semibold xl:text-xl">金級</span>
@@ -45,7 +45,7 @@ export default function Sponsor() {
                 {/* Image */}
             </div>
             <span className="text-xs font-semibold xl:text-xl">銀級</span>
-            <div className="grid grid-cols-6 gap-3 mb-5 w-full">
+            <div className="grid grid-cols-6 gap-3 mb-5 w-full ">
                 {/* <Image
                     src={'/images/album-cover.png'}
                     width={300}
@@ -60,14 +60,14 @@ export default function Sponsor() {
                     width={300}
                     height={300}
                     alt="Line_Logo_W"
-                    className="rounded-md col-span-3 md:col-span-2 w-full h-full bg-green-500 p-2"
+                    className="rounded-md col-span-3 md:col-span-2 bg-green-500 p-2 aspect-[2/1] h-[125px] object-contain"
                 />
                 <Image
                     src={AJA_Logo}
                     width={300}
                     height={300}
                     alt="AJA_Logo"
-                    className="rounded-md col-span-3 md:col-span-2 w-full h-full bg-white"
+                    className="rounded-md col-span-3 md:col-span-2l bg-white aspect-[2/1] h-[125px] object-contain"
                 />
             </div>
         </div>
