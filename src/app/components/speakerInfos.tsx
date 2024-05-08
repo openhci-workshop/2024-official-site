@@ -13,11 +13,11 @@ const speakersData = [
   { name: '蔡文傑', info: '臺大創新設計學院', position: '專案計畫助理教授', img: '/speakers/蔡文傑.jpg' },
   { name: '洪燕茹', info: '職涯諮詢師', position: '職游 共同發起人', img: '/speakers/洪燕茹.jpeg' },
   { name: '侯宗佑', info: '美國康乃爾大學', position: '資訊科學博士', img: '/speakers/侯宗佑.jpg' },
-  { name: '鄭龍磻', info: '國立臺灣大學資訊工程學系', position: '副教授', img: '/speakers/鄭龍磻.jpg' },
+  { name: '鄭龍磻', info: '國立臺灣大學 資訊工程學系', position: '副教授', img: '/speakers/鄭龍磻.jpg' },
   { name: '蔡欣叡', info: '國立政治大學 資訊系與數位內容學程', position: '副教授', img: '/speakers/蔡欣叡.png' },
   { name: '游創文', info: '國立清華大學 藝術學院科技藝術研究所', position: '專任副教授', img: '/speakers/游創文.jpg' },
   { name: '黃仲菁', info: '國立成功大學 全校不分系學士學位學程/規劃與設計學院/通識教育中心', position: '助理教授', img: '/speakers/黃仲菁.jpg' },
-  { name: '陳啟彰', info: '成功大學認知科學研究所 碩士', position: 'UXTW / 第三、四屆理事', img: '/speakers/陳啟彰.jpeg' },
+  { name: '陳啟彰', info: '國立成功大學 認知科學研究所 碩士', position: 'UXTW / 第三、四屆理事', img: '/speakers/陳啟彰.jpeg' },
   { name: '余能豪', info: '國立臺灣科技大學 設計學系', position: '副教授', img: '/speakers/余能豪.jpg' },
 ]
 const CustomScrollbar = styled.div`
