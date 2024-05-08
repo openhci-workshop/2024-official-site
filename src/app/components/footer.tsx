@@ -13,7 +13,6 @@ export default function Footer() {
                 <div className="  w-1/2">
                     <div className="relative w-full h-[243px]">
                         <Maps />
-                        <Maps />
                     </div>
                 </div>
 
