@@ -158,10 +158,10 @@ export default function PreviousWork() {
                                             />
                                         </div>
                                         <div className="col-span-6 xl:col-start-3 xl:col-end-7">
-                                            <h3 className="mb-5 font-medium text-md xl:text-2xl text-indigo-950">
+                                            <h3 className="mb-5 font-medium text-md xl:text-2xl text-[#636B76]">
                                                 {work.title}
                                             </h3>
-                                            <p className="text-base xl:text-lg text-indigo-950">{work.description}</p>
+                                            <p className="text-base xl:text-lg text-[#636B76]">{work.description}</p>
                                         </div>
                                     </div>
 
