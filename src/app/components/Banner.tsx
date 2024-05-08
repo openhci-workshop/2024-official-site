@@ -22,7 +22,7 @@ export default function Banner() {
                         立即報名
                     </Button>
                 </div>
-                <div className="col-span-8 col-start-2 text-left text-white translate-y-8 row-start-9 font-kompot ">
+                <div className="col-span-3 col-start-2 text-left text-white translate-y-8 row-start-9 font-kompot ">
                     <Image src="/banner/date.png" alt="date" width={200} height={100} />
                 </div>
             </div>
@@ -42,8 +42,8 @@ export default function Banner() {
                     </Button>
                 </div>
 
-                <div className="col-span-8 col-start-2 text-left text-white translate-y-8 row-start-9 font-kompot ">
-                    <Image src="/banner/date.png" alt="date" width={200} height={100} />
+                <div className="col-span-3 col-start-2 text-left text-white translate-y-8 row-start-9 font-kompot ">
+                    <Image src="/banner/date.png" alt="date" width={230} height={100} />
                 </div>
             </div>
         )
@@ -62,7 +62,7 @@ export default function Banner() {
                     </Button>
                 </div>
 
-                <div className="col-span-8 col-start-2 row-start-3 text-left text-white translate-y-32 font-kompot ">
+                <div className="col-span-3 col-start-2 row-start-3 text-left text-white translate-y-32 font-kompot ">
                     <Image src="/banner/date.png" alt="date" width={200} height={100} />
                 </div>
             </div>
@@ -77,13 +77,13 @@ export default function Banner() {
                     <Button
                         variant="bordered"
                         style={{ borderColor: '#F2D4CD' }}
-                        className="self-end w-1/3 text-lg leading-none tracking-widest text-white rounded-full shadow border-3 font-kompot drop-shadow-3xl backdrop-blur "
+                        className="self-end w-1/3 text-base leading-none tracking-widest text-white rounded-full shadow border-3 font-kompot drop-shadow-3xl backdrop-blur "
                     >
                         立即報名
                     </Button>
                 </div>
                 <div className="flex flex-col items-start justify-start ">
-                    <Image src="/banner/date.png" alt="date" width={200} height={100} />
+                    <Image src="/banner/date.png" alt="date" width={150} height={100} />
                 </div>
             </div>
         )
