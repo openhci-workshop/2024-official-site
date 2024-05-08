@@ -1,10 +1,9 @@
 import React from 'react'
 
-import { GoogleMapsEmbed } from '@next/third-parties/google'
-
 const OpenHCIDark = '/images/OpenHCI_Dark.svg'
 const OpenHCILight = '/images/OpenHCI_Light_Logo.svg'
 import Image from 'next/image'
+import Maps from './Maps'
 
 // Define the environment variable
 const GOOGLE_MAPS_API_KEY = process.env.GOOGLE_MAPS_API_KEY
@@ -16,13 +15,7 @@ export default function Footer() {
             <div className="flex flex-row gap-4 h-[243px]">
                 <div className="  w-1/2">
                     <div className="relative w-full h-[243px]">
-                        <GoogleMapsEmbed
-                            apiKey={GOOGLE_MAPS_API_KEY || ''}
-                            mode="place"
-                            q="國立台灣大學學新館"
-                            style="border: 1px solid black; height: 100%; width: 100%; position: absolute; bottom: 0; left: 0;"
-                            // style='border: 1px solid black; height: 100%; width: 100%;'
-                        />
+                        <Maps />
                     </div>
                 </div>
 
