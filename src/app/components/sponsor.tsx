@@ -2,7 +2,6 @@ import React from 'react'
 import Image from 'next/image'
 
 import AJA_Logo from '../../../public/images/AJA_Logo.png'
-import LINE_Green from '../../../public/images/LINE_Green.svg'
 import LINE_White from '../../../public/images/LINE_White.svg'
 import NYCU_Logo from '../../../public/images/NYCU_Logo.jpg'
 

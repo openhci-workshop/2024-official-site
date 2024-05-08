@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     metadataBase: new URL('https://www.2024.openhci.com/'),
     keywords: ['OpenHCI', 'HCI', '2024', '垮領域', '人機互動'],
     alternates: {
-        canonical: '/',
+        canonical: 'https://www.2024.openhci.com/',
         languages: {
             'en-US': 'https://www.2024.openhci.com/',
             'zh-Hant': 'https://www.2024.openhci.com/',
