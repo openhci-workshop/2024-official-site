@@ -31,7 +31,7 @@ export default function Student() {
                         onClick={() => handleButtonClick(team)}
                         className={clsx(
                             'text-xs xl:text-base font-medium md:text-sm',
-                            selectedTeam === team ? 'bg-[#94AAC1] text-white' : 'bg-[#E9E9E9] text-[#222]'
+                            selectedTeam === team ? 'bg-[#94AAC1] text-white' : 'bg-[#E9E9E9] text-[#636B76]'
                         )}
                     >
                         {team}

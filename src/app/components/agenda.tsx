@@ -153,7 +153,7 @@ const Agenda = () => {
                             radius="full"
                             className={clsx(
                                 'text-xs xl:text-base font-medium md:text-sm',
-                                activeButton === index ? 'bg-[#94AAC1] text-white' : 'bg-[#E9E9E9] text-[#222]'
+                                activeButton === index ? 'bg-[#94AAC1] text-white' : 'bg-[#E9E9E9] text-[#636B76]'
                             )}
                             onClick={() => handleButtonClick(index)}
                         >
@@ -170,7 +170,7 @@ const Agenda = () => {
                             radius="full"
                             className={clsx(
                                 'text-xs xl:text-base font-medium md:text-sm',
-                                activeButton === index + 2 ? 'bg-[#94AAC1] text-white' : 'bg-[#E9E9E9] text-[#222]'
+                                activeButton === index + 2 ? 'bg-[#94AAC1] text-white' : 'bg-[#E9E9E9] text-[#636B76]'
                             )}
                             onClick={() => handleButtonClick(index + 2)}
                         >
@@ -194,7 +194,7 @@ const Agenda = () => {
                                 backgroundPosition: 'center',
                             }}
                         >
-                            <div className="w-[174px] md:w-[292px] h-[158px] md:h-[276px] flex flex-col bg-[#D9D9D9]/25 rounded-2xl px-4 md:px-7 items-start justify-center text-[#222] py-4">
+                            <div className="w-[174px] md:w-[292px] h-[158px] md:h-[276px] flex flex-col bg-[#D9D9D9]/25 rounded-2xl px-4 md:px-7 items-start justify-center py-4">
                                 <div className="flex flex-row items-center w-full gap-2 md:gap-1 md:flex-col md:items-start">
                                     <span className="text-sm font-medium xl:text-2xl md:text-xl">
                                         {agenda.title}
@@ -214,7 +214,7 @@ const Agenda = () => {
                             {/* <Button
                                 radius="full"
                                 size="sm"
-                                className="bg-[#E9E9E9] text-[#222] text-xs xl:text-xl md:text-base font-semibold w-full md:py-6"
+                                className="bg-[#E9E9E9] text-xs xl:text-xl md:text-base font-semibold w-full md:py-6"
                             >
                                 詳細日程表
                             </Button> */}
