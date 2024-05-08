@@ -103,10 +103,34 @@ const settings = {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4.1,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow className="next-arrow" style={{}} onClick={() => {}} />,
     prevArrow: <SamplePrevArrow className="prev-arrow" style={{}} onClick={() => {}} />,
+    responsive: [
+        {
+            breakpoint: 1500,
+            settings: {
+                slidesToShow: 3.1,
+                slidesToScroll: 1,
+            },
+        },
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2.2,
+                slidesToScroll: 2,
+            },
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1.7,
+                slidesToScroll: 1,
+                arrows: false,
+            },
+        },
+    ],
 }
 const SpeakerInfo = () => {
     return (
@@ -116,7 +140,7 @@ const SpeakerInfo = () => {
                 className="pt-12 md:pt-8 flex flex-col items-start w-full  gap-[22px] xl:gap-[40px]  "
             >
                 <span className="font-semibold text-md xl:text-3xl md:text-2xl">講者資訊</span>
-                <div className="hidden lg:block w-full">
+                <div className="hidden w-full lg:block">
                     <Slider {...settings}>
                         {speakersData.map((speaker, index) => {
                             const gradientStyle =
@@ -132,24 +156,24 @@ const SpeakerInfo = () => {
                                         //     'bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))]',
                                         //     gradientStyle
                                         // )}
-                                        className="w-full lg:h-[300px] xl:h-[360px] md:h-[285px]"
+                                        className="w-full lg:h-[300px] xl:h-[300px] 2xl:h-[360px] md:h-[285px]"
                                     >
                                         {speaker.img && (
                                             <Image
                                                 src={speaker.img}
                                                 alt={speaker.name}
-                                                className="w-full h-full rounded-lg  md:rounded-2xl object-cover object-center		"
+                                                className="object-cover object-center w-full h-full border-2 rounded-lg md:rounded-2xl border-b-violet-200 border-r-[#CAD9DF] "
                                                 width={300}
                                                 height={300}
                                             />
                                         )}
                                     </div>
                                     <div className="flex flex-col ">
-                                        <span className=" text-xs font-medium lg:text-xl md:text-base">
+                                        <span className="text-xs font-medium lg:text-xl md:text-base">
                                             {speaker.name}
                                         </span>
                                         <span
-                                            className="font-medium text-xxs xl:text-base lg:text-sm md:text-xs mb-1"
+                                            className="mb-1 font-medium text-xxs xl:text-base lg:text-sm md:text-xs"
                                             dangerouslySetInnerHTML={{ __html: speaker.info }}
                                         >
                                             {/* {speaker.info} */}
@@ -166,7 +190,7 @@ const SpeakerInfo = () => {
 
                 <CustomScrollbar>
                     <div className="block lg:hidden">
-                        <div className="flex w-full gap-5 md:gap-8 pb-2 overflow-auto ">
+                        <div className="flex w-full gap-5 pb-2 overflow-auto md:gap-8 ">
                             {speakersData.map((speaker, index) => {
                                 const gradientStyle =
                                     index % 2 !== 0
@@ -186,7 +210,7 @@ const SpeakerInfo = () => {
                                                 <Image
                                                     src={speaker.img}
                                                     alt={speaker.name}
-                                                    className="w-full h-full rounded-lg md:rounded-2xl object-cover"
+                                                    className="object-cover w-full h-full rounded-lg md:rounded-2xl"
                                                     width={300}
                                                     height={300}
                                                 />
