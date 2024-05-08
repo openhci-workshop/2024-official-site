@@ -39,7 +39,7 @@ const Enrollment = () => {
                         </div>
                     </div>
                 </div>
-                <div id="FAQ"></div>
+
                 <div className="relative left-0 top-[-55px] xl:top-[-40px] z-20">
                     <ol className="flex justify-center w-screen border-t-2 border-white">
                         {/* 1  */}
@@ -95,6 +95,7 @@ const Enrollment = () => {
                         </li>
                     </ol>
                 </div>
+                <div id="FAQ"></div>
             </div>
         </>
     )

@@ -135,10 +135,7 @@ const settings = {
 const SpeakerInfo = () => {
     return (
         <>
-            <div
-                data-aos="fade-up"
-                className="pt-12 md:pt-8 flex flex-col items-start w-full  gap-[22px] xl:gap-[40px]  "
-            >
+            <div data-aos="fade-up" className="pt-8 flex flex-col items-start w-full  gap-[22px] xl:gap-[40px]  ">
                 <span className="font-semibold text-md xl:text-3xl md:text-2xl">講者資訊</span>
                 <div className="hidden w-full lg:block">
                     <Slider {...settings}>

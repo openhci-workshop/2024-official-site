@@ -18,7 +18,7 @@ export default function Student() {
         <div
             data-aos="fade-up"
             data-aos-offset="200"
-            className="pt-8 flex flex-col items-start w-full gap-[22px] xl:gap-[40px] "
+            className="pt-8 xl:pt-16 flex flex-col items-start w-full gap-[22px] xl:gap-[40px] "
         >
             <span className="font-semibold text-md xl:text-3xl md:text-2xl">籌辦團隊</span>
             {/* Teams */}

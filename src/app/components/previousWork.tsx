@@ -10,7 +10,6 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
 export default function PreviousWork() {
-
     const settings = {
         dots: true,
         infinite: true,
@@ -18,12 +17,12 @@ export default function PreviousWork() {
         slidesToShow: 1,
         slidesToScroll: 1,
         // nextArrow: <SampleNextArrow />,
-        nextArrow: <SampleNextArrow className="next-arrow" style={{}} onClick={() => { }} />,
+        nextArrow: <SampleNextArrow className="next-arrow" style={{}} onClick={() => {}} />,
         // prevArrow: <SamplePrevArrow />,
-        prevArrow: <SamplePrevArrow className="prev-arrow" style={{}} onClick={() => { }} />,
+        prevArrow: <SamplePrevArrow className="prev-arrow" style={{}} onClick={() => {}} />,
     }
 
-    const previousWorks = [        
+    const previousWorks = [
         {
             id: '1',
             title: 'Emokit',
@@ -41,7 +40,8 @@ export default function PreviousWork() {
         {
             id: '3',
             title: 'Wander in Ｗonder',
-            description: '轉動把手、齒輪轉動、簧片輕彈、音樂輕輕流瀉⋯⋯，看似直覺的一連串過程，你曾想過中間的過程是如何運作的嗎？Wander in Ｗonder 是一款結合 Reality Rift 概念的手搖式音樂盒，當使用者轉動音樂盒的把手時，會連動金屬圓筒開始轉動，即使圓筒上缺少金屬針，音梳看起來仍被某物所撥動，並發出樂聲。從人對於物理現象的心理模型出發，以移除零件創造出物理現象的斷裂，促發使用者運用想像接起裂隙。',
+            description:
+                '轉動把手、齒輪轉動、簧片輕彈、音樂輕輕流瀉⋯⋯，看似直覺的一連串過程，你曾想過中間的過程是如何運作的嗎？Wander in Ｗonder 是一款結合 Reality Rift 概念的手搖式音樂盒，當使用者轉動音樂盒的把手時，會連動金屬圓筒開始轉動，即使圓筒上缺少金屬針，音梳看起來仍被某物所撥動，並發出樂聲。從人對於物理現象的心理模型出發，以移除零件創造出物理現象的斷裂，促發使用者運用想像接起裂隙。',
             image: '/images/previous_work/Wander_in_Ｗonder.png',
         },
         {
@@ -97,20 +97,20 @@ export default function PreviousWork() {
         setCurrentWork(previousWorks[counter])
     }
     interface Work {
-        id: string;
-        title: string;
-        description: string;
-        image: string;
+        id: string
+        title: string
+        description: string
+        image: string
     }
 
     interface SampleArrowProps {
-        className: string;
-        style: React.CSSProperties;
-        onClick: () => void;
+        className: string
+        style: React.CSSProperties
+        onClick: () => void
     }
 
     function SampleNextArrow(props: SampleArrowProps) {
-        const { className, style, onClick } = props;
+        const { className, style, onClick } = props
         return (
             <div
                 className={className}
@@ -121,17 +121,17 @@ export default function PreviousWork() {
                 }}
                 onClick={onClick}
             />
-        );
+        )
     }
 
     interface SamplePrevArrowProps {
-        className: string;
-        style: React.CSSProperties;
-        onClick: () => void;
+        className: string
+        style: React.CSSProperties
+        onClick: () => void
     }
 
     function SamplePrevArrow(props: SamplePrevArrowProps) {
-        const { className, style, onClick } = props;
+        const { className, style, onClick } = props
         return (
             <div
                 className={className}
@@ -143,22 +143,23 @@ export default function PreviousWork() {
                 }}
                 onClick={onClick}
             />
-        );
+        )
     }
     return (
         <>
             <div
                 data-aos="fade-up"
                 data-aos-offset="200"
-                className="px-10 md:px-0 pt-8 flex flex-col items-start w-full gap-[22px] xl:gap-[40px] "
+                className=" md:px-0 pt-8 xl:pt-16 md:pt-4 flex flex-col items-start w-full gap-[22px] xl:gap-[40px] "
             >
-                <span className="font-semibold text-md xl:text-3xl">歷屆作品</span>
-                <Slider {...settings} className="w-full h-[350px] md:h-[400px] lg:h-[450px] xl:h-full">
-                    {previousWorks.map((work) => (
-                        <Card key={work.id} className="px-4 py-3 xl:py-6" shadow="sm">
-                            <CardBody>
-                                <div className="flex items-center justify-between">
-                                    {/* <Button
+                <span className="font-semibold  text-md md:text-2xl xl:text-3xl">歷屆作品</span>
+                <div className="px-10 w-full">
+                    <Slider {...settings} className=" w-full h-[350px] md:h-[400px] lg:h-[450px] xl:h-full ">
+                        {previousWorks.map((work) => (
+                            <Card key={work.id} className="px-4 py-3 xl:py-6" shadow="sm">
+                                <CardBody>
+                                    <div className="flex items-center justify-between">
+                                        {/* <Button
                                         isIconOnly
                                         className="data-[hover]:bg-foreground/10"
                                         radius="full"
@@ -168,27 +169,27 @@ export default function PreviousWork() {
                                         <PreviousIcon />
                                     </Button> */}
 
-                                    <div className="grid grid-cols-6 gap-5">
-                                        <div className="flex justify-center col-span-6 xl:col-start-1 xl:col-end-3">
-                                            <Image
-                                                src={work.image}
-                                                width={300}
-                                                height={300}
-                                                alt="Album cover"
-                                                className="rounded-lg xl:object-contain"
-                                            />
+                                        <div className="grid grid-cols-6 gap-5">
+                                            <div className="flex justify-center col-span-6 xl:col-start-1 xl:col-end-3">
+                                                <Image
+                                                    src={work.image}
+                                                    width={300}
+                                                    height={300}
+                                                    alt="Album cover"
+                                                    className="rounded-lg xl:object-contain"
+                                                />
+                                            </div>
+                                            <div className="col-span-6 xl:col-start-3 xl:col-end-7">
+                                                <h3 className="mb-5 font-medium text-md xl:text-2xl text-indigo-950">
+                                                    {work.title}
+                                                </h3>
+                                                <p className="text-base xl:text-lg text-indigo-950 line-clamp-3 md:line-clamp-4 lg:line-clamp-5 xl:line-clamp-6">
+                                                    {work.description}
+                                                </p>
+                                            </div>
                                         </div>
-                                        <div className="col-span-6 xl:col-start-3 xl:col-end-7">
-                                            <h3 className="mb-5 font-medium text-md xl:text-2xl text-indigo-950">
-                                                {work.title}
-                                            </h3>
-                                            <p className="text-base xl:text-lg text-indigo-950 line-clamp-3 md:line-clamp-4 lg:line-clamp-5 xl:line-clamp-6">
-                                                {work.description}
-                                            </p>
-                                        </div>
-                                    </div>
 
-                                    {/* <Button
+                                        {/* <Button
                                         isIconOnly
                                         className="data-[hover]:bg-foreground/10"
                                         radius="full"
@@ -197,11 +198,12 @@ export default function PreviousWork() {
                                     >
                                         <NextIcon />
                                     </Button> */}
-                                </div>
-                            </CardBody>
-                        </Card>
-                    ))}
-                </Slider>
+                                    </div>
+                                </CardBody>
+                            </Card>
+                        ))}
+                    </Slider>
+                </div>
             </div>
             <div id="members"></div>
         </>

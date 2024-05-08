@@ -14,7 +14,7 @@ export default function Banner() {
         return (
             <div className="absolute z-20 hidden w-full h-screen grid-cols-12 text-right sm:grid lg:hidden grid-rows-12">
                 <div className="flex flex-col items-end justify-end col-span-7 col-end-11 row-span-4 row-start-3 translate-y-20">
-                    <Image src="/banner/合併.png" alt="24OPENHCI" width={600} height={50} className="" />
+                    <Image src="/banner/合併.png" alt="24OPENHCI" width={600} height={50} className="" priority />
                     <Button
                         variant="bordered"
                         style={{ borderColor: '#F2D4CD' }}
@@ -24,7 +24,7 @@ export default function Banner() {
                     </Button>
                 </div>
                 <div className="col-span-3 col-start-2 text-left text-white translate-y-8 row-start-9 font-kompot ">
-                    <Image src="/banner/date.png" alt="date" width={200} height={100} />
+                    <Image src="/banner/date.png" alt="date" width={200} height={100} priority />
                 </div>
             </div>
         )
@@ -33,7 +33,7 @@ export default function Banner() {
         return (
             <div className="absolute z-20 items-end justify-end hidden w-full h-screen grid-cols-12 xl:grid grid-rows-10">
                 <div className="flex flex-col items-end justify-end col-span-5 col-end-11 row-span-1 row-start-6 scale-110 translate-y-12 ">
-                    <Image src="/banner/合併.png" alt="24OPENHCI" width={600} height={50} />
+                    <Image src="/banner/合併.png" alt="24OPENHCI" width={600} height={50} priority />
 
                     <Button
                         variant="bordered"
@@ -45,7 +45,7 @@ export default function Banner() {
                 </div>
 
                 <div className="col-span-3 col-start-2 text-left text-white translate-y-8 row-start-9 font-kompot ">
-                    <Image src="/banner/date.png" alt="date" width={230} height={100} />
+                    <Image src="/banner/date.png" alt="date" width={230} height={100} priority />
                 </div>
             </div>
         )
@@ -54,7 +54,7 @@ export default function Banner() {
         return (
             <div className="absolute z-20 items-end justify-end hidden w-full h-screen grid-cols-12 grid-rows-4 lg:grid xl:hidden">
                 <div className="min-w-[500px] flex flex-col items-end justify-end col-span-5 col-end-11 row-span-1 row-start-2 scale-110 translate-y-20 ">
-                    <Image src="/banner/合併.png" alt="24OPENHCI" width={600} height={50} />
+                    <Image src="/banner/合併.png" alt="24OPENHCI" width={600} height={50} priority />
 
                     <Button
                         variant="bordered"
@@ -66,7 +66,7 @@ export default function Banner() {
                 </div>
 
                 <div className="col-span-3 col-start-2 row-start-3 text-left text-white translate-y-32 font-kompot ">
-                    <Image src="/banner/date.png" alt="date" width={200} height={100} />
+                    <Image src="/banner/date.png" alt="date" width={200} height={100} priority />
                 </div>
             </div>
         )
@@ -75,7 +75,7 @@ export default function Banner() {
         return (
             <div className="absolute z-20 flex flex-col w-full h-screen gap-32 px-10 py-64 text-right min-[500px]:hidden ">
                 <div className="flex flex-col items-center justify-center gap-4">
-                    <Image src="/banner/合併.png" alt="24OPENHCI" width={600} height={50} />
+                    <Image src="/banner/合併.png" alt="24OPENHCI" width={600} height={50} priority />
                     <Button
                         variant="bordered"
                         style={{ borderColor: '#F2D4CD' }}
@@ -85,7 +85,7 @@ export default function Banner() {
                     </Button>
                 </div>
                 <div className="flex flex-col items-start justify-start ">
-                    <Image src="/banner/date.png" alt="date" width={150} height={100} />
+                    <Image src="/banner/date.png" alt="date" width={150} height={100} priority />
                 </div>
             </div>
         )
@@ -94,7 +94,7 @@ export default function Banner() {
         return (
             <div className="absolute z-20 flex-col w-full h-screen gap-10 px-10 text-right pt-32 min-[500px]:flex hidden min-[640px]:hidden">
                 <div className="flex flex-col items-end justify-end ">
-                    <Image src="/banner/合併.png" alt="24OPENHCI" width={500} height={50} />
+                    <Image src="/banner/合併.png" alt="24OPENHCI" width={500} height={50} priority />
                     <Button
                         variant="bordered"
                         style={{ borderColor: '#F2D4CD' }}
@@ -104,7 +104,7 @@ export default function Banner() {
                     </Button>
                 </div>
                 <div className="flex flex-col items-start justify-start ">
-                    <Image src="/banner/date.png" alt="date" width={200} height={100} />
+                    <Image src="/banner/date.png" alt="date" width={200} height={100} priority />
                 </div>
             </div>
         )
