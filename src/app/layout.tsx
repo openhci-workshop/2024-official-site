@@ -14,7 +14,15 @@ export const metadata: Metadata = {
     title: 'OpenHCI 2024',
     description: 'OpenHCI 2024 是一個專門推廣人機互動學門及促進垮領域合作的密集工作坊。',
     metadataBase: new URL('https://www.2024.openhci.com/'),
-    keywords: ['OpenHCI', 'HCI', '2024', '垮領域', '人機互動'],
+    keywords: [
+        'OpenHCI2024', 'OpenHCI 2024', 'Open HCI 2024', 'Open HCI2024',
+        'OpenCHI2024', 'OpenCHI 2024', 'Open CHI 2024', 'Open CHI2024',
+        '2024OpenHCI', '2024 OpenHCI', '2024 Open HCI', 
+        '2024 OpenCHI', '2024 OpenCHI2024', '2024 Open CHI', 
+        'HCI', 'CHI', 'Human Computer Interaction', 'Computer-Human Interaction', 'Conference on Human Factors in Computing Systems', 
+        '人機互動', '工作坊', '人機互動工作坊',
+        'OpenHCI 2024 是一個專門推廣人機互動學門及促進垮領域合作的密集工作坊。',
+    ],
     alternates: {
         canonical: 'https://www.2024.openhci.com/',
         languages: {
