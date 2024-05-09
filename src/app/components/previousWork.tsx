@@ -2,14 +2,27 @@
 
 import React from 'react'
 import Image from 'next/image'
-import { Card, CardBody, Button } from '@nextui-org/react'
+import {
+    Card,
+    CardBody,
+    Modal,
+    ModalContent,
+    ModalHeader,
+    ModalBody,
+    ModalFooter,
+    Button,
+    useDisclosure,
+} from '@nextui-org/react'
 import { NextIcon } from './nextIcon'
 import { PreviousIcon } from './previousIcon'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import Link from 'next/link'
 
 export default function PreviousWork() {
+    const { isOpen, onOpen, onOpenChange } = useDisclosure()
+
     const settings = {
         dots: true,
         infinite: true,
@@ -145,6 +158,7 @@ export default function PreviousWork() {
             />
         )
     }
+
     return (
         <>
             <div
@@ -179,13 +193,76 @@ export default function PreviousWork() {
                                                     className="rounded-lg xl:object-contain"
                                                 />
                                             </div>
-                                            <div className="col-span-6 xl:col-start-3 xl:col-end-7">
-                                                <h3 className="mb-5 font-medium text-md xl:text-2xl text-indigo-950">
+                                            <div className="col-span-6 xl:col-start-3 xl:col-end-7 flex justify-center items-start flex-col">
+                                                <h3 className="mb-5 font-medium text-md xl:text-2xl text-[#636B76]">
                                                     {work.title}
                                                 </h3>
-                                                <p className="text-base xl:text-lg text-indigo-950 line-clamp-3 md:line-clamp-4 lg:line-clamp-5 xl:line-clamp-6">
+                                                <p className="text-base xl:text-lg text-[#636B76] line-clamp-3 md:line-clamp-4 lg:line-clamp-5 xl:line-clamp-6 ">
                                                     {work.description}
                                                 </p>
+                                                <div></div>
+                                                <Button
+                                                    className="mt-4  self-end bg-gradient-to-r from-[#e7bbb1] to-[#94aac1] text-white font-medium"
+                                                    size="sm"
+                                                    radius="full"
+                                                >
+                                                    <a
+                                                        target="_blank"
+                                                        href="https://www.facebook.com/openhci/posts/pfbid02RtM1vH1H3rNMhA4XQWGYUJ6uTEeVEP3s44DDjaWS7WJxdQ7UFA1Wyhzr8tYrxSDRl?__cft__[0]=AZX3jMg1LpT3rXxneYZFnh29gG1h7Z7wJRRI7TRs10HS_gKnIeSCk79QQtygWDSpGjYrMg7Ldy_Jjtj5pWS8PkLNSg7jyoO62DkKZ9L6wi5yoAZl0cACqwRbWjsRaN_reZbfQRHnYwfrSN_aroHh1v4FAwWKLCK6WoL_Rh9o7QonEFz6Orr-3jGYEwsHOdLoM2U&__tn__=%2CO%2CP-R"
+                                                    >
+                                                        see more...
+                                                    </a>
+                                                </Button>
+                                                {/* <Button
+                                                    className="mt-4  self-end bg-gradient-to-r from-[#e7bbb1] to-[#94aac1] text-white font-medium"
+                                                    size="sm"
+                                                    radius="full"
+                                                    onPress={onOpen}
+                                                >
+                                                    see more...
+                                                </Button>
+                                                <Modal
+                                                    isOpen={isOpen}
+                                                    onOpenChange={onOpenChange}
+                                                    size="5xl"
+                                                    backdrop="blur"
+                                                >
+                                                    <ModalContent className="flex flex-row">
+                                                        {(onClose) => (
+                                                            <>
+                                                                <div>
+                                                                    <Image
+                                                                        src={work.image}
+                                                                        width={800}
+                                                                        height={300}
+                                                                        alt="Album cover"
+                                                                        className="rounded-lg xl:object-contain"
+                                                                    />
+                                                                </div>
+                                                                <div>
+                                                                    <ModalHeader className="flex flex-col gap-1">
+                                                                        {work.title}
+                                                                    </ModalHeader>
+                                                                    <ModalBody>
+                                                                        <p>{work.description}</p>
+                                                                    </ModalBody>
+                                                                    <ModalFooter>
+                                                                        <Button
+                                                                            color="danger"
+                                                                            variant="light"
+                                                                            onPress={onClose}
+                                                                        >
+                                                                            Close
+                                                                        </Button>
+                                                                        <Button color="primary" onPress={onClose}>
+                                                                            Action
+                                                                        </Button>
+                                                                    </ModalFooter>
+                                                                </div>
+                                                            </>
+                                                        )}
+                                                    </ModalContent>
+                                                </Modal> */}
                                             </div>
                                         </div>
 
