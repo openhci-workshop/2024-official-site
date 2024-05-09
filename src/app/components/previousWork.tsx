@@ -158,7 +158,7 @@ export default function PreviousWork() {
             />
         )
     }
-    const handleSeeMore = (work) => {
+    const handleSeeMore = (work: Work) => {
         setCurrentWork(work)
         onOpen()
     }
