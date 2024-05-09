@@ -168,7 +168,7 @@ export default function PreviousWork() {
             >
                 <span className="font-semibold  text-md md:text-2xl xl:text-3xl">歷屆作品</span>
                 <div className="px-10 w-full">
-                    <Slider {...settings} className=" w-full h-[350px] md:h-[400px] lg:h-[450px] xl:h-full ">
+                    <Slider {...settings} className=" w-full h-[350px] md:h-[420px] lg:h-[450px] xl:h-full ">
                         {previousWorks.map((work) => (
                             <Card key={work.id} className="px-4 py-3 xl:py-6" shadow="sm">
                                 <CardBody>
