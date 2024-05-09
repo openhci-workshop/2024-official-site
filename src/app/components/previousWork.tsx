@@ -170,18 +170,18 @@ export default function PreviousWork() {
                 data-aos-offset="200"
                 className=" md:px-0 pt-8 xl:pt-16 md:pt-4 flex flex-col items-start w-full gap-[22px] xl:gap-[40px] "
             >
-                <span className="font-semibold  text-md md:text-2xl xl:text-3xl">歷屆作品</span>
+                <span className="font-semibold text-md md:text-2xl xl:text-3xl">歷屆作品</span>
                 <Suspense fallback={<p>Loading feed...</p>}>
-                    <div className="px-10 w-full">
+                    <div className="w-full px-10">
                         <Slider {...settings} className=" w-full h-[380px] md:h-[280px] lg:h-[300px] xl:h-full ">
                             {previousWorks.map((work) => (
                                 <Card
                                     key={work.id}
-                                    className="px-4 py-3 xl:py-6 xl:px-6  border-3 border-b-violet-200 border-r-[#CAD9DF] "
+                                    className="px-4 py-3 xl:py-6 xl:px-6  border-3 border-b-violet-200 border-r-[#CAD9DF] bg-[url('/card_detail.png')] bg-cover bg-center	 "
                                     shadow="sm"
                                 >
-                                    <CardBody>
-                                        <div className="flex items-center justify-between">
+                                    <CardBody className="rounded-lg bg-white/25 backdrop-blur ">
+                                        <div className="flex items-center justify-between ">
                                             <div className="grid grid-cols-6 gap-5">
                                                 <div className="flex justify-center col-span-6 md:col-start-1 md:col-end-4 2xl:col-start-1 2xl:col-end-3">
                                                     <Image
@@ -189,10 +189,10 @@ export default function PreviousWork() {
                                                         width={400}
                                                         height={300}
                                                         alt="Album cover"
-                                                        className="rounded-lg object-contain"
+                                                        className="object-contain rounded-lg"
                                                     />
                                                 </div>
-                                                <div className=" col-span-6 md:col-start-4 md:col-end-7 flex justify-center items-start flex-col 2xl:col-start-3 2xl:col-end-7">
+                                                <div className="flex flex-col items-start justify-center col-span-6 md:col-start-4 md:col-end-7 2xl:col-start-3 2xl:col-end-7">
                                                     <h3 className="mb-5 font-medium text-md lg:text-2xl text-[#636B76]">
                                                         {work.title}
                                                     </h3>
@@ -223,7 +223,7 @@ export default function PreviousWork() {
                 size="4xl"
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}
-                className="text-[#636B76]"
+                className="text-[#636B76] border-3 border-b-violet-200 border-r-[#CAD9DF] bg-[url('/card_detail.png')] bg-cover bg-center"
                 scrollBehavior="inside"
                 classNames={{
                     backdrop: 'bg-gradient-to-t from-[#e7bbb1]/40 to-[#94aac1]/40 backdrop-opacity-20',
@@ -233,24 +233,24 @@ export default function PreviousWork() {
                     {(onClose) => (
                         <>
                             <ModalHeader className="flex flex-row gap-1 ">
-                                <div className=" text-3xl ">{currentWork.title}</div>
+                                <div className="text-3xl ">{currentWork.title}</div>
                             </ModalHeader>
-                            <ModalBody className="flex flex-col md:flex-row">
+                            <ModalBody className="flex flex-col mx-8 rounded-lg md:flex-row bg-white/25">
                                 <Image
                                     priority
                                     src={currentWork.image}
                                     width={400}
                                     height={300}
                                     alt="Album cover"
-                                    className=" object-contain md:w-1/2 lg:w-full 2xl:w-1/2 "
+                                    className="object-contain md:w-1/2 lg:w-full 2xl:w-1/2 "
                                 />
-                                <div className="md:px-2 lg:px-8 text-base w-full leading-8">
+                                <div className="w-full text-base leading-8 md:px-2 lg:px-8">
                                     {currentWork.description}
                                 </div>
                             </ModalBody>
                             <ModalFooter>
                                 <Button
-                                    className="mt-4  self-end font-medium"
+                                    className="self-end mt-4 font-medium bg-white/25 border-2 border-[#636B76]/10 text-[#636B76] "
                                     size="sm"
                                     radius="full"
                                     onClick={onClose}
