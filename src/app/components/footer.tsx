@@ -21,6 +21,16 @@ export default function Footer() {
                     <div>
                         <p className="text-center font-bold text-xxs xl:text-md">© COPYRIGHT 2024 OpenHCI&apos;24</p>
                         <div className="text-xs text-center xl:text-sm mt-4">
+                            {/* Facebook */}
+                            <a href="https://www.facebook.com/openhci/" target="_blank" rel="noopener noreferrer">
+                                Facebook
+                            </a> {' '}
+                            {/* Instagram */}
+                            <a href="https://www.instagram.com/open.hci24/" target="_blank" rel="noopener noreferrer">
+                                Instagram
+                            </a>
+                        </div>
+                        <div className="text-xs text-center xl:text-sm mt-4">
                             <a href="https://www.2023.openhci.com/" target="_blank" rel="noopener noreferrer">
                                 2023
                             </a>{' '}
