@@ -40,7 +40,7 @@ export default function Banner() {
                         style={{ borderColor: '#F2D4CD' }}
                         className="w-1/3 text-xl leading-none tracking-widest text-white rounded-full shadow border-3 font-kompot drop-shadow-3xl backdrop-blur "
                     >
-                        <Link href="#enroll">立即報名 </Link>
+                        <Link href="#enroll">5/15 開始報名 </Link>
                     </Button>
                 </div>
 
