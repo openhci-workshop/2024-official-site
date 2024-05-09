@@ -79,7 +79,10 @@ export default function Student() {
                                           {student.name}
                                       </span>
                                       <span className="text-xxs xl:text-base md:text-xs">
-                                          {student.school} {student.department}
+                                          {student.school}
+                                      </span>
+                                      <span className="text-xxs xl:text-base md:text-xs">
+                                          {student.department}
                                       </span>
                                   </div>
                               </div>
