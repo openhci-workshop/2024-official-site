@@ -12,18 +12,18 @@ export default function Footer() {
     return (
         <div className="w-full xl:pt-16 pt-8  ">
             <h1 className="mb-5 font-semibold text-md md:text-2xl xl:text-3xl">活動地點</h1>
-            <div className="flex flex-row gap-4 h-[243px]">
-                <div className="  w-1/2">
+            <div className="flex flex-row gap-4 h-[486px] sm:h-[243px] flex-wrap sm:flex-nowrap">
+                <div className=" w-full sm:w-1/2">
                     <div className="relative w-full h-[243px]">
                         <Maps />
                     </div>
                 </div>
 
-                <div className=" flex flex-col items-center justify-between w-1/2 ">
+                <div className=" flex flex-col items-center justify-between w-full sm:w-1/2 ">
                     <Image src="/OpenHCI_Light_Logo.png" alt="OpenHCI_logo" width={300} height={100} className="mb-6" />
                     <div>
                         <p className="text-center font-bold text-xxs xl:text-md">© COPYRIGHT 2024 OpenHCI&apos;24</p>
-                        <div className="flex flex-row gap-10 justify-center text-xs text-center xl:text-sm mt-4">
+                        <div className="flex flex-row flex-wrap sm:flex-nowrap gap-5 justify-center text-xs text-center xl:text-sm mt-4">
                             {/* Facebook */}
                             <a href="https://www.facebook.com/openhci/" target="_blank" rel="noopener noreferrer" className='flex flex-row gap-1'>
                                 <FaSquareFacebook className='w-[16px] h-[16px]' /> <span>Facebook</span>
