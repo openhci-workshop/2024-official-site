@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import clsx from 'clsx'
 import styled from 'styled-components'
 import 'slick-carousel/slick/slick.css'
@@ -124,7 +124,6 @@ const settings = {
 }
 const SpeakerInfo = () => {
     const [selectedCategory, setSelectedCategory] = useState('講師');
-    const sliderRef = useRef<any>(null);
 
     const filteredSpeakers = speakersData.filter(
         (speaker) => speaker.category === selectedCategory
@@ -132,9 +131,6 @@ const SpeakerInfo = () => {
 
     const handleButtonClick = (category: string) => {
         setSelectedCategory(category);
-        if (sliderRef.current) {
-            sliderRef.current.slickGoTo(0); 
-        }
     };
 
     return (
@@ -162,7 +158,7 @@ const SpeakerInfo = () => {
                     ))}
                 </div>
                 <div className="hidden w-full lg:block">
-                    <Slider {...settings} ref={sliderRef}>
+                    <Slider {...settings} key={selectedCategory}>
                         {filteredSpeakers.map((speaker, index) => {
                             const gradientStyle =
                                 index % 2 !== 0
