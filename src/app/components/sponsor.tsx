@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 import AJA_Logo from '../../../public/images/AJA_Logo.png'
 import LINE_White from '../../../public/images/LINE_White.svg'
+import LINE_Green from '../../../public/images/LINE_Green.svg'
 import NYCU_Logo from '../../../public/images/NYCU_Logo.png'
 
 export default function Sponsor() {
@@ -14,7 +15,7 @@ export default function Sponsor() {
         >
             <span className="font-semibold text-md md:text-2xl xl:text-3xl">贊助單位</span>
             <span className="text-xs font-semibold xl:text-xl">白金級</span>
-            <div className="grid grid-cols-6 gap-3 mb-5 w-full">
+            <div className="grid grid-cols-6 gap-2 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10 mb-5 w-full">
                 {/* <Image
                     src={'/images/album-cover.png'}
                     width={300}
@@ -33,7 +34,7 @@ export default function Sponsor() {
                 />
             </div>
             <span className="text-xs font-semibold xl:text-xl">金級</span>
-            <div className="grid grid-cols-6 gap-3 mb-5 w-full">
+            <div className="grid grid-cols-6 gap-2 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10 mb-5 w-full">
                 {/* <Image
                     src={'/images/album-cover.png'}
                     width={300}
@@ -45,7 +46,7 @@ export default function Sponsor() {
                 {/* Image */}
             </div>
             <span className="text-xs font-semibold xl:text-xl">銀級</span>
-            <div className="grid grid-cols-6 gap-3 mb-5 w-full ">
+            <div className="grid grid-cols-6 gap-2 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10 mb-5 w-full ">
                 {/* <Image
                     src={'/images/album-cover.png'}
                     width={300}
@@ -56,12 +57,12 @@ export default function Sponsor() {
 
                 {/* Image */}
                 <Image
-                    src={LINE_White}
+                    src={LINE_Green}
                     width={300}
                     height={300}
                     alt="Line_Logo_W"
-                    className="rounded-md col-span-3 md:col-span-2 bg-green-500 p-2 aspect-[2/1] object-contain"
-                />
+                    className="rounded-md col-span-3 md:col-span-2 bg-white p-5 aspect-[2/1] object-contain"
+                />                                                                
                 <Image
                     src={AJA_Logo}
                     width={300}
