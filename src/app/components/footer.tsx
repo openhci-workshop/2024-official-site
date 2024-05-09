@@ -23,7 +23,7 @@ export default function Footer() {
                     <Image src="/OpenHCI_Light_Logo.png" alt="OpenHCI_logo" width={300} height={100} className="mb-6" />
                     <div>
                         <p className="text-center font-bold text-xxs xl:text-md">© COPYRIGHT 2024 OpenHCI&apos;24</p>
-                        <div className="flex flex-row gap-1 justify-around justify-center text-xs text-center xl:text-sm mt-2">
+                        <div className="flex flex-row gap-10 justify-center text-xs text-center xl:text-sm mt-4">
                             {/* Facebook */}
                             <a href="https://www.facebook.com/openhci/" target="_blank" rel="noopener noreferrer" className='flex flex-row gap-1'>
                                 <FaSquareFacebook className='w-[16px] h-[16px]' /> <span>Facebook</span>
@@ -33,7 +33,7 @@ export default function Footer() {
                                 <RiInstagramFill className='w-[16px] h-[16px]' /> <span>Instagram</span>
                             </a>
                         </div>
-                        <div className="text-xs text-center xl:text-sm mt-2">
+                        <div className="text-xs text-center xl:text-sm mt-4">
                             <a href="https://www.2023.openhci.com/" target="_blank" rel="noopener noreferrer">
                                 2023
                             </a>{' '}
