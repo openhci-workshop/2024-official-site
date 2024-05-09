@@ -175,7 +175,11 @@ export default function PreviousWork() {
                     <div className="px-10 w-full">
                         <Slider {...settings} className=" w-full h-[380px] md:h-[280px] lg:h-[300px] xl:h-full ">
                             {previousWorks.map((work) => (
-                                <Card key={work.id} className="px-4 py-3 xl:py-6 xl:px-6" shadow="sm">
+                                <Card
+                                    key={work.id}
+                                    className="px-4 py-3 xl:py-6 xl:px-6  border-3 border-b-violet-200 border-r-[#CAD9DF] "
+                                    shadow="sm"
+                                >
                                     <CardBody>
                                         <div className="flex items-center justify-between">
                                             <div className="grid grid-cols-6 gap-5">
