@@ -19,6 +19,7 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import Link from 'next/link'
+import { Suspense } from 'react'
 
 export default function PreviousWork() {
     const { isOpen, onOpen, onOpenChange } = useDisclosure()
@@ -167,13 +168,14 @@ export default function PreviousWork() {
                 className=" md:px-0 pt-8 xl:pt-16 md:pt-4 flex flex-col items-start w-full gap-[22px] xl:gap-[40px] "
             >
                 <span className="font-semibold  text-md md:text-2xl xl:text-3xl">歷屆作品</span>
-                <div className="px-10 w-full">
-                    <Slider {...settings} className=" w-full h-[350px] md:h-[420px] lg:h-[450px] xl:h-full ">
-                        {previousWorks.map((work) => (
-                            <Card key={work.id} className="px-4 py-3 xl:py-6" shadow="sm">
-                                <CardBody>
-                                    <div className="flex items-center justify-between">
-                                        {/* <Button
+                <Suspense fallback={<p>Loading feed...</p>}>
+                    <div className="px-10 w-full">
+                        <Slider {...settings} className=" w-full h-[350px] md:h-[420px] lg:h-[450px] xl:h-full ">
+                            {previousWorks.map((work) => (
+                                <Card key={work.id} className="px-4 py-3 xl:py-6" shadow="sm">
+                                    <CardBody>
+                                        <div className="flex items-center justify-between">
+                                            {/* <Button
                                         isIconOnly
                                         className="data-[hover]:bg-foreground/10"
                                         radius="full"
@@ -183,37 +185,37 @@ export default function PreviousWork() {
                                         <PreviousIcon />
                                     </Button> */}
 
-                                        <div className="grid grid-cols-6 gap-5">
-                                            <div className="flex justify-center col-span-6 xl:col-start-1 xl:col-end-3">
-                                                <Image
-                                                    src={work.image}
-                                                    width={300}
-                                                    height={300}
-                                                    alt="Album cover"
-                                                    className="rounded-lg xl:object-contain"
-                                                />
-                                            </div>
-                                            <div className="col-span-6 xl:col-start-3 xl:col-end-7 flex justify-center items-start flex-col">
-                                                <h3 className="mb-5 font-medium text-md xl:text-2xl text-[#636B76]">
-                                                    {work.title}
-                                                </h3>
-                                                <p className="text-base xl:text-lg text-[#636B76] line-clamp-3 md:line-clamp-4 lg:line-clamp-5 xl:line-clamp-6 ">
-                                                    {work.description}
-                                                </p>
-                                                <div></div>
-                                                <Button
-                                                    className="mt-4  self-end bg-gradient-to-r from-[#e7bbb1] to-[#94aac1] text-white font-medium"
-                                                    size="sm"
-                                                    radius="full"
-                                                >
-                                                    <a
-                                                        target="_blank"
-                                                        href="https://www.facebook.com/openhci/posts/pfbid02RtM1vH1H3rNMhA4XQWGYUJ6uTEeVEP3s44DDjaWS7WJxdQ7UFA1Wyhzr8tYrxSDRl?__cft__[0]=AZX3jMg1LpT3rXxneYZFnh29gG1h7Z7wJRRI7TRs10HS_gKnIeSCk79QQtygWDSpGjYrMg7Ldy_Jjtj5pWS8PkLNSg7jyoO62DkKZ9L6wi5yoAZl0cACqwRbWjsRaN_reZbfQRHnYwfrSN_aroHh1v4FAwWKLCK6WoL_Rh9o7QonEFz6Orr-3jGYEwsHOdLoM2U&__tn__=%2CO%2CP-R"
+                                            <div className="grid grid-cols-6 gap-5">
+                                                <div className="flex justify-center col-span-6 xl:col-start-1 xl:col-end-3">
+                                                    <Image
+                                                        src={work.image}
+                                                        width={300}
+                                                        height={300}
+                                                        alt="Album cover"
+                                                        className="rounded-lg xl:object-contain"
+                                                    />
+                                                </div>
+                                                <div className="col-span-6 xl:col-start-3 xl:col-end-7 flex justify-center items-start flex-col">
+                                                    <h3 className="mb-5 font-medium text-md xl:text-2xl text-[#636B76]">
+                                                        {work.title}
+                                                    </h3>
+                                                    <p className="text-base xl:text-lg text-[#636B76] line-clamp-3 md:line-clamp-4 lg:line-clamp-5 xl:line-clamp-6 ">
+                                                        {work.description}
+                                                    </p>
+                                                    <div></div>
+                                                    <Button
+                                                        className="mt-4  self-end bg-gradient-to-r from-[#e7bbb1] to-[#94aac1] text-white font-medium"
+                                                        size="sm"
+                                                        radius="full"
                                                     >
-                                                        see more...
-                                                    </a>
-                                                </Button>
-                                                {/* <Button
+                                                        <a
+                                                            target="_blank"
+                                                            href="https://www.facebook.com/openhci/posts/pfbid02RtM1vH1H3rNMhA4XQWGYUJ6uTEeVEP3s44DDjaWS7WJxdQ7UFA1Wyhzr8tYrxSDRl?__cft__[0]=AZX3jMg1LpT3rXxneYZFnh29gG1h7Z7wJRRI7TRs10HS_gKnIeSCk79QQtygWDSpGjYrMg7Ldy_Jjtj5pWS8PkLNSg7jyoO62DkKZ9L6wi5yoAZl0cACqwRbWjsRaN_reZbfQRHnYwfrSN_aroHh1v4FAwWKLCK6WoL_Rh9o7QonEFz6Orr-3jGYEwsHOdLoM2U&__tn__=%2CO%2CP-R"
+                                                        >
+                                                            see more...
+                                                        </a>
+                                                    </Button>
+                                                    {/* <Button
                                                     className="mt-4  self-end bg-gradient-to-r from-[#e7bbb1] to-[#94aac1] text-white font-medium"
                                                     size="sm"
                                                     radius="full"
@@ -263,10 +265,10 @@ export default function PreviousWork() {
                                                         )}
                                                     </ModalContent>
                                                 </Modal> */}
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        {/* <Button
+                                            {/* <Button
                                         isIconOnly
                                         className="data-[hover]:bg-foreground/10"
                                         radius="full"
@@ -275,12 +277,13 @@ export default function PreviousWork() {
                                     >
                                         <NextIcon />
                                     </Button> */}
-                                    </div>
-                                </CardBody>
-                            </Card>
-                        ))}
-                    </Slider>
-                </div>
+                                        </div>
+                                    </CardBody>
+                                </Card>
+                            ))}
+                        </Slider>
+                    </div>
+                </Suspense>
             </div>
             <div id="members"></div>
         </>
