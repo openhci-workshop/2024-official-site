@@ -23,7 +23,6 @@ import { Suspense } from 'react'
 
 export default function PreviousWork() {
     const { isOpen, onOpen, onOpenChange } = useDisclosure()
-
     const settings = {
         dots: true,
         infinite: true,
@@ -159,6 +158,10 @@ export default function PreviousWork() {
             />
         )
     }
+    const handleSeeMore = (work) => {
+        setCurrentWork(work)
+        onOpen()
+    }
 
     return (
         <>
@@ -170,113 +173,39 @@ export default function PreviousWork() {
                 <span className="font-semibold  text-md md:text-2xl xl:text-3xl">歷屆作品</span>
                 <Suspense fallback={<p>Loading feed...</p>}>
                     <div className="px-10 w-full">
-                        <Slider {...settings} className=" w-full h-[350px] md:h-[420px] lg:h-[450px] xl:h-full ">
+                        <Slider {...settings} className=" w-full h-[380px] md:h-[280px] lg:h-[300px] xl:h-full ">
                             {previousWorks.map((work) => (
-                                <Card key={work.id} className="px-4 py-3 xl:py-6" shadow="sm">
+                                <Card key={work.id} className="px-4 py-3 xl:py-6 xl:px-6" shadow="sm">
                                     <CardBody>
                                         <div className="flex items-center justify-between">
-                                            {/* <Button
-                                        isIconOnly
-                                        className="data-[hover]:bg-foreground/10"
-                                        radius="full"
-                                        variant="light"
-                                        onPress={() => handlePrevious()}
-                                    >
-                                        <PreviousIcon />
-                                    </Button> */}
-
                                             <div className="grid grid-cols-6 gap-5">
-                                                <div className="flex justify-center col-span-6 xl:col-start-1 xl:col-end-3">
+                                                <div className="flex justify-center col-span-6 md:col-start-1 md:col-end-4 2xl:col-start-1 2xl:col-end-3">
                                                     <Image
                                                         src={work.image}
-                                                        width={300}
+                                                        width={400}
                                                         height={300}
                                                         alt="Album cover"
-                                                        className="rounded-lg xl:object-contain"
+                                                        className="rounded-lg object-contain"
                                                     />
                                                 </div>
-                                                <div className="col-span-6 xl:col-start-3 xl:col-end-7 flex justify-center items-start flex-col">
-                                                    <h3 className="mb-5 font-medium text-md xl:text-2xl text-[#636B76]">
+                                                <div className=" col-span-6 md:col-start-4 md:col-end-7 flex justify-center items-start flex-col 2xl:col-start-3 2xl:col-end-7">
+                                                    <h3 className="mb-5 font-medium text-md lg:text-2xl text-[#636B76]">
                                                         {work.title}
                                                     </h3>
-                                                    <p className="text-base xl:text-lg text-[#636B76] line-clamp-3 md:line-clamp-4 lg:line-clamp-5 xl:line-clamp-6 ">
+                                                    <p className="md:leading-7 lg:leading-7 text-sm lg:text-base xl:text-lg xl:leading-8 text-[#636B76] line-clamp-3 md:line-clamp-4 xl:line-clamp-5 2xl:line-clamp-6">
                                                         {work.description}
                                                     </p>
-                                                    <div></div>
+
                                                     <Button
                                                         className="mt-4  self-end bg-gradient-to-r from-[#e7bbb1] to-[#94aac1] text-white font-medium"
                                                         size="sm"
                                                         radius="full"
+                                                        onClick={() => handleSeeMore(work)}
                                                     >
-                                                        <a
-                                                            target="_blank"
-                                                            href="https://www.facebook.com/openhci/posts/pfbid02RtM1vH1H3rNMhA4XQWGYUJ6uTEeVEP3s44DDjaWS7WJxdQ7UFA1Wyhzr8tYrxSDRl?__cft__[0]=AZX3jMg1LpT3rXxneYZFnh29gG1h7Z7wJRRI7TRs10HS_gKnIeSCk79QQtygWDSpGjYrMg7Ldy_Jjtj5pWS8PkLNSg7jyoO62DkKZ9L6wi5yoAZl0cACqwRbWjsRaN_reZbfQRHnYwfrSN_aroHh1v4FAwWKLCK6WoL_Rh9o7QonEFz6Orr-3jGYEwsHOdLoM2U&__tn__=%2CO%2CP-R"
-                                                        >
-                                                            see more...
-                                                        </a>
+                                                        see more...
                                                     </Button>
-                                                    {/* <Button
-                                                    className="mt-4  self-end bg-gradient-to-r from-[#e7bbb1] to-[#94aac1] text-white font-medium"
-                                                    size="sm"
-                                                    radius="full"
-                                                    onPress={onOpen}
-                                                >
-                                                    see more...
-                                                </Button>
-                                                <Modal
-                                                    isOpen={isOpen}
-                                                    onOpenChange={onOpenChange}
-                                                    size="5xl"
-                                                    backdrop="blur"
-                                                >
-                                                    <ModalContent className="flex flex-row">
-                                                        {(onClose) => (
-                                                            <>
-                                                                <div>
-                                                                    <Image
-                                                                        src={work.image}
-                                                                        width={800}
-                                                                        height={300}
-                                                                        alt="Album cover"
-                                                                        className="rounded-lg xl:object-contain"
-                                                                    />
-                                                                </div>
-                                                                <div>
-                                                                    <ModalHeader className="flex flex-col gap-1">
-                                                                        {work.title}
-                                                                    </ModalHeader>
-                                                                    <ModalBody>
-                                                                        <p>{work.description}</p>
-                                                                    </ModalBody>
-                                                                    <ModalFooter>
-                                                                        <Button
-                                                                            color="danger"
-                                                                            variant="light"
-                                                                            onPress={onClose}
-                                                                        >
-                                                                            Close
-                                                                        </Button>
-                                                                        <Button color="primary" onPress={onClose}>
-                                                                            Action
-                                                                        </Button>
-                                                                    </ModalFooter>
-                                                                </div>
-                                                            </>
-                                                        )}
-                                                    </ModalContent>
-                                                </Modal> */}
                                                 </div>
                                             </div>
-
-                                            {/* <Button
-                                        isIconOnly
-                                        className="data-[hover]:bg-foreground/10"
-                                        radius="full"
-                                        variant="light"
-                                        onPress={() => handleNext()}
-                                    >
-                                        <NextIcon />
-                                    </Button> */}
                                         </div>
                                     </CardBody>
                                 </Card>
@@ -285,6 +214,51 @@ export default function PreviousWork() {
                     </div>
                 </Suspense>
             </div>
+
+            <Modal
+                size="4xl"
+                isOpen={isOpen}
+                onOpenChange={onOpenChange}
+                className="text-[#636B76]"
+                scrollBehavior="inside"
+                classNames={{
+                    backdrop: 'bg-gradient-to-t from-[#e7bbb1]/40 to-[#94aac1]/40 backdrop-opacity-20',
+                }}
+            >
+                <ModalContent>
+                    {(onClose) => (
+                        <>
+                            <ModalHeader className="flex flex-row gap-1 ">
+                                <div className=" text-3xl ">{currentWork.title}</div>
+                            </ModalHeader>
+                            <ModalBody className="flex flex-col md:flex-row">
+                                <Image
+                                    priority
+                                    src={currentWork.image}
+                                    width={400}
+                                    height={300}
+                                    alt="Album cover"
+                                    className=" object-contain md:w-1/2 lg:w-full 2xl:w-1/2 "
+                                />
+                                <div className="md:px-2 lg:px-8 text-base w-full leading-8">
+                                    {currentWork.description}
+                                </div>
+                            </ModalBody>
+                            <ModalFooter>
+                                <Button
+                                    className="mt-4  self-end font-medium"
+                                    size="sm"
+                                    radius="full"
+                                    onClick={onClose}
+                                >
+                                    關閉
+                                </Button>
+                            </ModalFooter>
+                        </>
+                    )}
+                </ModalContent>
+            </Modal>
+
             <div id="members"></div>
         </>
     )
