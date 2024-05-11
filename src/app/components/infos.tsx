@@ -6,9 +6,13 @@ const Infos = () => {
     return (
         <div className="md:pt-8 flex flex-col items-start w-full  gap-[55px] xl:gap-20 ">
             <div data-aos="fade-up" data-aos-offset="200" className=" flex flex-col mb-[22px] xl:mb-4">
-                <span className="font-semibold text-md xl:text-3xl md:text-2xl">活動宗旨</span>
+                <span className="font-semibold text-md xl:text-3xl md:text-2xl drop-shadow-[0px_5px_10px_rgba(256,256,256,1)] ">
+                    活動宗旨
+                </span>
                 <div
-                    className={clsx('mt-4 py-16 xl:py-24 w-full rounded-[50%] z-10 flex justify-center items-center')}
+                    className={clsx(
+                        'shadow-[0px_5px_15px_1px] shadow-white	 mt-8 py-16 xl:py-16 w-full rounded-[60px]  flex justify-center  items-center bg-white/25'
+                    )}
                     style={{
                         backgroundImage:
                             'radial-gradient(ellipse at center, rgba(255,255,255,0.8) 12%, rgba(202,217,223,0.8) 35%, rgba(242,212,205,0.85) 50%, rgba(255,255,255,0.12) 70%)',
@@ -25,13 +29,15 @@ const Infos = () => {
             <div data-aos="fade-up" className=" flex flex-col mb-[22px] xl:mb-4">
                 <span className="font-semibold text-md xl:text-3xl md:text-2xl">活動資訊</span>
                 <div
-                    className={clsx('py-10 w-full rounded-[50%] z-10 flex justify-center items-center')}
-                    style={{
-                        backgroundImage:
-                            'radial-gradient(ellipse at center, rgba(255,255,255,0.8) 12%, rgba(202,217,223,0.8) 35%, rgba(242,212,205,0.85) 50%, rgba(255,255,255,0.12) 70%)',
-                    }}
+                    className=" bg-white/30 backdrop-blur-sm border-3 border-b-violet-200 border-r-[#CAD9DF] mt-8 py-16 xl:py-8 px-8 w-full  rounded-[50px] z-10 flex justify-center items-center "
+
+                    // className={clsx('py-10 w-full rounded-[50%] z-10 flex justify-center items-center')}
+                    // style={{
+                    //     backgroundImage:
+                    //         'radial-gradient(ellipse at center, rgba(255,255,255,0.8) 12%, rgba(202,217,223,0.8) 35%, rgba(242,212,205,0.85) 50%, rgba(255,255,255,0.12) 70%)',
+                    // }}
                 >
-                    <div className="flex flex-col w-full gap-4 px-10 text-xs md:px-16 lg:px-24 xl:text-xl xl:gap-8 xl:px-32">
+                    <div className="flex flex-col w-full gap-4 px-10 text-xs xl:py-8 md:px-16 lg:px-24 xl:text-xl xl:gap-8 xl:px-12">
                         <div className="flex flex-col gap-3">
                             <span className="text-sm font-bold xl:text-2xl md:text-xl">/ 活動時間 /</span>
                             <div className="flex flex-col gap-1 tracking-wider underline md:text-base xl:text-xl">
