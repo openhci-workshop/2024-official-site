@@ -170,7 +170,9 @@ export default function PreviousWork() {
                 data-aos-offset="200"
                 className=" md:px-0 pt-8 xl:pt-16 md:pt-4 flex flex-col items-start w-full gap-[22px] xl:gap-[40px] "
             >
-                <span className="font-semibold text-md md:text-2xl xl:text-3xl">歷屆作品</span>
+                <span className="font-semibold text-md md:text-2xl xl:text-3xl drop-shadow-[0px_5px_10px_rgba(256,256,256,1)]">
+                    歷屆作品
+                </span>
                 <Suspense fallback={<p>Loading feed...</p>}>
                     <div className="w-full px-10">
                         <Slider {...settings} className=" w-full h-[380px] md:h-[280px] lg:h-[300px] xl:h-full ">

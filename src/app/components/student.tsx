@@ -20,7 +20,9 @@ export default function Student() {
             data-aos-offset="200"
             className="pt-8 xl:pt-16 flex flex-col items-start w-full gap-[22px] xl:gap-[40px] "
         >
-            <span className="font-semibold text-md xl:text-3xl md:text-2xl">籌辦團隊</span>
+            <span className="font-semibold text-md xl:text-3xl md:text-2xl drop-shadow-[0px_5px_10px_rgba(256,256,256,1)]">
+                籌辦團隊
+            </span>
             {/* Teams */}
             <div className="flex flex-wrap gap-2 xl:gap-4">
                 {teams.map((team, index) => (
@@ -78,12 +80,8 @@ export default function Student() {
                                       <span className="text-xs font-medium xl:text-xl md:text-base">
                                           {student.name}
                                       </span>
-                                      <span className="text-xxs xl:text-base md:text-xs">
-                                          {student.school}
-                                      </span>
-                                      <span className="text-xxs xl:text-base md:text-xs">
-                                          {student.department}
-                                      </span>
+                                      <span className="text-xxs xl:text-base md:text-xs">{student.school}</span>
+                                      <span className="text-xxs xl:text-base md:text-xs">{student.department}</span>
                                   </div>
                               </div>
                           ))}
