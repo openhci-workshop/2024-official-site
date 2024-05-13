@@ -10,7 +10,7 @@ const Enrollment = () => {
                             報名資訊
                         </span>
                         <div className=" bg-[url('/card_detail.png')] bg-cover bg-center border-3 border-b-violet-200 border-r-[#CAD9DF] mt-8 p-4 xl:p-8 w-full  rounded-[50px] z-10 flex justify-center items-center ">
-                            <div className="rounded-[50px] bg-white/25 flex flex-col w-full gap-4 px-10  py-4 text-xs xl:py-8 md:px-16 lg:px-24 xl:text-xl xl:gap-8 xl:px-12">
+                            <div className="rounded-[45px] xl:rounded-[50px] bg-white/25 flex flex-col w-full gap-4 px-10  py-4 text-xs xl:py-8 md:px-16 lg:px-12 xl:text-xl xl:gap-8 xl:px-12">
                                 <div className="flex flex-col gap-3">
                                     <span className="text-sm font-bold xl:text-2xl md:text-xl">/ 報名資格 /</span>
                                     <span className="text-xs underline xl:text-xl md:text-base">

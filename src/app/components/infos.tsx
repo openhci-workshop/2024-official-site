@@ -8,7 +8,7 @@ const Infos = () => {
                     活動宗旨
                 </span>
                 <div className=" bg-[url('/card_detail.png')] bg-cover bg-center bg-white/30  border-3 border-b-violet-200 border-r-[#CAD9DF] mt-8 p-4 xl:p-8 w-full  rounded-[50px] z-10 flex justify-center items-center ">
-                    <div className="text-start px-10  py-4 xl:py-8 md:px-16 lg:px-24 xl:text-xl xl:gap-8 xl:px-12 rounded-[40px] bg-white/25   text-xs   md:text-base">
+                    <div className="text-start px-10  py-4 xl:py-8 md:px-16 lg:px-12 xl:text-xl xl:gap-8 xl:px-12 rounded-[40px] bg-white/25   text-xs   md:text-base">
                         <span>
                             本活動希望以推廣 HCI
                             為主要宗旨，招收工程、設計及跨領域背景的學生，共同學習並進行跨領域的合作，探索人類生活空間中與周遭環境、物件或工具的互動模式。為期六天的工作坊，期盼參與者能根據主題體察其日常經驗裡的互動缺口或議題，實際動手解決問題或創造出新的意義，進而尋思更和諧的人機互動願景。
@@ -21,7 +21,7 @@ const Infos = () => {
                     活動資訊
                 </span>
                 <div className=" p-4  bg-[url('/card_detail.png')] bg-cover bg-center bg-white/30  border-3 border-b-violet-200 border-r-[#CAD9DF] mt-8  xl:p-8 w-full  rounded-[50px] z-10 flex justify-center items-center ">
-                    <div className="rounded-[50px] bg-white/25  flex flex-col w-full gap-4 px-10  py-4 text-xs xl:py-8 md:px-16 lg:px-24 xl:text-xl xl:gap-8 xl:px-12">
+                    <div className="rounded-[45px] xl:rounded-[50px] bg-white/25  flex flex-col w-full gap-4 px-10  py-4 text-xs xl:py-8 md:px-16 lg:px-12 xl:text-xl xl:gap-8 xl:px-12">
                         <div className="flex flex-col gap-3">
                             <span className="text-sm font-bold xl:text-2xl md:text-xl">/ 活動時間 /</span>
                             <div className="flex flex-col gap-1 tracking-wider underline md:text-base xl:text-xl">
