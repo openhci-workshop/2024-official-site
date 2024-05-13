@@ -16,7 +16,7 @@ const speakersData = [
     { name: '李冠慰', info: 'HTC XR體驗設計研究', position: '資深經理', category: '講師', img: '/speakers/李冠慰.jpg' },
     { name: '陳美伶', info: '悠識數位 研究與內容策略', position: '副總監', category: '評審', img: '/speakers/陳美伶.jpg' },
     { name: '蔡文傑', info: '臺大創新設計學院', position: '專案計畫助理教授', category: '評審', img: '/speakers/蔡文傑.jpg' },
-    { name: '洪燕茹', info: '職涯諮詢師', position: '職游 共同發起人', category: '評審', img: '/speakers/洪燕茹.jpeg' },
+    { name: '洪燕茹', info: '職涯諮詢師', position: '亞太服務設計協會 副秘書長 / 職涯諮詢師 / 職游共同創辦人', category: '評審', img: '/speakers/洪燕茹.jpeg' },
     { name: '侯宗佑', info: '美國康乃爾大學', position: '資訊科學博士', category: '講師', img: '/speakers/侯宗佑.jpg' },
     { name: '鄭龍磻', info: '國立臺灣大學<br>資訊工程學系', position: '副教授', category: '顧問', img: '/speakers/鄭龍磻.jpg' },
     { name: '蔡欣叡', info: '國立政治大學<br>資訊系與數位內容學程', position: '副教授', category: '顧問', img: '/speakers/蔡欣叡.png' },
