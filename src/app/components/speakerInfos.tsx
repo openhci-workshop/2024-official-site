@@ -12,7 +12,7 @@ import Image from 'next/image'
 
 const speakersData = [
     { name: '陳盈羽', info: '國立陽明交通大學<br>傳播與科技學系', position: '助理教授', category: '講師', img: '/speakers/陳盈羽.jpg' },
-    { name: '鄭宇婷', info: '國立臺灣科技大學<br>設計學系', position: '助理教授', category: '講師', img: '/speakers/avatar.jpg' },
+    { name: '鄭宇婷', info: '國立臺灣科技大學<br>設計學系', position: '助理教授', category: '講師', img: '/speakers/鄭宇婷.jpg' },
     { name: '李冠慰', info: 'HTC XR體驗設計研究', position: '資深經理', category: '講師', img: '/speakers/李冠慰.jpg' },
     { name: '陳美伶', info: '悠識數位 研究與內容策略', position: '副總監', category: '評審', img: '/speakers/陳美伶.jpg' },
     { name: '蔡文傑', info: '臺大創新設計學院', position: '專案計畫助理教授', category: '評審', img: '/speakers/蔡文傑.jpg' },

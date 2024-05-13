@@ -72,7 +72,9 @@ export default function Student() {
                                       // className='w-[185px] h-[185px]  xl:w-[245px] xl:h-[245px] rounded-lg self-center mb-3'
                                       className="self-start object-cover w-full mb-3 bg-cover rounded-lg"
                                       src={student.image || '/images/album-cover.png'}
-                                      alt={student.name}                                      
+                                      alt={student.name}
+                                      placeholder='blur'
+                                      blurDataURL='/images/stu_pics/avatar.jpg'
                                   />
                                   <div className="flex flex-col gap-1">
                                       <span className="text-xs font-medium xl:text-xl md:text-base">
