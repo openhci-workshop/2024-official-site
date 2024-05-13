@@ -4,7 +4,6 @@ import React, { useEffect } from 'react'
 import clsx from 'clsx'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { animate } from 'framer-motion'
 const topicsData = [
     {
         title: '什麼是人機互動?',
@@ -61,8 +60,6 @@ const Topics = () => {
                             {topic.title}
                         </span>
                         <div
-                            // className="  bg-[url('/card_detail.png')] bg-cover bg-center border-3 border-b-violet-200 border-r-[#CAD9DF] mt-4 py-16 xl:py-8 px-8 w-full  rounded-[50px] z-10 flex justify-center items-center "
-
                             className={clsx(
                                 'shadow-[0px_5px_15px_1px] shadow-white	 mt-8 py-4 xl:py-16 w-full rounded-[60px]  flex justify-center  items-center bg-white/25'
                             )}
@@ -74,9 +71,7 @@ const Topics = () => {
                             <div
                                 className="px-8 xl:px-16 py-8 text-xs text-start  md:text-base xl:text-xl"
                                 dangerouslySetInnerHTML={{ __html: topic.info }}
-                            >
-                                {/* <span>{topic.info}</span> */}
-                            </div>
+                            ></div>
                         </div>
                     </div>
                 ))}

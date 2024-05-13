@@ -262,7 +262,7 @@ const Agenda = () => {
                             </Button> */}
                         </div>
                     ))}
-                </div>{' '}
+                </div>
             </CustomScrollbar>
             <div id="enroll"></div>
         </div>

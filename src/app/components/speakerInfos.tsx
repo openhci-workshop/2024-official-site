@@ -23,7 +23,7 @@ const speakersData = [
         info: '國立臺灣科技大學<br>設計學系',
         position: '助理教授',
         category: '講師',
-        img: '/speakers/avatar.jpg',
+        img: '/speakers/鄭宇婷.jpg',
     },
     { name: '李冠慰', info: 'HTC XR體驗設計研究', position: '資深經理', category: '講師', img: '/speakers/李冠慰.jpg' },
     {
@@ -40,7 +40,13 @@ const speakersData = [
         category: '評審',
         img: '/speakers/蔡文傑.jpg',
     },
-    { name: '洪燕茹', info: '職涯諮詢師', position: '職游 共同發起人', category: '評審', img: '/speakers/洪燕茹.jpeg' },
+    {
+        name: '洪燕茹',
+        info: '職涯諮詢師',
+        position: '亞太服務設計協會 副秘書長 / 職涯諮詢師 / 職游共同創辦人',
+        category: '評審',
+        img: '/speakers/洪燕茹.jpeg',
+    },
     { name: '侯宗佑', info: '美國康乃爾大學', position: '資訊科學博士', category: '講師', img: '/speakers/侯宗佑.jpg' },
     {
         name: '鄭龍磻',
@@ -219,25 +225,12 @@ const SpeakerInfo = () => {
                 <div className="hidden w-full h-full lg:block">
                     <Slider {...settings} key={selectedCategory}>
                         {filteredSpeakers.map((speaker, index) => {
-                            const gradientStyle =
-                                index % 2 !== 0
-                                    ? 'from-white from-20% via-[#CAD9DF] via-50% to-[#F2D4CD] to-70%'
-                                    : 'from-[#CAD9DF] from-0% via-[#F2D4CD] via-49% to-white to-70%'
-
                             return (
                                 <div
                                     key={index}
                                     className="h-full flex flex-col  bg-white/25 rounded-3xl border-2  bg-[url('/card_detail.png')] bg-cover bg-right-bottom	  border-b-violet-200 border-r-[#CAD9DF]"
                                 >
-                                    <div
-                                        // className={clsx(
-                                        //     'w-[152px] h-[222px] md:w-[225px] md:h-[285px] lg:w-[270px] lg:h-[360px] mb-[11px] md:mb-[20px] rounded-lg md:rounded-2xl',
-                                        //     'bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))]',
-                                        //     gradientStyle
-                                        // )}
-
-                                        className="w-full lg:h-[300px] xl:h-[300px] 2xl:h-[360px] md:h-[285px]"
-                                    >
+                                    <div className="w-full lg:h-[300px] xl:h-[300px] 2xl:h-[360px] md:h-[285px]">
                                         {speaker.img && (
                                             <Image
                                                 src={speaker.img}
@@ -255,9 +248,7 @@ const SpeakerInfo = () => {
                                         <span
                                             className="mb-1 font-medium text-xxs xl:text-sm lg:text-xs md:text-xs"
                                             dangerouslySetInnerHTML={{ __html: speaker.info }}
-                                        >
-                                            {/* {speaker.info} */}
-                                        </span>
+                                        ></span>
                                         <span className="text-xxs xl:text-sm lg:text-xs md:text-xs">
                                             {speaker.position}
                                         </span>
@@ -288,22 +279,20 @@ const SpeakerInfo = () => {
                                                 />
                                             )}
                                         </div>
-                                        <div className="flex flex-col px-4 pb-4 h-[80px] md:h-[100px]">
+                                        <div className="flex flex-col px-4 pb-4 h-[100px]">
                                             <span className="text-xs font-medium xl:text-xl md:text-base">
                                                 {speaker.name}
                                             </span>
                                             <span
                                                 className="text-xxs xl:text-base md:text-xs"
                                                 dangerouslySetInnerHTML={{ __html: speaker.info }}
-                                            >
-                                                {/* {speaker.info} */}
-                                            </span>
+                                            ></span>
                                             <span className="text-xxs xl:text-base md:text-xs">{speaker.position}</span>
                                         </div>
                                     </div>
                                 )
                             })}
-                        </div>{' '}
+                        </div>
                     </div>
                 </CustomScrollbar>
             </div>

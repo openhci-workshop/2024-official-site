@@ -1,7 +1,5 @@
 'use client'
 
-import clsx from 'clsx'
-
 const Infos = () => {
     return (
         <div className="md:pt-8 flex flex-col items-start w-full  gap-[55px] xl:gap-20 ">
