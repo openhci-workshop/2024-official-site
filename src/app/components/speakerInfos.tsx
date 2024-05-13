@@ -78,7 +78,7 @@ const speakersData = [
     },
     {
         name: '陳啟彰',
-        info: '國立成功大學 認知科學研究所 碩士',
+        info: '國立成功大學<br>認知科學研究所 碩士',
         position: 'UXTW / 第三、四屆理事',
         category: '評審',
         img: '/speakers/陳啟彰.jpeg',
