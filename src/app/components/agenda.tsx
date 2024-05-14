@@ -240,14 +240,14 @@ const Agenda = () => {
                                 backgroundPosition: 'center',
                             }}
                         >
-                            <div className="w-[174px] md:w-[292px] h-[158px] md:h-[276px] flex flex-col bg-[#D9D9D9]/25 rounded-2xl px-4 md:px-7 items-start justify-start pt-6 md:pt-10">
-                                <div className="flex flex-row items-center w-full gap-2 md:gap-1 md:flex-col md:items-start">
+                            <div className="w-[174px] md:w-[292px] h-[200px] md:h-[276px] flex flex-col bg-[#D9D9D9]/25 rounded-2xl px-4 md:px-7 items-start justify-start pt-6 md:pt-10">
+                                <div className="flex  w-full gap-1 flex-col items-start">
                                     <span className="text-sm font-medium xl:text-2xl md:text-xl">{agenda.title}</span>
-                                    <span className="text-xxs xl:text-base md:text-base">{agenda.date}</span>
+                                    <span className="text-xs xl:text-base md:text-base">{agenda.date}</span>
                                 </div>
                                 <ul className="pl-4 list-disc md:pl-8 mt-2 space-y-2">
                                     {agenda.contents.map((content, index) => (
-                                        <li key={index} className="text-xxs xl:text-base md:text-sm">
+                                        <li key={index} className="text-xs xl:text-base md:text-sm">
                                             {content}
                                         </li>
                                     ))}
