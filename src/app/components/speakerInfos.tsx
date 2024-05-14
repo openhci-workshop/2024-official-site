@@ -77,6 +77,13 @@ const speakersData = [
         img: '/speakers/黃仲菁.jpg',
     },
     {
+        name: '張婉玲',
+        info: '國立成功大學<br>工業設計學系',
+        position: '助理教授',
+        category: '顧問',
+        img: '/speakers/張婉玲.jpg',
+    },
+    {
         name: '陳啟彰',
         info: '國立成功大學<br>認知科學研究所 碩士',
         position: 'UXTW / 第三、四屆理事',
