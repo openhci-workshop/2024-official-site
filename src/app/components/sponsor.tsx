@@ -8,7 +8,7 @@ import NCCU_Logo from '../../../public/images/NCCU_Logo.jpg'
 import ITSA_Logo from '../../../public/images/ITSA_Logo.png'
 import BegoniaDesign_Logo from '../../../public/images/BegoniaDesign_Logo.png'
 import NTU_Logo from '../../../public/images/NTU_Logo.png'
-import D_Logo from '../../../public/images/D_Logo.png'
+import DSchool_Logo from '../../../public/images/DSchool_Logo.png'
 import CEP_Logo from '../../../public/images/CEP_Logo.png'
 import TAICHI_Logo from '../../../public/images/TAICHI_Logo.png'
 
@@ -130,10 +130,10 @@ export default function Sponsor() {
                     className="rounded-md col-span-3 md:col-span-2 p-5 bg-white aspect-[2/1] object-contain"
                 />
                 <Image
-                    src={D_Logo}
+                    src={DSchool_Logo}
                     width={300}
                     height={300}
-                    alt="D_Logo"
+                    alt="DSchool_Logo"
                     className="rounded-md col-span-3 md:col-span-2 bg-white aspect-[2/1] object-contain"
                 />
                 <Image
