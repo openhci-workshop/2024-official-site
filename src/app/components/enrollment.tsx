@@ -26,12 +26,12 @@ const Enrollment = () => {
                                 </div>
                                 <div className="flex flex-col gap-6">
                                     <span className="text-sm font-bold xl:text-2xl md:text-xl ">/ 招生時程 /</span>
-                                    <div className="relative top-24 xl:top-36 w-full pb-12 xl:pb-28">
+                                    <div className="relative top-24 xl:top-36 w-full pb-24 xl:pb-28">
                                         <ol className="flex justify-center  border-t-2 border-white">
-                                            <li className="ml-[57px] md:ml-[80px] xl:ml-[250px] top-[-90px] md:top-[-107px] xl:top-[-137px] relative">
-                                                <div className="w-[67px] md:w-[100px] xl:w-[190px] flex-start items-center block pt-0">
-                                                    <div className="text-center h-[37px] md:h-[54px] xl:h-[80px] w-[178px] mb-2 xl:mb-1 me-0 -ms-[80px]">
-                                                        <p className="text-xs xl:text-base md:text-base">
+                                            <li className="ml-[50px] sm:ml-[80px] xl:ml-[168px] top-[-90px] md:top-[-107px] xl:top-[-137px] relative">
+                                                <div className="w-[60px] sm:w-[100px] xl:w-[168px] flex-start items-center block pt-0">
+                                                    <div className="text-center h-[37px] md:h-[54px] xl:h-[80px] w-[178px] md:w-[240px] mb-2 xl:mb-1 me-0 -ms-[80px] md:-ms-[115px]">
+                                                        <p className="text-xxs xl:text-base md:text-base">
                                                             2024 年 5 月 15 日（三）
                                                         </p>
                                                         <p className="text-xs xl:text-xl md:text-base">報名開始</p>
@@ -43,12 +43,12 @@ const Enrollment = () => {
                                             </li>
 
                                             <li>
-                                                <div className="w-[67px] md:w-[100px] xl:w-[190px] flex-start items-center block pt-0">
+                                                <div className="w-[60px] sm:w-[100px] xl:w-[168px] flex-start items-center block pt-0">
                                                     <div className="h-[9px] w-[9px] rounded-full bg-white -mt-[5px] me-0 ms-0"></div>
                                                     <div className="h-[40px] xl:h-[48px] w-[2px] rounded-full bg-white -mt-[5px] me-0 ms-1"></div>
                                                     <div className="h-[9px] w-[9px] rounded-full bg-white -mt-[5px] me-0 ms-0"></div>
-                                                    <div className="text-center h-[37px] xl:h-[80px] w-[178px] mt-4 me-0 -ms-[80px]">
-                                                        <p className="text-xs xl:text-base md:text-base">
+                                                    <div className="text-center h-[37px] xl:h-[80px] w-[178px] md:w-[240px] mt-4 me-0 -ms-[80px] md:-ms-[115px]">
+                                                        <p className="text-xxs xl:text-base md:text-base">
                                                             2024 年 5 月 21 日（二）
                                                         </p>
                                                         <p className="text-xs xl:text-xl md:text-base">報名結束</p>
@@ -57,9 +57,9 @@ const Enrollment = () => {
                                             </li>
 
                                             <li className="top-[-90px] md:top-[-107px] xl:top-[-137px] relative">
-                                                <div className="w-[67px] md:w-[100px] xl:w-[190px] flex-start items-center block pt-0">
+                                                <div className="w-[60px] sm:w-[100px] xl:w-[168px] flex-start items-center block pt-0">
                                                     <div className="text-center h-[37px] md:h-[54px] xl:h-[80px] w-[178px] mb-2 xl:mb-1 me-0 -ms-[80px]">
-                                                        <p className="text-xs xl:text-base md:text-base">
+                                                        <p className="text-xxs xl:text-base md:text-base">
                                                             2024 年 6 月 1 日（六）
                                                         </p>
                                                         <p className="text-xs xl:text-xl md:text-base">正取名單公布</p>
@@ -71,12 +71,12 @@ const Enrollment = () => {
                                             </li>
 
                                             <li>
-                                                <div className="w-[67px] md:w-[100px] xl:w-[260px] flex-start items-center block pt-0">
+                                                <div className="w-[60px] sm:w-[100px] xl:w-[168px] flex-start items-center block pt-0">
                                                     <div className="h-[9px] w-[9px] rounded-full bg-white -mt-[5px] me-0 ms-0"></div>
                                                     <div className="h-[40px] xl:h-[48px] w-[2px] rounded-full bg-white -mt-[5px] me-0 ms-1"></div>
                                                     <div className="h-[9px] w-[9px] rounded-full bg-white -mt-[5px] me-0 ms-0"></div>
                                                     <div className="text-center h-[37px] xl:h-[80px] w-[178px] mt-4 me-0 -ms-[80px]">
-                                                        <p className="text-xs xl:text-base md:text-base">
+                                                        <p className="text-xxs xl:text-base md:text-base">
                                                             2024 年 6 月 5 日（三）
                                                         </p>
                                                         <p className="text-xs xl:text-xl md:text-base">遞補備取通知</p>
