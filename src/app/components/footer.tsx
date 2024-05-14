@@ -10,7 +10,9 @@ import { RiInstagramFill } from 'react-icons/ri'
 export default function Footer() {
     return (
         <div className="w-full pt-8 xl:pt-16 ">
-            <h1 className="mb-5 font-semibold text-md md:text-2xl xl:text-3xl">活動地點</h1>
+            <h1 className="mb-5 font-semibold text-md md:text-2xl xl:text-3xl drop-shadow-[0px_5px_10px_rgba(256,256,256,1)]">
+                活動地點
+            </h1>
             <div className="flex flex-row gap-4 h-[486px] sm:h-[243px] flex-wrap sm:flex-nowrap">
                 <div className="w-full sm:w-1/2">
                     <div className="relative w-full h-[243px]">

@@ -4,7 +4,6 @@ import React, { useEffect } from 'react'
 import clsx from 'clsx'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { animate } from 'framer-motion'
 const topicsData = [
     {
         title: '什麼是人機互動?',
@@ -37,14 +36,14 @@ const Topics = () => {
                     <span className="font-semibold text-md md:text-2xl xl:text-3xl">What is Resilience?</span>
                     <div
                         className={clsx(
-                            'shadow-[0px_5px_15px_1px] shadow-white	 mt-8 py-16 xl:py-16 w-full rounded-[60px]  flex justify-center  items-center bg-white/25'
+                            'shadow-[0px_5px_15px_1px] shadow-white	 mt-8 py-4  xl:py-16 w-full rounded-[40px] md:rounded-[50px] lg:rounded-[60px]  flex justify-center  items-center bg-white/25'
                         )}
                         style={{
                             backgroundImage:
                                 'radial-gradient(ellipse at center, rgba(255,255,255,1) 12%, rgba(242,212,205,1) 30%, rgba(202,217,223,0.4) 55%, rgba(255,255,255,0.6) 100%)',
                         }}
                     >
-                        <div className="px-16 py-8 text-xs text-start md:text-base xl:text-xl">
+                        <div className="px-8 lg:px-12 xl:px-16 py-8 text-xs text-start md:text-base xl:text-xl">
                             <span className="font-bold">
                                 「Resilience，象徵著適應力、韌性、彈性。在新興科技大量衝擊的年代，人性為最不可或缺的關鍵。」{' '}
                             </span>
@@ -61,10 +60,8 @@ const Topics = () => {
                             {topic.title}
                         </span>
                         <div
-                            // className="  bg-[url('/card_detail.png')] bg-cover bg-center border-3 border-b-violet-200 border-r-[#CAD9DF] mt-4 py-16 xl:py-8 px-8 w-full  rounded-[50px] z-10 flex justify-center items-center "
-
                             className={clsx(
-                                'shadow-[0px_5px_15px_1px] shadow-white	 mt-8 py-16 xl:py-16 w-full rounded-[60px]  flex justify-center  items-center bg-white/25'
+                                'shadow-[0px_5px_15px_1px] shadow-white	 mt-8 py-4 xl:py-16 w-full rounded-[40px] md:rounded-[50px] lg:rounded-[60px] flex justify-center  items-center bg-white/25'
                             )}
                             style={{
                                 backgroundImage:
@@ -72,11 +69,9 @@ const Topics = () => {
                             }}
                         >
                             <div
-                                className="px-16 py-8 text-xs text-start  md:text-base xl:text-xl"
+                                className="lg:px-12 px-8 xl:px-16 py-8 text-xs text-start  md:text-base xl:text-xl"
                                 dangerouslySetInnerHTML={{ __html: topic.info }}
-                            >
-                                {/* <span>{topic.info}</span> */}
-                            </div>
+                            ></div>
                         </div>
                     </div>
                 ))}
