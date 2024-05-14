@@ -11,7 +11,9 @@ export default function FAQ() {
     return (
         <>
             <div className="flex flex-col items-start w-full md:pt-16 ">
-                <span className="mb-5 font-semibold text-md xl:text-3xl md:text-2xl">FAQ</span>
+                <span className="mb-5 font-semibold text-md xl:text-3xl md:text-2xl drop-shadow-[0px_5px_10px_rgba(256,256,256,1)]">
+                    FAQ
+                </span>
                 <span className="mb-5 text-sm font-medium xl:text-2xl md:text-xl">報名常見問題</span>
                 <div className="flex items-start justify-center w-full mb-5" data-aos="fade-right">
                     <Image src={FaqM1} alt="faq_m_q1" className="block sm:hidden w-3/4" width={500} height={500} />

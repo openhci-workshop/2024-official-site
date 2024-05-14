@@ -30,8 +30,8 @@ const agendaDatas = [
     {
         title: '前置工作坊',
         date: '6/23（日）',
-        contents: [            
-            '顧問時間',            
+        contents: [
+            '顧問時間',
             '技術課 Arduino',
             '技術課 Rapid Prototyping',
             '技術課 Unity',
@@ -66,7 +66,7 @@ const agendaDatas = [
     {
         title: '正式工作坊',
         date: '7/5（五）',
-        contents: [            
+        contents: [
             '演講',
             '演講 侯宗佑',
             '學員討論',
@@ -85,7 +85,7 @@ const agendaDatas = [
         date: '7/6（六）',
         contents: [
             '演講 李冠慰',
-            '學員討論',            
+            '學員討論',
             // '08:30 - 09:00 學員報到',
             // '09:00 - 12:00 學員討論',
             // '12:00 - 13:00 午餐',
@@ -187,7 +187,9 @@ const Agenda = () => {
 
     return (
         <div data-aos="zoom-in" className="flex flex-col items-start w-full gap-[22px] xl:gap-[40px] ">
-            <span className="font-semibold text-md xl:text-3xl md:text-2xl">詳細日程 Agenda</span>
+            <span className="font-semibold text-md xl:text-3xl md:text-2xl drop-shadow-[0px_5px_10px_rgba(256,256,256,1)]">
+                詳細日程 Agenda
+            </span>
             <div className="flex flex-col w-full gap-0 md:flex-row md:gap-4">
                 <div className="flex justify-start gap-2 md:gap-4">
                     {['前置 D1', '前置 D2'].map((label, index) => (

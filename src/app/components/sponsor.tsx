@@ -14,7 +14,9 @@ export default function Sponsor() {
             data-aos-offset="200"
             className="xl:pt-16 pt-8 flex flex-col items-start w-full gap-[22px] xl:gap-[40px] "
         >
-            <span className="font-semibold text-md md:text-2xl xl:text-3xl">贊助單位</span>
+            <span className="font-semibold text-md md:text-2xl xl:text-3xl drop-shadow-[0px_5px_10px_rgba(256,256,256,1)]">
+                贊助單位
+            </span>
             <span className="text-xs font-semibold xl:text-xl">白金級</span>
             <div className="grid grid-cols-6 gap-2 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10 mb-5 w-full">
                 {/* <Image
@@ -39,7 +41,7 @@ export default function Sponsor() {
                     height={300}
                     alt="ITSA_Logo"
                     className="rounded-md col-span-3 md:col-span-2 bg-white aspect-[2/1] object-contain"
-                />                
+                />
             </div>
             <span className="text-xs font-semibold xl:text-xl">金級</span>
             <div className="grid grid-cols-6 gap-2 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10 mb-5 w-full">
@@ -70,7 +72,7 @@ export default function Sponsor() {
                     height={300}
                     alt="Line_Logo_W"
                     className="rounded-md col-span-3 md:col-span-2 bg-white p-5 aspect-[2/1] object-contain"
-                />                                                                
+                />
                 <Image
                     src={AJA_Logo}
                     width={300}
