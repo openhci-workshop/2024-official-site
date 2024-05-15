@@ -8,9 +8,7 @@ const Infos = () => {
                     活動宗旨
                 </span>
                 <div
-                    className={clsx(
-                        'shadow-[0px_5px_15px_1px] shadow-white	mt-8 p-4 xl:p-8 w-full rounded-[60px]  flex justify-center  items-center bg-white/25'
-                    )}
+                    className='shadow-[0px_5px_15px_1px] shadow-white mt-8 p-4 xl:p-8 w-full rounded-[60px] flex justify-center items-center bg-white/25'
                     style={{
                         backgroundImage:
                             'radial-gradient(ellipse at center, rgba(255,255,255,0.8) 12%, rgba(202,217,223,0.8) 35%, rgba(242,212,205,0.85) 50%, rgba(255,255,255,0.12) 70%)',
