@@ -55,7 +55,7 @@ const speakersData = [
     },
     {
         name: '洪燕茹',
-        info: '職涯諮詢師',
+        info: '',
         position: '亞太服務設計協會副秘書長<br>職游共同創辦人',
         category: '評審',
         img: '/speakers/洪燕茹.jpeg',
@@ -104,7 +104,7 @@ const speakersData = [
     },
     {
         name: '陳啟彰',
-        info: '國立成功大學 認知科學研究所 碩士',
+        info: '',
         position: '亞太服務設計協會理事<br>領潮創意設計體驗研究設計顧問',
         category: '評審',
         img: '/speakers/陳啟彰.jpeg',
@@ -275,7 +275,7 @@ const SpeakerInfo = () => {
                                             />
                                         )}
                                     </div>
-                                    <div className="flex flex-col px-4 pb-4 h-[180px]">
+                                    <div className="flex flex-col px-4 pb-4 h-[150px]">
                                         <span className="text-xs font-medium lg:text-lg md:text-base">
                                             {speaker.name}
                                         </span>
