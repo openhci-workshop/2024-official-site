@@ -56,7 +56,7 @@ const speakersData = [
     {
         name: '洪燕茹',
         info: '',
-        position: '亞太服務設計協會副秘書長<br>職游共同創辦人',
+        position: '亞太服務設計協會副秘書長<br>職涯諮詢師<br>職游共同創辦人',
         category: '評審',
         img: '/speakers/洪燕茹.jpeg',
     },
