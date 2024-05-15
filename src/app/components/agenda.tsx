@@ -10,57 +10,32 @@ const agendaDatas = [
     {
         title: '前置工作坊',
         date: '6/22（六）',
-        contents: [
-            'HCI Intro 曾唯哲',
-            '設計課',
-            '開場演講 陳盈羽',
-            '演講 賴楨璾',
-        ],
+        contents: ['HCI Intro 曾唯哲', '設計課', '開場演講 陳盈羽', '演講 賴楨璾'],
     },
     {
         title: '前置工作坊',
         date: '6/23（日）',
-        contents: [
-            '顧問時間',
-            '技術課 Arduino',
-            '技術課 Rapid Prototyping',
-            '技術課 Unity',
-        ],
+        contents: ['顧問時間', '技術課 Arduino', '技術課 Rapid Prototyping', '技術課 Unity'],
     },
     {
         title: '正式工作坊',
         date: '7/4（四）',
-        contents: [
-            '演講 鄭宇婷',
-            '期中提案',
-            '學員討論',
-        ],
+        contents: ['演講 鄭宇婷', '期中提案', '學員討論'],
     },
     {
         title: '正式工作坊',
         date: '7/5（五）',
-        contents: [
-            '演講',
-            '演講 侯宗佑',
-            '學員討論',
-        ],
+        contents: ['演講', '演講 侯宗佑', '學員討論'],
     },
     {
         title: '正式工作坊',
         date: '7/6（六）',
-        contents: [
-            '演講 李冠慰',
-            '學員討論',
-        ],
+        contents: ['演講 李冠慰', '學員討論'],
     },
     {
         title: '正式工作坊',
         date: '7/7（日）',
-        contents: [
-            '學員討論',
-            '期末發表',
-            '頒獎 / 閉幕',
-        ],
+        contents: ['學員討論', '期末發表', '頒獎 / 閉幕'],
     },
 ]
 const CustomScrollbar = styled.div`
@@ -205,7 +180,7 @@ const Agenda = () => {
                                     ))}
                                 </ul>
                             </div>
-                            <Modal index={index}/>
+                            <Modal index={index} />
                         </div>
                     ))}
                 </div>
