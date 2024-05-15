@@ -108,7 +108,7 @@ export default function Sponsor() {
                     className="rounded-md col-span-3 md:col-span-2 bg-white aspect-[2/1] object-contain"
                 />
             </div>
-            <span className="text-xs font-semibold xl:text-xl">物資贊助</span>
+            <span className="text-xs font-semibold xl:text-xl">場地與物資贊助</span>
             <div className="grid grid-cols-6 gap-2 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10 mb-5 w-full ">
                 {/* <Image
                     src={'/images/album-cover.png'}
