@@ -21,7 +21,7 @@ export default function Banner() {
                         className="w-1/3 p-4 text-base leading-none tracking-widest text-white rounded-full shadow border-3 font-kompot drop-shadow-3xl backdrop-blur"
                     >
                         {/* <Link href="#enroll">開始報名 </Link> */}
-                        <Link href='https://forms.gle/93hpb3MgqxHYBXtD8'>開始報名</Link>
+                        <Link href="https://forms.gle/93hpb3MgqxHYBXtD8">開始報名</Link>
                     </Button>
                 </div>
                 <div className="col-span-3 col-start-2 text-left text-white translate-y-8 row-start-9 font-kompot ">
@@ -32,8 +32,8 @@ export default function Banner() {
     }
     const DesktopLayout = () => {
         return (
-            <div className="absolute z-20 items-end justify-end hidden w-full h-screen grid-cols-12 xl:grid grid-rows-10">
-                <div className="flex flex-col items-end justify-end col-span-5 col-end-11 row-span-1 row-start-6 scale-110 translate-y-12 ">
+            <div className="absolute z-20 items-end justify-end hidden w-full h-screen grid-cols-12 xl:grid 2xl:hidden grid-rows-10">
+                <div className="flex flex-col items-end justify-end col-span-6 col-end-12 row-span-1 row-start-6 scale-110 translate-y-12 ">
                     <Image src="/banner/合併.png" alt="24OPENHCI" width={600} height={50} priority />
 
                     <Button
@@ -41,13 +41,33 @@ export default function Banner() {
                         style={{ borderColor: '#F2D4CD' }}
                         className="w-1/3 text-xl leading-none tracking-widest text-white rounded-full shadow border-3 font-kompot drop-shadow-3xl backdrop-blur "
                     >
-                        {/* <Link href="#enroll">開始報名 </Link> */}
-                        <Link href='https://forms.gle/93hpb3MgqxHYBXtD8'>開始報名</Link>
+                        <Link href="https://forms.gle/93hpb3MgqxHYBXtD8">開始報名</Link>
                     </Button>
                 </div>
 
-                <div className="col-span-3 col-start-2 text-left text-white translate-y-8 row-start-9 font-kompot ">
+                <div className="col-span-3 col-start-1 ml-12 text-left text-white translate-y-8 row-start-9 font-kompot ">
                     <Image src="/banner/date.png" alt="date" width={230} height={100} priority />
+                </div>
+            </div>
+        )
+    }
+    const XLDesktopLayout = () => {
+        return (
+            <div className="absolute z-20 items-end justify-end hidden w-full h-screen grid-cols-12 2xl:grid grid-rows-10">
+                <div className="flex flex-col items-end justify-end col-span-5 col-end-12 row-span-1 row-start-5 scale-110 translate-y-12 ">
+                    <Image src="/banner/合併.png" alt="24OPENHCI" width={700} height={50} priority />
+
+                    <Button
+                        variant="bordered"
+                        style={{ borderColor: '#F2D4CD' }}
+                        className="w-1/3 text-xl leading-none tracking-widest text-white rounded-full shadow border-3 font-kompot drop-shadow-3xl backdrop-blur "
+                    >
+                        <Link href="https://forms.gle/93hpb3MgqxHYBXtD8">開始報名</Link>
+                    </Button>
+                </div>
+
+                <div className="col-span-3 col-start-1 ml-12 text-left text-white translate-y-8 row-start-9 font-kompot ">
+                    <Image src="/banner/date.png" alt="date" width={300} height={100} priority />
                 </div>
             </div>
         )
@@ -64,7 +84,7 @@ export default function Banner() {
                         className="w-1/3 text-xl leading-none tracking-widest text-white rounded-full shadow border-3 font-kompot drop-shadow-3xl backdrop-blur "
                     >
                         {/* <Link href="#enroll">開始報名 </Link> */}
-                        <Link href='https://forms.gle/93hpb3MgqxHYBXtD8'>開始報名</Link>
+                        <Link href="https://forms.gle/93hpb3MgqxHYBXtD8">開始報名</Link>
                     </Button>
                 </div>
 
@@ -85,7 +105,7 @@ export default function Banner() {
                         className="self-end w-1/3 text-base leading-none tracking-widest text-white rounded-full shadow border-3 font-kompot drop-shadow-3xl backdrop-blur "
                     >
                         {/* <Link href="#enroll">開始報名 </Link> */}
-                        <Link href='https://forms.gle/93hpb3MgqxHYBXtD8'>開始報名</Link>
+                        <Link href="https://forms.gle/93hpb3MgqxHYBXtD8">開始報名</Link>
                     </Button>
                 </div>
                 <div className="flex flex-col items-start justify-start ">
@@ -105,7 +125,7 @@ export default function Banner() {
                         className="w-1/3 text-base leading-none tracking-widest text-white rounded-full shadow border-3 font-kompot drop-shadow-3xl backdrop-blur"
                     >
                         {/* <Link href="#enroll">開始報名 </Link> */}
-                        <Link href='https://forms.gle/93hpb3MgqxHYBXtD8'>開始報名</Link>
+                        <Link href="https://forms.gle/93hpb3MgqxHYBXtD8">開始報名</Link>
                     </Button>
                 </div>
                 <div className="flex flex-col items-start justify-start ">
@@ -122,6 +142,7 @@ export default function Banner() {
                 <PhoneLayout />
                 <LaptopLayout />
                 <SmWindowLayout />
+                <XLDesktopLayout />
                 {/* <div className="absolute z-10 w-full h-screen">
                     <Sketch canvasRef={canvasRef} />
                 </div> */}
