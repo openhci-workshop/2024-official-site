@@ -43,7 +43,7 @@ const Topics = () => {
                                 'radial-gradient(ellipse at center, rgba(255,255,255,1) 12%, rgba(242,212,205,1) 30%, rgba(202,217,223,0.4) 55%, rgba(255,255,255,0.6) 100%)',
                         }}
                     >
-                        <div className="px-8 lg:px-12 xl:px-16 py-8 text-xs text-start md:text-base xl:text-xl">
+                        <div className="px-16 py-8 text-sm text-start md:text-base xl:text-xl">
                             <span className="font-bold">
                                 「Resilience，象徵著適應力、韌性、彈性。在新興科技大量衝擊的年代，人性為最不可或缺的關鍵。」{' '}
                             </span>
@@ -69,7 +69,7 @@ const Topics = () => {
                             }}
                         >
                             <div
-                                className="lg:px-12 px-8 xl:px-16 py-8 text-xs text-start  md:text-base xl:text-xl"
+                                className="px-16 py-8 text-sm text-start  md:text-base xl:text-xl"
                                 dangerouslySetInnerHTML={{ __html: topic.info }}
                             ></div>
                         </div>

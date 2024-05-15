@@ -9,17 +9,17 @@ const Enrollment = () => {
                         <span className="items-start font-semibold text-md xl:text-3xl md:text-2xl drop-shadow-[0px_5px_10px_rgba(256,256,256,1)]">
                             報名資訊
                         </span>
-                        <div className=" bg-[url('/card_detail.png')] bg-cover bg-center border-3 border-b-violet-200 border-r-[#CAD9DF] mt-8 p-4 xl:p-8 w-full  rounded-[50px] z-10 flex justify-center items-center ">
-                            <div className="rounded-[45px] xl:rounded-[50px] bg-white/25 flex flex-col w-full gap-4 px-10  py-4 text-xs xl:py-8 md:px-16 lg:px-12 xl:text-xl xl:gap-8 xl:px-12">
+                        <div className=" bg-white/30 backdrop-blur-sm border-3 border-b-violet-200 border-r-[#CAD9DF] mt-8 py-8 pb-16 xl:py-8 px-4 md:px-8 w-full  rounded-[50px] z-10 flex justify-center items-center ">
+                            <div className="flex flex-col w-full gap-4 px-4 text-sm xl:py-8 md:px-16 lg:px-24 xl:text-xl xl:gap-8 xl:px-12">
                                 <div className="flex flex-col gap-3">
                                     <span className="text-sm font-bold xl:text-2xl md:text-xl">/ 報名資格 /</span>
-                                    <span className="text-xs underline xl:text-xl md:text-base">
+                                    <span className="text-sm underline xl:text-xl md:text-base">
                                         全國各大專院校升大三以上在學生，含學碩博應屆畢業生及碩博新生。
                                     </span>
                                 </div>
                                 <div className="flex flex-col gap-3">
                                     <span className="text-sm font-bold xl:text-2xl md:text-xl">/ 報名方式 /</span>
-                                    <span className="text-xs xl:text-xl md:text-base">
+                                    <span className="text-sm xl:text-xl md:text-base">
                                         一律填寫線上表單報名。本活動以報名資料填寫內容作為錄取參考依據，
                                         報名先後順序不列入計分標準。
                                     </span>
