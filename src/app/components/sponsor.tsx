@@ -11,6 +11,7 @@ import NTU_Logo from '../../../public/images/NTU_Logo.png'
 import DSchool_Logo from '../../../public/images/DSchool_Logo.png'
 import CEP_Logo from '../../../public/images/CEP_Logo.png'
 import TAICHI_Logo from '../../../public/images/TAICHI_Logo.png'
+import NTUCS_Logo from '../../../public/images/NTUCS_Logo.svg'
 
 export default function Sponsor() {
     return (
@@ -19,44 +20,8 @@ export default function Sponsor() {
                 贊助單位
             </span>
             <div className="bg-white/30 backdrop-blur-sm border-3 border-b-violet-200 border-r-[#CAD9DF] mt-8 py-8 pb-16 xl:py-8 px-4 md:px-8 w-full  rounded-[50px] z-10 flex flex-col justify-start items-start ">
-                <span className="text-xs font-semibold xl:text-xl mb-2">白金級</span>
+                <span className="text-xs font-semibold xl:text-xl mb-2">主辦單位</span>
                 <div className="grid grid-cols-6 gap-2 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10 mb-5 w-full">
-                    {/* <Image
-                    src={'/images/album-cover.png'}
-                    width={300}
-                    height={300}
-                    alt='sponsor'
-                    className='rounded-md'
-                /> */}
-
-                    {/* Image */}
-                    <Image
-                        src={ITSA_Logo}
-                        width={300}
-                        height={300}
-                        alt="ITSA_Logo"
-                        className="rounded-md col-span-3 md:col-span-2 p-5 bg-white aspect-[2/1] object-contain"
-                    />
-
-                    <Image
-                        src={TAICHI_Logo}
-                        width={300}
-                        height={300}
-                        alt="TAICHI_Logo"
-                        className="rounded-md col-span-3 md:col-span-2 bg-white aspect-[2/1] object-contain"
-                    />
-                </div>
-                <span className="text-xs font-semibold xl:text-xl mb-2">金級</span>
-                <div className="grid grid-cols-6 gap-2 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10 mb-5 w-full">
-                    {/* <Image
-                    src={'/images/album-cover.png'}
-                    width={300}
-                    height={300}
-                    alt='sponsor'
-                    className='rounded-md'
-                /> */}
-
-                    {/* Image */}
                     <Image
                         src={NYCU_Logo}
                         width={300}
@@ -72,17 +37,29 @@ export default function Sponsor() {
                         className="rounded-md col-span-3 md:col-span-2 p-5 bg-white aspect-[2/1] object-contain"
                     />
                 </div>
+                <span className="text-xs font-semibold xl:text-xl mb-2">白金級</span>
+                <div className="grid grid-cols-6 gap-2 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10 mb-5 w-full">
+                    <Image
+                        src={TAICHI_Logo}
+                        width={300}
+                        height={300}
+                        alt="TAICHI_Logo"
+                        className="rounded-md col-span-3 md:col-span-2 bg-white aspect-[2/1] object-contain"
+                    />
+                    <Image
+                        src={ITSA_Logo}
+                        width={300}
+                        height={300}
+                        alt="ITSA_Logo"
+                        className="rounded-md col-span-3 md:col-span-2 p-5 bg-white aspect-[2/1] object-contain"
+                    />
+                </div>
+                <span className="text-xs font-semibold xl:text-xl mb-2">金級</span>
+                <div className="grid grid-cols-6 gap-2 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10 mb-5 w-full">
+
+                </div>
                 <span className="text-xs font-semibold xl:text-xl mb-2">銀級</span>
                 <div className="grid grid-cols-6 gap-2 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10 mb-5 w-full ">
-                    {/* <Image
-                    src={'/images/album-cover.png'}
-                    width={300}
-                    height={300}
-                    alt='sponsor'
-                    className='rounded-md'
-                /> */}
-
-                    {/* Image */}
                     <Image
                         src={LINE_Green}
                         width={300}
@@ -105,20 +82,22 @@ export default function Sponsor() {
                         className="rounded-md col-span-3 md:col-span-2 bg-white aspect-[2/1] object-contain"
                     />
                 </div>
-                <span className="text-xs font-semibold xl:text-xl mb-2">場地與物資贊助</span>
+                <span className="text-xs font-semibold xl:text-xl mb-2">協辦單位</span>
                 <div className="grid grid-cols-6 gap-2 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10 mb-5 w-full ">
-                    {/* <Image
-                    src={'/images/album-cover.png'}
-                    width={300}
-                    height={300}
-                    alt='sponsor'
-                    className='rounded-md'
-                /> */}
-
-                    {/* Image */}
-                    {/* NTU_Logo
-                D_Logo
-                CEP_Logo */}
+                    <Image
+                        src={TAICHI_Logo}
+                        width={300}
+                        height={300}
+                        alt="TAICHI_Logo"
+                        className="rounded-md col-span-3 md:col-span-2 bg-white aspect-[2/1] object-contain"
+                    />
+                    <Image
+                        src={NTUCS_Logo}
+                        width={300}
+                        height={300}
+                        alt="NTUCS_Logo"
+                        className="rounded-md col-span-3 md:col-span-2 bg-white aspect-[2/1] p-3 object-contain "
+                    />
                     <Image
                         src={NTU_Logo}
                         width={300}
