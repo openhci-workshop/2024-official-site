@@ -4,7 +4,6 @@ import React, { useEffect } from 'react'
 import clsx from 'clsx'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { animate } from 'framer-motion'
 const topicsData = [
     {
         title: '什麼是人機互動?',

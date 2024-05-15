@@ -233,7 +233,7 @@ const Agenda = () => {
                     {agendaDatas.map((agenda, index) => (
                         <div
                             key={index}
-                            className="w-[200px] md:w-[347px] h-[233px] md:h-[385px] p-4 md:px-7 md:py-6 flex-shrink-0 flex flex-col justify-between items-center rounded-3xl"
+                            className="border-3 border-b-violet-200 border-r-[#CAD9DF] w-[200px] md:w-[347px] h-[233px] md:h-[385px] p-4 md:px-7 md:py-6 flex-shrink-0 flex flex-col justify-between items-center rounded-3xl"
                             style={{
                                 backgroundImage: 'url(/card.png)',
                                 backgroundSize: 'cover',
@@ -262,7 +262,7 @@ const Agenda = () => {
                             </Button> */}
                         </div>
                     ))}
-                </div>{' '}
+                </div>
             </CustomScrollbar>
             <div id="enroll"></div>
         </div>

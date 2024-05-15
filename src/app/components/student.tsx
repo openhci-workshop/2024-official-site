@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 
-import { Button, ButtonGroup } from '@nextui-org/react'
+import { Button } from '@nextui-org/react'
 import { teams, students } from './studentAndTeam'
 import clsx from 'clsx'
 

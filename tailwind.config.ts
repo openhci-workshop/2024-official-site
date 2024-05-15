@@ -16,7 +16,8 @@ const config: Config = {
             fontFamily: { kompot: ['kompot'] },
 
             backgroundImage: {
-                'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                'gradient-radial':
+                    'radial-gradient(ellipse at center, rgba(255,255,255,0.8) 12%, rgba(202,217,223,0.8) 35%, rgba(242,212,205,0.85) 50%, rgba(255,255,255,0.12) 70%)',
                 'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
             },
             fontSize: {
