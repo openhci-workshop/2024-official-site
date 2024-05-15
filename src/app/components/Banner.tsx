@@ -19,9 +19,12 @@ export default function Banner() {
                         variant="bordered"
                         style={{ borderColor: '#F2D4CD' }}
                         className="w-1/3 p-4 text-base leading-none tracking-widest text-white rounded-full shadow border-3 font-kompot drop-shadow-3xl backdrop-blur"
+                        onClick={() => window.open('https://forms.gle/93hpb3MgqxHYBXtD8', '_blank')}
                     >
                         {/* <Link href="#enroll">開始報名 </Link> */}
-                        <Link href='https://forms.gle/93hpb3MgqxHYBXtD8'>開始報名</Link>
+                        {/* <Link href='https://forms.gle/93hpb3MgqxHYBXtD8'> */}
+                            開始報名
+                        {/* </Link> */}
                     </Button>
                 </div>
                 <div className="col-span-3 col-start-2 text-left text-white translate-y-8 row-start-9 font-kompot ">
@@ -40,8 +43,12 @@ export default function Banner() {
                         variant="bordered"
                         style={{ borderColor: '#F2D4CD' }}
                         className="w-1/3 text-xl leading-none tracking-widest text-white rounded-full shadow border-3 font-kompot drop-shadow-3xl backdrop-blur "
+                        onClick={() => window.open('https://forms.gle/93hpb3MgqxHYBXtD8', '_blank')}
                     >
-                        <Link href="https://forms.gle/93hpb3MgqxHYBXtD8">開始報名</Link>
+                        {/* <Link href="#enroll">開始報名 </Link> */}
+                        {/* <Link href='https://forms.gle/93hpb3MgqxHYBXtD8'> */}
+                            開始報名
+                        {/* </Link> */}
                     </Button>
                 </div>
 
@@ -61,9 +68,12 @@ export default function Banner() {
                         variant="bordered"
                         style={{ borderColor: '#F2D4CD' }}
                         className="w-1/3 text-xl leading-none tracking-widest text-white rounded-full shadow border-3 font-kompot drop-shadow-3xl backdrop-blur "
+                        onClick={() => window.open('https://forms.gle/93hpb3MgqxHYBXtD8', '_blank')}
                     >
                         {/* <Link href="#enroll">開始報名 </Link> */}
-                        <Link href='https://forms.gle/93hpb3MgqxHYBXtD8'>開始報名</Link>
+                        {/* <Link href='https://forms.gle/93hpb3MgqxHYBXtD8'> */}
+                            開始報名
+                        {/* </Link> */}
                     </Button>
                 </div>
 
@@ -83,9 +93,12 @@ export default function Banner() {
                         variant="bordered"
                         style={{ borderColor: '#F2D4CD' }}
                         className="w-1/3 text-xl leading-none tracking-widest text-white rounded-full shadow border-3 font-kompot drop-shadow-3xl backdrop-blur "
+                        onClick={() => window.open('https://forms.gle/93hpb3MgqxHYBXtD8', '_blank')}
                     >
                         {/* <Link href="#enroll">開始報名 </Link> */}
-                        <Link href='https://forms.gle/93hpb3MgqxHYBXtD8'>開始報名</Link>
+                        {/* <Link href='https://forms.gle/93hpb3MgqxHYBXtD8'> */}
+                            開始報名
+                        {/* </Link> */}
                     </Button>
                 </div>
 
@@ -104,9 +117,12 @@ export default function Banner() {
                         variant="bordered"
                         style={{ borderColor: '#F2D4CD' }}
                         className="self-end w-1/3 text-base leading-none tracking-widest text-white rounded-full shadow border-3 font-kompot drop-shadow-3xl backdrop-blur "
+                        onClick={() => window.open('https://forms.gle/93hpb3MgqxHYBXtD8', '_blank')}
                     >
                         {/* <Link href="#enroll">開始報名 </Link> */}
-                        <Link href='https://forms.gle/93hpb3MgqxHYBXtD8'>開始報名</Link>
+                        {/* <Link href='https://forms.gle/93hpb3MgqxHYBXtD8'> */}
+                            開始報名
+                        {/* </Link> */}
                     </Button>
                 </div>
                 <div className="flex flex-col items-start justify-start ">
@@ -124,9 +140,12 @@ export default function Banner() {
                         variant="bordered"
                         style={{ borderColor: '#F2D4CD' }}
                         className="w-1/3 text-base leading-none tracking-widest text-white rounded-full shadow border-3 font-kompot drop-shadow-3xl backdrop-blur"
+                        onClick={() => window.open('https://forms.gle/93hpb3MgqxHYBXtD8', '_blank')}
                     >
                         {/* <Link href="#enroll">開始報名 </Link> */}
-                        <Link href='https://forms.gle/93hpb3MgqxHYBXtD8'>開始報名</Link>
+                        {/* <Link href='https://forms.gle/93hpb3MgqxHYBXtD8'> */}
+                            開始報名
+                        {/* </Link> */}
                     </Button>
                 </div>
                 <div className="flex flex-col items-start justify-start ">
