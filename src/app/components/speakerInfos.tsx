@@ -232,7 +232,8 @@ const SpeakerInfo = () => {
                             size="md"
                             radius="full"
                             className={clsx(
-                                'text-xs xl:text-base font-medium md:text-sm',
+                                // 'text-xs xl:text-base font-medium md:text-sm',                                
+                                'text-base font-medium',
                                 selectedCategory === category
                                     ? 'bg-[#94AAC1] text-white'
                                     : 'bg-[#E9E9E9] text-[#636B76]'
