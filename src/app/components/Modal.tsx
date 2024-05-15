@@ -111,15 +111,18 @@ export default function Mpdal({ index }: Props) {
         isOpen={isOpen}
         onClose={onClose}
         style={{ backgroundImage: `url('/card_detail.png')`, backgroundSize: 'cover' }}
-        className="max-w-[340px] h-[512px] rounded-3xl"
+        className="max-w-[340px] h-[512px] rounded-3xl border-3 border-b-violet-200 border-r-[#CAD9DF]"
         key={index}
         hideCloseButton={true}
+        classNames={{
+          backdrop: 'bg-gradient-to-t from-[#e7bbb1]/40 to-[#94aac1]/40 backdrop-opacity-20',
+        }}
       >
         <ModalContent>
           {(onClose) => (
             <>
               <ModalBody className="p-4 gap-3">
-                <div className="flex flex-col justify-center items-center h-1/5 border-1.5 border-black rounded-3xl bg-[#e9e9e9]">
+                <div className="flex flex-col justify-center items-center h-1/5 rounded-3xl bg-[#D9D9D9]/50">
                   <span className="text-2xl font-semibold">
                     詳細日程表
                   </span>
@@ -127,7 +130,7 @@ export default function Mpdal({ index }: Props) {
                     {agendaDatas[index].title}
                   </span>
                 </div>
-                <div className="flex flex-col justify-between items-start h-4/5 border-1.5 border-black rounded-3xl bg-[#e9e9e9] text-base font-medium px-5 py-8">
+                <div className="flex flex-col justify-between items-start h-4/5 rounded-3xl bg-[#D9D9D9]/50 text-base font-medium px-5 py-8">
                   {agendaDatas[index].contents.map((content, index) => (
                     <span key={index}>{content}</span>
                   ))}
