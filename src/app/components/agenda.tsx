@@ -4,6 +4,7 @@ import React, { useRef, useEffect, useState } from 'react'
 import clsx from 'clsx'
 import { Button, Card } from '@nextui-org/react'
 import styled from 'styled-components'
+import Modal from './Modal'
 
 const agendaDatas = [
     {
@@ -14,17 +15,6 @@ const agendaDatas = [
             '設計課',
             '開場演講 陳盈羽',
             '演講 賴楨璾',
-            // '08:30 - 09:00 學員報到',
-            // '09:00 - 10:00 HCI Intro 曾唯哲',
-            // '10:00 - 11:00 設計課 1',
-            // '11:00 - 12:00 設計課 2',
-            // '12:00 - 13:00 午餐',
-            // '13:00 - 14:00 開場演講 陳盈羽',
-            // '14:00 - 15:00 學員討論',
-            // '15:00 - 17:00 演講 賴楨璾',
-            // '17:00 - 18:00 晚餐',
-            // '18:00 - 19:00 設計課 3',
-            // '19:00 - 21:00 學員討論',
         ],
     },
     {
@@ -35,15 +25,6 @@ const agendaDatas = [
             '技術課 Arduino',
             '技術課 Rapid Prototyping',
             '技術課 Unity',
-            // '08:30 - 09:00 學員報到',
-            // '09:00 - 11:00 技術課 Unity',
-            // '11:00 - 12:00 技術課 Rapid Prototyping',
-            // '12:00 - 13:00 午餐',
-            // '13:00 - 14:30 學員討論',
-            // '14:30 - 17:00 顧問時間',
-            // '17:00 - 18:00 晚餐',
-            // '18:00 - 19:30 技術課 Arduino',
-            // '19:30 - 21:00 學員討論',
         ],
     },
     {
@@ -53,14 +34,6 @@ const agendaDatas = [
             '演講 鄭宇婷',
             '期中提案',
             '學員討論',
-            // '08:30 - 09:00 學員報到',
-            // '09:00 - 10:00 演講',
-            // '10:00 - 12:00 學員討論',
-            // '12:00 - 13:00 午餐',
-            // '13:00 - 14:30 學員討論',
-            // '14:30 - 17:00 期中提案',
-            // '17:00 - 18:00 晚餐',
-            // '18:00 - 21:00 學員討論',
         ],
     },
     {
@@ -70,14 +43,6 @@ const agendaDatas = [
             '演講',
             '演講 侯宗佑',
             '學員討論',
-            // '08:30 - 09:00 學員報到',
-            // '09:00 - 10:00 學員討論',
-            // '10:00 - 12:00 演講',
-            // '12:00 - 13:00 午餐',
-            // '13:00 - 14:30 學員討論',
-            // '14:30 - 17:00 演講',
-            // '17:00 - 18:00 晚餐',
-            // '18:00 - 21:00 學員討論',
         ],
     },
     {
@@ -86,13 +51,6 @@ const agendaDatas = [
         contents: [
             '演講 李冠慰',
             '學員討論',
-            // '08:30 - 09:00 學員報到',
-            // '09:00 - 12:00 學員討論',
-            // '12:00 - 13:00 午餐',
-            // '13:00 - 14:30 演講',
-            // '14:30 - 17:00 學員討論',
-            // '17:00 - 18:00 晚餐',
-            // '18:00 - 21:00 學員討論',
         ],
     },
     {
@@ -102,12 +60,6 @@ const agendaDatas = [
             '學員討論',
             '期末發表',
             '頒獎 / 閉幕',
-            // '08:30 - 09:00 學員報到',
-            // '09:00 - 11:00 學員討論',
-            // '11:00 - 12:00 會場布置',
-            // '12:00 - 13:00 午餐',
-            // '13:00 - 17:30 期末發表',
-            // '17:30 - 18:30 頒獎 / 閉幕',
         ],
     },
 ]
@@ -240,26 +192,20 @@ const Agenda = () => {
                                 backgroundPosition: 'center',
                             }}
                         >
-                            <div className="w-[174px] md:w-[292px] h-[200px] md:h-[276px] flex flex-col bg-[#D9D9D9]/25 rounded-2xl px-4 md:px-7 items-start justify-start pt-6 md:pt-10">
-                                <div className="flex  w-full gap-1 flex-col items-start">
+                            <div className="w-[174px] md:w-[292px] h-[155px] md:h-[265px] flex flex-col bg-[#D9D9D9]/25 rounded-2xl px-4 md:px-7 items-start justify-start pt-3 md:pt-8">
+                                <div className="flex w-full flex-col items-start">
                                     <span className="text-sm font-medium xl:text-2xl md:text-xl">{agenda.title}</span>
-                                    <span className="text-xs xl:text-base md:text-base">{agenda.date}</span>
+                                    <span className="text-xs xl:text-lg md:text-base">{agenda.date}</span>
                                 </div>
-                                <ul className="pl-4 list-disc md:pl-8 mt-2 space-y-2">
+                                <ul className="pl-4 list-disc md:pl-8 mt-2 space-y-0.5 md:space-y-1.5">
                                     {agenda.contents.map((content, index) => (
-                                        <li key={index} className="text-xs xl:text-base md:text-sm">
+                                        <li key={index} className="text-xs md:text-base">
                                             {content}
                                         </li>
                                     ))}
                                 </ul>
                             </div>
-                            {/* <Button
-                                radius="full"
-                                size="sm"
-                                className="bg-[#E9E9E9] text-xs xl:text-xl md:text-base font-semibold w-full md:py-6"
-                            >
-                                詳細日程表
-                            </Button> */}
+                            <Modal index={index}/>
                         </div>
                     ))}
                 </div>

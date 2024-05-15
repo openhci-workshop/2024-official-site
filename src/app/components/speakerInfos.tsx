@@ -192,7 +192,7 @@ const settings = {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 4.1,
+    slidesToShow: 3.1,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow className="next-arrow" style={{}} onClick={() => {}} />,
     prevArrow: <SamplePrevArrow className="prev-arrow" style={{}} onClick={() => {}} />,
@@ -264,7 +264,7 @@ const SpeakerInfo = () => {
                                     key={index}
                                     className="flex flex-col bg-white/30 backdrop-blur-sm border-3 rounded-2xl border-b-violet-200 border-r-[#CAD9DF]"
                                 >
-                                    <div className="w-full lg:h-[300px] xl:h-[300px] 2xl:h-[360px] md:h-[285px]">
+                                    <div className="w-full md:h-[285px] lg:h-[300px] 2xl:h-[380px]">
                                         {speaker.img && (
                                             <Image
                                                 src={speaker.img}
@@ -275,7 +275,7 @@ const SpeakerInfo = () => {
                                             />
                                         )}
                                     </div>
-                                    <div className="flex flex-col px-4 pb-4 h-[150px]">
+                                    <div className="flex flex-col px-4 pb-4 h-[145px]">
                                         <span className="text-xs font-medium lg:text-lg md:text-base">
                                             {speaker.name}
                                         </span>
@@ -304,18 +304,18 @@ const SpeakerInfo = () => {
                                         key={index}
                                         className="flex flex-col  bg-white/30 backdrop-blur-sm border-3 border-b-violet-200 border-r-[#CAD9DF] rounded-2xl"
                                     >
-                                        <div className="w-[152px] h-[222px] md:w-[225px] md:h-[285px] lg:w-[270px] lg:h-[360px] mb-[11px] md:mb-[20px] ">
+                                        <div className="w-[185px] h-[222px] md:w-[225px] md:h-[285px] lg:w-[270px] lg:h-[360px] mb-[10px] md:mb-[13px] ">
                                             {speaker.img && (
                                                 <Image
                                                     src={speaker.img}
                                                     alt={speaker.name}
-                                                    className="object-cover w-full h-full rounded-t-2xl md:rounded-2xl "
+                                                    className="object-cover w-full h-full rounded-t-2xl md:rounded-t-2xl "
                                                     width={300}
                                                     height={300}
                                                 />
                                             )}
                                         </div>
-                                        <div className="flex flex-col px-4 pb-4 h-[100px]">
+                                        <div className="flex flex-col px-4 h-[80px] md:h-[95px]">
                                             <span className="text-xs font-medium xl:text-xl md:text-base">
                                                 {speaker.name}
                                             </span>
