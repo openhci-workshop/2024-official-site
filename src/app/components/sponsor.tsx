@@ -88,7 +88,7 @@ export default function Sponsor() {
                         width={300}
                         height={300}
                         alt="Line_Logo_W"
-                        className="rounded-md col-span-3 md:col-span-2 bg-white p-4 xl:p-6 aspect-[2/1] object-contain object-center"
+                        className="rounded-md col-span-3 md:col-span-2 bg-white p-8 aspect-[2/1] object-contain object-center"
                     />
                     <Image
                         src={AJA_Logo}
