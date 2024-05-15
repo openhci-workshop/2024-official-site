@@ -32,7 +32,13 @@ const speakersData = [
         category: '評審',
         img: '/speakers/余能豪.jpg',
     },    
-    { name: '李冠慰', info: 'HTC XR體驗設計研究', position: '資深經理', category: '講師', img: '/speakers/李冠慰.jpg' },
+    { 
+        name: '李冠慰', 
+        info: 'HTC XR體驗設計研究', 
+        position: '資深經理', 
+        category: '講師', 
+        img: '/speakers/李冠慰.jpg' 
+    },
     {
         name: '陳美伶',
         info: '悠識數位 研究與內容策略',
@@ -50,11 +56,17 @@ const speakersData = [
     {
         name: '洪燕茹',
         info: '職涯諮詢師',
-        position: '亞太服務設計協會 副秘書長 / 職游共同創辦人',
+        position: '亞太服務設計協會副秘書長<br>職游共同創辦人',
         category: '評審',
         img: '/speakers/洪燕茹.jpeg',
     },
-    { name: '侯宗佑', info: '美國康乃爾大學', position: '資訊科學博士', category: '講師', img: '/speakers/侯宗佑.jpg' },
+    { 
+        name: '侯宗佑', 
+        info: '美國康乃爾大學', 
+        position: '資訊科學博士', 
+        category: '講師', 
+        img: '/speakers/侯宗佑.jpg' 
+    },
     {
         name: '鄭龍磻',
         info: '國立臺灣大學<br>資訊工程學系',
@@ -93,7 +105,7 @@ const speakersData = [
     {
         name: '陳啟彰',
         info: '國立成功大學 認知科學研究所 碩士',
-        position: '亞太服務設計協會理事 / 領潮創意設計體驗研究設計顧問',
+        position: '亞太服務設計協會理事<br>領潮創意設計體驗研究設計顧問',
         category: '評審',
         img: '/speakers/陳啟彰.jpeg',
     },
@@ -271,9 +283,11 @@ const SpeakerInfo = () => {
                                             className="mb-1 font-medium text-xxs xl:text-sm lg:text-xs md:text-xs"
                                             dangerouslySetInnerHTML={{ __html: speaker.info }}
                                         ></span>
-                                        <span className="text-xxs xl:text-sm lg:text-xs md:text-xs">
-                                            {speaker.position}
-                                        </span>
+                                        {/* <span className="text-xxs xl:text-base md:text-xs">{speaker.position}</span> */}
+                                        <span
+                                            className="text-xxs xl:text-base md:text-xs"
+                                            dangerouslySetInnerHTML={{ __html: speaker.position }}
+                                        ></span>
                                     </div>
                                 </div>
                             )
@@ -309,7 +323,11 @@ const SpeakerInfo = () => {
                                                 className="text-xxs xl:text-base md:text-xs"
                                                 dangerouslySetInnerHTML={{ __html: speaker.info }}
                                             ></span>
-                                            <span className="text-xxs xl:text-base md:text-xs">{speaker.position}</span>
+                                            {/* <span className="text-xxs xl:text-base md:text-xs">{speaker.position}</span> */}
+                                            <span
+                                                className="text-xxs xl:text-base md:text-xs"
+                                                dangerouslySetInnerHTML={{ __html: speaker.position }}
+                                            ></span>
                                         </div>
                                     </div>
                                 )
