@@ -275,7 +275,7 @@ const SpeakerInfo = () => {
                                             />
                                         )}
                                     </div>
-                                    <div className="flex flex-col px-4 pb-4 h-[150px]">
+                                    <div className="flex flex-col px-4 pb-4 h-[180px]">
                                         <span className="text-xs font-medium lg:text-lg md:text-base">
                                             {speaker.name}
                                         </span>
