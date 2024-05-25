@@ -96,11 +96,11 @@ const speakersData = [
         img: '/speakers/黃仲菁.jpg',
     },
     {
-        name: '張婉玲',
+        name: '張婉鈴',
         info: '國立成功大學<br>工業設計學系',
         position: '助理教授',
         category: '顧問',
-        img: '/speakers/張婉玲.jpg',
+        img: '/speakers/張婉鈴.jpg',
     },
     {
         name: '陳啟彰',
@@ -122,6 +122,27 @@ const speakersData = [
         position: '設計師',
         category: '講師',
         img: '/speakers/賴楨璾.jpg',
+    },
+    {
+        name: '宮保睿',
+        info: '實踐大學<br>工業產品設計學系',
+        position: '專任助理教授／推測設計師',
+        category: '講師',
+        img: '/speakers/宮保睿.jpg',
+    },
+    {
+        name: '莊以琳',
+        info: '',
+        position: 'DeepLearning.AI UI/UX Designer',
+        category: '評審',
+        img: '/speakers/莊以琳.jpeg',
+    },
+    {
+        name: '顏羽君',
+        info: '國立陽明交通大學<br>資訊工程學系',
+        position: '助理教授',
+        category: '評審',
+        img: '/speakers/顏羽君.jpg',
     },
 ]
 
