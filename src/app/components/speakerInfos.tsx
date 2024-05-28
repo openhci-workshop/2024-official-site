@@ -26,12 +26,12 @@ const speakersData = [
         img: '/speakers/鄭宇婷.jpg',
     },
     {
-        name: '余能豪',
-        info: '國立臺灣科技大學<br>設計學系',
-        position: '副教授',
-        category: '評審',
-        img: '/speakers/余能豪.jpg',
-    },    
+        name: '宮保睿',
+        info: '實踐大學<br>工業產品設計學系',
+        position: '專任助理教授／推測設計師',
+        category: '講師',
+        img: '/speakers/宮保睿.jpg',
+    },
     { 
         name: '李冠慰', 
         info: 'HTC XR體驗設計研究', 
@@ -39,12 +39,40 @@ const speakersData = [
         category: '講師', 
         img: '/speakers/李冠慰.jpg' 
     },
+    { 
+        name: '侯宗佑', 
+        info: '美國康乃爾大學', 
+        position: '資訊科學博士', 
+        category: '講師', 
+        img: '/speakers/侯宗佑.jpg' 
+    },
     {
-        name: '陳美伶',
-        info: '悠識數位 研究與內容策略',
-        position: '副總監',
+        name: '賴楨璾',
+        info: '國立臺灣科技大學<br>設計學系',
+        position: '設計師',
+        category: '講師',
+        img: '/speakers/賴楨璾.jpg',
+    },
+    {
+        name: '曾唯哲',
+        info: 'ViewSonic',
+        position: 'UX/UI Designer',
+        category: '講師',
+        img: '/speakers/曾唯哲.jpg',
+    },
+    {
+        name: '余能豪',
+        info: '國立臺灣科技大學<br>設計學系',
+        position: '副教授',
         category: '評審',
-        img: '/speakers/陳美伶.jpg',
+        img: '/speakers/余能豪.jpg',
+    },
+    {
+        name: '顏羽君',
+        info: '國立陽明交通大學<br>資訊工程學系',
+        position: '助理教授',
+        category: '評審',
+        img: '/speakers/顏羽君.jpg',
     },
     {
         name: '蔡文傑',
@@ -54,18 +82,18 @@ const speakersData = [
         img: '/speakers/蔡文傑.jpg',
     },
     {
+        name: '陳美伶',
+        info: '悠識數位 研究與內容策略',
+        position: '副總監',
+        category: '評審',
+        img: '/speakers/陳美伶.jpg',
+    },
+    {
         name: '洪燕茹',
         info: '',
         position: '亞太服務設計協會副秘書長<br>職涯諮詢師<br>職游共同創辦人',
         category: '評審',
         img: '/speakers/洪燕茹.jpeg',
-    },
-    { 
-        name: '侯宗佑', 
-        info: '美國康乃爾大學', 
-        position: '資訊科學博士', 
-        category: '講師', 
-        img: '/speakers/侯宗佑.jpg' 
     },
     {
         name: '鄭龍磻',
@@ -110,39 +138,11 @@ const speakersData = [
         img: '/speakers/陳啟彰.jpeg',
     },
     {
-        name: '曾唯哲',
-        info: 'ViewSonic',
-        position: 'UX/UI Designer',
-        category: '講師',
-        img: '/speakers/曾唯哲.jpg',
-    },
-    {
-        name: '賴楨璾',
-        info: '國立臺灣科技大學<br>設計學系',
-        position: '設計師',
-        category: '講師',
-        img: '/speakers/賴楨璾.jpg',
-    },
-    {
-        name: '宮保睿',
-        info: '實踐大學<br>工業產品設計學系',
-        position: '專任助理教授／推測設計師',
-        category: '講師',
-        img: '/speakers/宮保睿.jpg',
-    },
-    {
         name: '莊以琳',
         info: '',
         position: 'DeepLearning.AI UI/UX Designer',
         category: '評審',
         img: '/speakers/莊以琳.jpeg',
-    },
-    {
-        name: '顏羽君',
-        info: '國立陽明交通大學<br>資訊工程學系',
-        position: '助理教授',
-        category: '評審',
-        img: '/speakers/顏羽君.jpg',
     },
 ]
 
