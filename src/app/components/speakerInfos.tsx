@@ -131,6 +131,13 @@ const speakersData = [
         img: '/speakers/張婉鈴.jpg',
     },
     {
+        name: '簡瑋麒',
+        info: '國立成功大學<br>工業設計學系',
+        position: '助理教授',
+        category: '顧問',
+        img: '/speakers/簡瑋麒.jpeg',
+    },    
+    {
         name: '陳啟彰',
         info: '',
         position: '亞太服務設計協會理事<br>領潮創意設計體驗研究設計顧問',
