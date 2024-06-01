@@ -19,11 +19,11 @@ export default function Banner() {
                         variant="bordered"
                         style={{ borderColor: '#F2D4CD' }}
                         className="w-1/3 p-4 text-base leading-none tracking-widest text-white rounded-full shadow border-3 font-kompot drop-shadow-3xl backdrop-blur"
-                        onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfowpBY8mnQmGe3KJisZK6GyDi12Kc9uLHQ382V32SyUaQiUQ/viewform', '_blank')}
+                        onClick={() => window.open('https://www.facebook.com/share/p/rV4Bc1GhsRGQHj3y/', '_blank')}
                     >
-                        {/* <Link href="#enroll">志工招募 </Link> */}
-                        {/* <Link href='https://docs.google.com/forms/d/e/1FAIpQLSfowpBY8mnQmGe3KJisZK6GyDi12Kc9uLHQ382V32SyUaQiUQ/viewform'> */}
-                        志工招募
+                        {/* <Link href="#enroll">錄取名單 </Link> */}
+                        {/* <Link href='https://www.facebook.com/share/p/rV4Bc1GhsRGQHj3y/'> */}
+                        錄取名單
                         {/* </Link> */}
                     </Button>
                 </div>
@@ -43,11 +43,11 @@ export default function Banner() {
                         variant="bordered"
                         style={{ borderColor: '#F2D4CD' }}
                         className="w-1/3 text-xl leading-none tracking-widest text-white rounded-full shadow border-3 font-kompot drop-shadow-3xl backdrop-blur "
-                        onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfowpBY8mnQmGe3KJisZK6GyDi12Kc9uLHQ382V32SyUaQiUQ/viewform', '_blank')}
+                        onClick={() => window.open('https://www.facebook.com/share/p/rV4Bc1GhsRGQHj3y/', '_blank')}
                     >
-                        {/* <Link href="#enroll">志工招募 </Link> */}
-                        {/* <Link href='https://docs.google.com/forms/d/e/1FAIpQLSfowpBY8mnQmGe3KJisZK6GyDi12Kc9uLHQ382V32SyUaQiUQ/viewform'> */}
-                        志工招募
+                        {/* <Link href="#enroll">錄取名單 </Link> */}
+                        {/* <Link href='https://www.facebook.com/share/p/rV4Bc1GhsRGQHj3y/'> */}
+                        錄取名單
                         {/* </Link> */}
                     </Button>
                 </div>
@@ -68,11 +68,11 @@ export default function Banner() {
                         variant="bordered"
                         style={{ borderColor: '#F2D4CD' }}
                         className="w-1/3 text-xl leading-none tracking-widest text-white rounded-full shadow border-3 font-kompot drop-shadow-3xl backdrop-blur "
-                        onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfowpBY8mnQmGe3KJisZK6GyDi12Kc9uLHQ382V32SyUaQiUQ/viewform', '_blank')}
+                        onClick={() => window.open('https://www.facebook.com/share/p/rV4Bc1GhsRGQHj3y/', '_blank')}
                     >
-                        {/* <Link href="#enroll">志工招募 </Link> */}
-                        {/* <Link href='https://docs.google.com/forms/d/e/1FAIpQLSfowpBY8mnQmGe3KJisZK6GyDi12Kc9uLHQ382V32SyUaQiUQ/viewform'> */}
-                        志工招募
+                        {/* <Link href="#enroll">錄取名單 </Link> */}
+                        {/* <Link href='https://www.facebook.com/share/p/rV4Bc1GhsRGQHj3y/'> */}
+                        錄取名單
                         {/* </Link> */}
                     </Button>
                 </div>
@@ -94,7 +94,7 @@ export default function Banner() {
                         style={{ borderColor: '#F2D4CD' }}
                         className="w-1/3 text-xl leading-none tracking-widest text-white rounded-full shadow border-3 font-kompot drop-shadow-3xl backdrop-blur "
                     >
-                        <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfowpBY8mnQmGe3KJisZK6GyDi12Kc9uLHQ382V32SyUaQiUQ/viewform">志工招募</Link>
+                        <Link href="https://www.facebook.com/share/p/rV4Bc1GhsRGQHj3y/">錄取名單</Link>
                     </Button>
                 </div>
 
@@ -114,11 +114,11 @@ export default function Banner() {
                         variant="bordered"
                         style={{ borderColor: '#F2D4CD' }}
                         className="w-1/3 text-xl leading-none tracking-widest text-white rounded-full shadow border-3 font-kompot drop-shadow-3xl backdrop-blur "
-                        onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfowpBY8mnQmGe3KJisZK6GyDi12Kc9uLHQ382V32SyUaQiUQ/viewform', '_blank')}
+                        onClick={() => window.open('https://www.facebook.com/share/p/rV4Bc1GhsRGQHj3y/', '_blank')}
                     >
-                        {/* <Link href="#enroll">志工招募 </Link> */}
-                        {/* <Link href='https://docs.google.com/forms/d/e/1FAIpQLSfowpBY8mnQmGe3KJisZK6GyDi12Kc9uLHQ382V32SyUaQiUQ/viewform'> */}
-                        志工招募
+                        {/* <Link href="#enroll">錄取名單 </Link> */}
+                        {/* <Link href='https://www.facebook.com/share/p/rV4Bc1GhsRGQHj3y/'> */}
+                        錄取名單
                         {/* </Link> */}
                     </Button>
                 </div>
@@ -138,11 +138,11 @@ export default function Banner() {
                         variant="bordered"
                         style={{ borderColor: '#F2D4CD' }}
                         className="self-end w-1/3 text-base leading-none tracking-widest text-white rounded-full shadow border-3 font-kompot drop-shadow-3xl backdrop-blur "
-                        onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfowpBY8mnQmGe3KJisZK6GyDi12Kc9uLHQ382V32SyUaQiUQ/viewform', '_blank')}
+                        onClick={() => window.open('https://www.facebook.com/share/p/rV4Bc1GhsRGQHj3y/', '_blank')}
                     >
-                        {/* <Link href="#enroll">志工招募 </Link> */}
-                        {/* <Link href='https://docs.google.com/forms/d/e/1FAIpQLSfowpBY8mnQmGe3KJisZK6GyDi12Kc9uLHQ382V32SyUaQiUQ/viewform'> */}
-                        志工招募
+                        {/* <Link href="#enroll">錄取名單 </Link> */}
+                        {/* <Link href='https://www.facebook.com/share/p/rV4Bc1GhsRGQHj3y/'> */}
+                        錄取名單
                         {/* </Link> */}
                     </Button>
                 </div>
@@ -161,11 +161,11 @@ export default function Banner() {
                         variant="bordered"
                         style={{ borderColor: '#F2D4CD' }}
                         className="w-1/3 text-base leading-none tracking-widest text-white rounded-full shadow border-3 font-kompot drop-shadow-3xl backdrop-blur"
-                        onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfowpBY8mnQmGe3KJisZK6GyDi12Kc9uLHQ382V32SyUaQiUQ/viewform', '_blank')}
+                        onClick={() => window.open('https://www.facebook.com/share/p/rV4Bc1GhsRGQHj3y/', '_blank')}
                     >
-                        {/* <Link href="#enroll">志工招募 </Link> */}
-                        {/* <Link href='https://docs.google.com/forms/d/e/1FAIpQLSfowpBY8mnQmGe3KJisZK6GyDi12Kc9uLHQ382V32SyUaQiUQ/viewform'> */}
-                        志工招募
+                        {/* <Link href="#enroll">錄取名單 </Link> */}
+                        {/* <Link href='https://www.facebook.com/share/p/rV4Bc1GhsRGQHj3y/'> */}
+                        錄取名單
                         {/* </Link> */}
                     </Button>
                 </div>
