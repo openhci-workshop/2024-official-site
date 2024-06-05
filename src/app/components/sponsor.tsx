@@ -12,6 +12,8 @@ import DSchool_Logo from '../../../public/images/DSchool_Logo.png'
 import CEP_Logo from '../../../public/images/CEP_Logo.png'
 import TAICHI_Logo from '../../../public/images/TAICHI_Logo.png'
 import NTUCS_Logo from '../../../public/images/NTUCS_Logo.svg'
+import NYCU_ICT_Logo2 from '../../../public/images/NYCU_ICT_Logo2.png'
+import GOONS_Logo from '../../../public/images/GOONS_Logo.svg'
 
 export default function Sponsor() {
     return (
@@ -81,6 +83,13 @@ export default function Sponsor() {
                         alt="BegoniaDesign_Logo"
                         className="rounded-md col-span-3 md:col-span-2 bg-white aspect-[2/1] object-contain"
                     />
+                    <Image
+                        src={GOONS_Logo}
+                        width={300}
+                        height={300}
+                        alt="GOONS_Logo"
+                        className="rounded-md col-span-3 md:col-span-2 bg-white p-4 aspect-[2/1] object-contain"
+                    />
                 </div>
                 <span className="text-xs font-semibold xl:text-xl mb-2">協辦單位</span>
                 <div className="grid grid-cols-6 gap-2 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10 mb-5 w-full ">
@@ -119,6 +128,13 @@ export default function Sponsor() {
                         alt="CEP_Logo"
                         className="rounded-md col-span-3 md:col-span-2 bg-white aspect-[2/1] object-contain"
                     />
+                    <Image
+                        src={NYCU_ICT_Logo2}
+                        width={300}
+                        height={300}
+                        alt="NYCU_ICT_Logo2"
+                        className="rounded-md col-span-3 md:col-span-2 bg-white aspect-[2/1] object-contain"
+                    />                    
                 </div>
             </div>
         </div>
