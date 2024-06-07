@@ -14,6 +14,8 @@ import TAICHI_Logo from '../../../public/images/TAICHI_Logo.png'
 import NTUCS_Logo from '../../../public/images/NTUCS_Logo.svg'
 import NYCU_ICT_Logo2 from '../../../public/images/NYCU_ICT_Logo2.png'
 import GOONS_Logo from '../../../public/images/GOONS_Logo.svg'
+import MW_Logo from '../../../public/images/MW_Logo.png'
+import TianYen_Logo from '../../../public/images/TianYen_Logo.png'
 
 export default function Sponsor() {
     return (
@@ -55,6 +57,13 @@ export default function Sponsor() {
                         alt="ITSA_Logo"
                         className="rounded-md col-span-3 md:col-span-2 p-5 bg-white aspect-[2/1] object-contain"
                     />
+                    <Image
+                        src={MW_Logo}
+                        width={300}
+                        height={300}
+                        alt="MW_Logo"
+                        className="rounded-md col-span-3 md:col-span-2 p-5 bg-white aspect-[2/1] object-contain"
+                    />
                 </div>
                 <span className="text-xs font-semibold xl:text-xl mb-2">金級</span>
                 <div className="grid grid-cols-6 gap-2 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10 mb-5 w-full">
@@ -90,6 +99,13 @@ export default function Sponsor() {
                         alt="GOONS_Logo"
                         className="rounded-md col-span-3 md:col-span-2 bg-white p-4 aspect-[2/1] object-contain"
                     />
+                    {/* <Image
+                        src={TianYen_Logo}
+                        width={300}
+                        height={300}
+                        alt="TianYen_Logo"
+                        className="rounded-md col-span-3 md:col-span-2 bg-white aspect-[2/1] object-contain"
+                    />                     */}
                 </div>
                 <span className="text-xs font-semibold xl:text-xl mb-2">協辦單位</span>
                 <div className="grid grid-cols-6 gap-2 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10 mb-5 w-full ">
