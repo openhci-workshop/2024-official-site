@@ -88,13 +88,20 @@ const speakersData = [
         category: '評審',
         img: '/speakers/陳美伶.jpg',
     },
+    // {
+    //     name: '洪燕茹',
+    //     info: '',
+    //     position: '亞太服務設計協會副秘書長<br>職涯諮詢師<br>職游共同創辦人',
+    //     category: '評審',
+    //     img: '/speakers/洪燕茹.jpeg',
+    // },
     {
-        name: '洪燕茹',
+        name: '康涵慈',
         info: '',
-        position: '亞太服務設計協會副秘書長<br>職涯諮詢師<br>職游共同創辦人',
+        position: '康林生活與 Social AED<br>共同創辦人',
         category: '評審',
-        img: '/speakers/洪燕茹.jpeg',
-    },
+        img: '/speakers/康涵慈.png',
+    },    
     {
         name: '鄭龍磻',
         info: '國立臺灣大學<br>資訊工程學系',
@@ -263,7 +270,7 @@ const SpeakerInfo = () => {
             <div data-aos="fade-up" className="pt-8 flex flex-col items-start w-full  gap-[22px] xl:gap-[40px]">
                 <span className="font-semibold text-md xl:text-3xl md:text-2xl drop-shadow-[0px_5px_10px_rgba(256,256,256,1)]">
                     講者資訊
-                    <span className="ml-1 text-xs font-medium lg:text-xl md:text-base">（陸續更新中...）</span>
+                    {/* <span className="ml-1 text-xs font-medium lg:text-xl md:text-base">（陸續更新中...）</span> */}
                 </span>
                 <div className="flex gap-2 md:gap-4">
                     {categories.map((category, index) => (
