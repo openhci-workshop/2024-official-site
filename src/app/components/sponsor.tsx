@@ -104,7 +104,7 @@ export default function Sponsor() {
                         width={300}
                         height={300}
                         alt="TianYen_Logo"
-                        className="rounded-md col-span-3 md:col-span-2 bg-white aspect-[2/1] object-contain"
+                        className="rounded-md col-span-3 md:col-span-2 aspect-[2/1] object-contain"
                     />                    
                 </div>
                 <span className="text-xs font-semibold xl:text-xl mb-2">協辦單位</span>
