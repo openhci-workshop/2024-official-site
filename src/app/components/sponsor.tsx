@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 import AJA_Logo from '../../../public/images/AJA_Logo.png'
 import LINE_Green from '../../../public/images/LINE_Green.svg'
+import Hepta_Logo from '../../../public/images/Hepta_Light_Logo.svg'
 import NYCU_Logo from '../../../public/images/NYCU_Logo.png'
 import NCCU_Logo from '../../../public/images/NCCU_Logo.jpg'
 import ITSA_Logo from '../../../public/images/ITSA_Logo.png'
@@ -105,7 +106,7 @@ export default function Sponsor() {
                         height={300}
                         alt="TianYen_Logo"
                         className="rounded-md col-span-3 md:col-span-2 aspect-[2/1] object-contain"
-                    />                    
+                    />
                 </div>
                 <span className="text-xs font-semibold xl:text-xl mb-2">協辦單位</span>
                 <div className="grid grid-cols-6 gap-2 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10 mb-5 w-full ">
@@ -150,7 +151,14 @@ export default function Sponsor() {
                         height={300}
                         alt="NYCU_ICT_Logo2"
                         className="rounded-md col-span-3 md:col-span-2 bg-white aspect-[2/1] object-contain"
-                    />                    
+                    />
+                    <Image
+                        src={Hepta_Logo}
+                        width={300}
+                        height={300}
+                        alt="Hepta_Logo"
+                        className="rounded-md col-span-3 md:col-span-2 bg-white aspect-[2/1] object-contain"
+                    />
                 </div>
             </div>
         </div>
