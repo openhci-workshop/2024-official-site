@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 import AJA_Logo from '../../../public/images/AJA_Logo.png'
 import LINE_Green from '../../../public/images/LINE_Green.svg'
-import Hepta_Logo from '../../../public/images/Hepta_Light_Logo.svg'
+import Hepta_Logo from '../../../public/images/Hepta_Logo.png'
 import NYCU_Logo from '../../../public/images/NYCU_Logo.png'
 import NCCU_Logo from '../../../public/images/NCCU_Logo.jpg'
 import ITSA_Logo from '../../../public/images/ITSA_Logo.png'
@@ -157,7 +157,7 @@ export default function Sponsor() {
                         width={300}
                         height={300}
                         alt="Hepta_Logo"
-                        className="rounded-md col-span-3 md:col-span-2 bg-white aspect-[2/1] object-contain"
+                        className="rounded-md col-span-3 md:col-span-2 p-3 bg-white aspect-[2/1] object-contain"
                     />
                 </div>
             </div>
