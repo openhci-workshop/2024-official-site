@@ -20,9 +20,12 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import Link from 'next/link'
 import { Suspense } from 'react'
+import Zoom from './zoom'
 
 export default function PreviousWork() {
     const { isOpen, onOpen, onOpenChange } = useDisclosure()
+    const [selectedImage, setSelectedImage] = React.useState<string | null>(null) // Add state for selected image
+    const { isOpen: isImageOpen, onOpen: onImageOpen, onOpenChange: onImageOpenChange } = useDisclosure()
     const settings = {
         dots: true,
         infinite: true,
@@ -38,52 +41,52 @@ export default function PreviousWork() {
     const previousWorks = [
         {
             id: '1',
-            title: 'Emokit',
+            title: 'Virtual Rehearsal',
             description:
-                '「我上班不能碰手機，是要怎麼跟你說^_^？？」Emokit 嘗試以科技輔具協助年輕且忙於工作的情侶克服溝通挑戰。年輕情侶多因爲彼此工作時間落差而產生溝通阻礙，Emokit 透過裝置互相連結，讓伴侶能夠藉由桌上型裝置傳達三種情緒提示給對方，同步彼此狀態，緩解伴侶之間延遲分享造成感情疏離的痛點。Emokit 期盼連結忙碌情侶分享情緒的一面，增加親密關係的幸福感。',
-            image: '/images/previous_work/Emokit.png',
+                '本專案結合 AI 和真人參與的優點，提供兩種觀眾 Avatar: 一種是 LLM Avatar，另一種是連線真人的 Avatar。兩者使用相同的擬人形態，模糊其區別，讓使用者在演講過程中無法辨識和預測觀眾身份，進而感受到台下真人帶來的壓力，提升真實感。這樣的設計結合 AI 和少量真人的參與，無需大量人力資源即可創建大型模擬環境，提高訓練效率和效果。此外， 真人和 LLM Avatar 都能與使用者互動並提供回饋，實現更完整的演講訓練效果。',
+            image: '/work/第一組.png',
         },
         {
             id: '2',
-            title: 'Ocean',
+            title: 'ChronoClones',
             description:
-                '在這個資訊爭奪注意力的時代，你是否曾經禁不起手機震動和螢幕亮起的誘惑頻頻查看通知？就算開啟勿擾模式，你還是會常常看手機怕錯過重要訊息嗎？我們發現目前大學生在線下學習時常常被通知干擾，加上害怕錯過與重要他人的互動所造成的焦慮感，導致學習效率不彰。Ocean是一款結合裝置和App的藝術性產品，動態海浪代表著使用者學習時專注的狀態，而瓶中信則代表了重要聯絡人的訊息通知，不僅改造傳統手機通知呈現，更幫助FOMO大學生找回自己的時間，在資訊汪洋中不再載浮載沉，跟著學習專注航行。Follow me!',
-            image: '/images/previous_work/Ocean.png',
+                ' ChronoClones 是一款透過分身合作尋找寶藏的虛擬實境 (VR) 遊戲。基於 Clonemator 的技術，我們增加了一項限制 Temporal Echo（時間輪迴），此機制讓 VR 世界的場景與時間不斷重置。使用者在每一次輪迴中的動作和移動都會被記錄下， 並在之後以分身的形式和使用者同時出現於每一次輪迴中，使用者可以不斷和過去的自己互動來完成任務。',
+            image: '/work/第二組.png',
         },
         {
             id: '3',
-            title: 'Wander in Ｗonder',
+            title: 'ME_NU',
             description:
-                '轉動把手、齒輪轉動、簧片輕彈、音樂輕輕流瀉⋯⋯，看似直覺的一連串過程，你曾想過中間的過程是如何運作的嗎？Wander in Ｗonder 是一款結合 Reality Rift 概念的手搖式音樂盒，當使用者轉動音樂盒的把手時，會連動金屬圓筒開始轉動，即使圓筒上缺少金屬針，音梳看起來仍被某物所撥動，並發出樂聲。從人對於物理現象的心理模型出發，以移除零件創造出物理現象的斷裂，促發使用者運用想像接起裂隙。',
-            image: '/images/previous_work/Wander_in_Ｗonder.png',
+                'ME_NU 是一款結合大型語言模型 (LLM) 的點餐輔助工具。我們利用 LLM 理解需求、彙整資訊、生成文字的特性，來協助了解用戶偏好、統整餐點評價，並產生餐點推薦說明。透過 Al 技術，我們希望幫助用戶在資訊充足的情況下，更有效率地選到符合用戶需求的餐點。',
+            image: '/work/第三組.jpg',
         },
         {
             id: '4',
-            title: 'ALARM',
+            title: '溫情座位系統',
             description:
-                '「嘿，你有想過當你沉浸在 VR 的世界時，身邊會發生什麼事情嗎？」在虛擬實境快速發展的時代，大多數玩家為了感受與現實的不同，沉浸在虛擬世界的體驗中。但當真實世界發生突發狀況或自然災害時，如何確保安全成為了重要的議題。ALARM 是一款領先的虛擬實境緊急通知系統，專為突發狀況和自然災害而設計。讓您在體驗虛擬世界時，仍能保持與真實世界的連繫，無論是火警、地震或其他緊急狀況。它結合了最新的虛擬實境技術，能夠即時感知周遭環境的變化，並透過視覺、聽覺及觸覺三種感知，將訊息傳遞給使用者。',
-            image: '/images/previous_work/ALARM.png',
+                '設計溫情座位系統介面，橋接需求者與自願者的「狀態」與「意願」，以網頁前端技術設計QRCODE掃描連動座椅，使乘坐者可通過讓座系統介面匿名提出請求;同時通過較無指向性的Emoji標誌，讓所有乘坐者可以彈性的表達自身狀態，讓需求更易被識別，並提升大眾對於乘坐者心理狀態的覺察、促進積極的善意循環。',
+            image: '/work/第四組.png',
         },
         {
             id: '5',
-            title: 'ImmersiTopia',
+            title: '阿公阿嬤哇想曆',
             description:
-                'First Time? Long Time? 第一次的體驗總是擔心受怕，頻繁的等待總是漫長。常見的數位裝置中，內容讀取／載入多是以進度條呈現，觀看者甚至會分心查看其他事務。然而，隨著虛擬實境日漸興盛，使用者在體驗時往往無法輕易將眼鏡摘下，只能焦躁地看著索然無味的畫面痴痴地等候。「ImmersiTopia」因應而生，我們嘗試塑造VR沉浸式環境。對於初次使用者，期望能減緩陌生及徬徨不安的感受，資深使用者也可轉移等待載入的焦躁情緒，增加正面情緒以讓使用者加快載入的時間感。無論你是初次踏入VR這個世界，還是早已熟悉其中，都能嘗試體驗ImmersiTopia的協助來打發時間。',
-            image: '/images/previous_work/ImmersiTopia.png',
+                '阿公阿嬤哇想曆是一個專屬於阿公阿嬤的電子日曆一—保留傳統日曆的概念，並能讓家人每天傳送 照 片與文字訊息，讓長輩隨時看到最新的家人動態。 透過這個裝置，無論子孫身處何地，都能輕分享生活點滴，拉近與長輩的距離， 讓愛與關懷時刻相伴在阿公阿嬤的身邊。',
+            image: '/work/第五組.png',
         },
         {
             id: '6',
-            title: 'Toast Mode',
+            title: '衣二衫',
             description:
-                '你昨天有睡飽嗎？我們透過調查發現年齡介於19至25歲的年輕族群，平均比預期時間晚入睡30至180分鐘，且超過90％的人睡前使用社群媒體。這種拖延的情形可能導致睡眠不足，影響隔日精神狀態，並對健康造成長期影響。Toast Mode以烤吐司機早餐意象重新設計入睡到起床的旅程，透過捕捉早晨的情感與經驗，並將手機作為載體，融入社會意識，建立親友的睡眠習慣連結，為你建打造更健康的睡眠習慣！',
-            image: '/images/previous_work/Toast_Mode.png',
+                '購買二手衣，是一種延長衣物生命週期、促進永續循環的方式，希望透過科技使永續行為具象化並富有吸引力，並藉社群媒體讓使用者被動被推播的同時也能成為主動傳播者。我們的解方是，讓使用者在二手衣店試穿衣物後，與 AR 裝置互動，並根據衣服風格呈現視覺特效、音樂和燈光。為求以新穎的實體互動方式促使使用者在社群動員的氛圍下重新定義衣物潮流。',
+            image: '/work/第六組.png',
         },
         {
             id: '7',
-            title: 'SOUNDFIT',
+            title: 'knock knock',
             description:
-                '工作時你會聽爵士樂、Lofi還是K-POP? 你可能會聽著KPOP做無需動腦的工作增加樂趣，當你不經意地開始動腦思考，漸漸地轉換工作狀態時卻發現KPOP變成干擾你思緒的外界資訊？好希望音樂能了解你，跟著你的工作狀態轉換歌曲? 許多研究指出，音樂與我們生理、情感和認知有強烈的連結，對我們的行為和思緒有顯著的影響。SOUNDFIT是耳罩式耳機結合Spotify外掛功能的產品，根據使用者當下的專注度、精神和生理數據，播放最適合當下工作狀態的歌曲，透過「對系統表達工作關鍵的兩種狀態」以及「系統向使用者採取生理數據」的雙向互動，增進人機與彼此的連結，打造前所未見的工作介面與體驗。',
-            image: '/images/previous_work/SOUNDFIT.png',
+                '此題目期待回到人與物之間的互動，發掘更多「使用」以外的內在動機。本次設計想討論在「遠距關係」中，物件可以如何「觸發」遠距使用者之間的交流。我們發現 「門」不僅是不同空間的出入口，同時也是使用者間溝通的媒介。「敲門」是禮貌性詢問對方的狀態，「開門」則是接受一段對話的開端。承接這個脈絡，我們想延續敲門詢問與開門回應互動行為，做為遠距關係中觸發溝通的方式，並跨越空間交流上的限制。',
+            image: '/work/第七組.png',
         },
     ]
 
@@ -128,7 +131,7 @@ export default function PreviousWork() {
             <div
                 className={className}
                 style={{
-                    right: '-40px',
+                    right: '-10px',
                     transform: 'scale(1.5)',
                     borderRadius: '999px',
                 }}
@@ -150,9 +153,10 @@ export default function PreviousWork() {
                 className={className}
                 style={{
                     position: 'absolute',
-                    left: '-40px',
+                    left: '-10px',
                     transform: 'scale(1.5)',
                     borderRadius: '999px',
+                    zIndex: 999,
                 }}
                 onClick={onClick}
             />
@@ -162,7 +166,10 @@ export default function PreviousWork() {
         setCurrentWork(work)
         onOpen()
     }
-
+    const handleImageClick = (image: string) => {
+        setSelectedImage(image)
+        onImageOpen()
+    }
     return (
         <>
             <div
@@ -171,11 +178,11 @@ export default function PreviousWork() {
                 className=" md:px-0 pt-8 xl:pt-16 md:pt-4 flex flex-col items-start w-full gap-[22px] xl:gap-[40px] "
             >
                 <span className="font-semibold text-md md:text-2xl xl:text-3xl drop-shadow-[0px_5px_10px_rgba(256,256,256,1)]">
-                    歷屆作品
+                    本屆作品
                 </span>
                 <Suspense fallback={<p>Loading feed...</p>}>
-                    <div className="w-full px-10">
-                        <Slider {...settings} className=" w-full h-[380px] md:h-[280px] lg:h-[300px] xl:h-full ">
+                    <div className="w-full px-1">
+                        <Slider {...settings} className=" w-full h-[250px] md:h-[450px] lg:h-[450px] xl:h-full ">
                             {previousWorks.map((work) => (
                                 <Card
                                     key={work.id}
@@ -185,7 +192,7 @@ export default function PreviousWork() {
                                     <CardBody className="rounded-lg bg-white/25 backdrop-blur ">
                                         <div className="flex items-center justify-between ">
                                             <div className="grid grid-cols-6 gap-5">
-                                                <div className="flex justify-center col-span-6 md:col-start-1 md:col-end-4 2xl:col-start-1 2xl:col-end-3">
+                                                <div className="flex justify-center col-span-3 md:col-start-1 md:col-end-4 2xl:col-start-1 2xl:col-end-3">
                                                     <Image
                                                         src={work.image}
                                                         width={400}
@@ -194,7 +201,7 @@ export default function PreviousWork() {
                                                         className="object-contain rounded-lg"
                                                     />
                                                 </div>
-                                                <div className="flex flex-col items-start justify-center col-span-6 md:col-start-4 md:col-end-7 2xl:col-start-3 2xl:col-end-7">
+                                                <div className="flex flex-col items-start justify-center col-span-3 md:col-start-4 md:col-end-7 2xl:col-start-3 2xl:col-end-7">
                                                     <h3 className="mb-5 font-medium text-md lg:text-2xl text-[#636B76]">
                                                         {work.title}
                                                     </h3>
@@ -244,8 +251,16 @@ export default function PreviousWork() {
                                     width={400}
                                     height={300}
                                     alt="Album cover"
-                                    className="object-contain md:w-1/2 lg:w-full 2xl:w-1/2 "
+                                    className=" object-contain md:w-1/2 lg:w-full 2xl:w-1/2 hover:cursor-pointer"
+                                    onClick={() => handleImageClick(currentWork.image)}
                                 />
+                                {/* <Zoom
+                                    height={500}
+                                    width={830}
+                                    zoomScale={3}
+                                    src={currentWork.image}
+                                    className="md:block hidden object-contain md:w-1/2 lg:w-full 2xl:w-1/2 "
+                                /> */}
                                 <div className="w-full text-base leading-8 md:px-2 lg:px-8">
                                     {currentWork.description}
                                 </div>
@@ -264,7 +279,30 @@ export default function PreviousWork() {
                     )}
                 </ModalContent>
             </Modal>
-
+            <Modal
+                isOpen={isImageOpen}
+                onOpenChange={onImageOpenChange}
+                className=" bg-transparent"
+                size="full"
+                classNames={{
+                    backdrop: 'bg-gradient-to-t from-[#e7bbb1]/60 to-[#94aac1]/60 backdrop-opacity-40',
+                }}
+            >
+                <ModalContent>
+                    {(onClose) => (
+                        <div className="flex items-center justify-center h-full">
+                            <Image
+                                src={selectedImage ?? ''}
+                                layout="fill"
+                                objectFit="contain"
+                                alt="Full screen image"
+                                onClick={onClose}
+                                className="cursor-pointer"
+                            />
+                        </div>
+                    )}
+                </ModalContent>
+            </Modal>
             <div id="members"></div>
         </>
     )

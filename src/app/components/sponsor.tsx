@@ -67,9 +67,7 @@ export default function Sponsor() {
                     />
                 </div>
                 <span className="text-xs font-semibold xl:text-xl mb-2">金級</span>
-                <div className="grid grid-cols-6 gap-2 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10 mb-5 w-full">
-
-                </div>
+                <div className="grid grid-cols-6 gap-2 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10 mb-5 w-full"></div>
                 <span className="text-xs font-semibold xl:text-xl mb-2">銀級</span>
                 <div className="grid grid-cols-6 gap-2 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10 mb-5 w-full ">
                     <Image
@@ -158,6 +156,16 @@ export default function Sponsor() {
                         height={300}
                         alt="Hepta_Logo"
                         className="rounded-md col-span-3 md:col-span-2 p-3 bg-white aspect-[2/1] object-contain"
+                    />
+                </div>
+                <span className="text-xs font-semibold xl:text-xl mb-2">攝影合作夥伴</span>
+                <div className="grid grid-cols-6 gap-2 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10 mb-5 w-full ">
+                    <Image
+                        src="/images/GUNO_LOGO_B.png"
+                        width={300}
+                        height={300}
+                        alt="GUNO_LOGO_B"
+                        className="rounded-md col-span-3 md:col-span-2 bg-white p-3 aspect-[2/1] object-contain object-center"
                     />
                 </div>
             </div>

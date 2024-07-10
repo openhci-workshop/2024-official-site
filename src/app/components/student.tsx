@@ -89,6 +89,16 @@ export default function Student() {
                           ))}
                 {/* </div> */}
             </div>
+            <div className="text-xs font-semibold xl:text-xl mb-2">2024全員合影</div>
+            <div className="flex flex-col justify-center items-center">
+                <Image
+                    src="/大合照.jpg"
+                    width={800}
+                    height={300}
+                    alt="大合照"
+                    className="rounded-md  md:w-2/3 object-contain"
+                />
+            </div>
         </div>
     )
 }
