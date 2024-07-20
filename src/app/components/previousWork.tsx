@@ -25,7 +25,6 @@ import Zoom from './zoom'
 export default function PreviousWork() {
     const { isOpen, onOpen, onOpenChange } = useDisclosure()
     const [selectedImage, setSelectedImage] = React.useState<string | null>(null) // Add state for selected image
-    const { isOpen: isImageOpen, onOpen: onImageOpen, onOpenChange: onImageOpenChange } = useDisclosure()
     const settings = {
         dots: true,
         infinite: true,
@@ -166,10 +165,7 @@ export default function PreviousWork() {
         setCurrentWork(work)
         onOpen()
     }
-    const handleImageClick = (image: string) => {
-        setSelectedImage(image)
-        onImageOpen()
-    }
+
     return (
         <>
             <div
@@ -182,7 +178,7 @@ export default function PreviousWork() {
                 </span>
                 <Suspense fallback={<p>Loading feed...</p>}>
                     <div className="w-full px-1">
-                        <Slider {...settings} className=" w-full h-[250px] md:h-[450px] lg:h-[450px] xl:h-full ">
+                        <Slider {...settings} className=" w-full h-[225px] md:h-[280px] lg:h-[300px] xl:h-full ">
                             {previousWorks.map((work) => (
                                 <Card
                                     key={work.id}
@@ -251,16 +247,9 @@ export default function PreviousWork() {
                                     width={400}
                                     height={300}
                                     alt="Album cover"
-                                    className=" object-contain md:w-1/2 lg:w-full 2xl:w-1/2 hover:cursor-pointer"
-                                    onClick={() => handleImageClick(currentWork.image)}
+                                    className=" object-contain md:w-1/2 lg:w-full 2xl:w-1/2 "
                                 />
-                                {/* <Zoom
-                                    height={500}
-                                    width={830}
-                                    zoomScale={3}
-                                    src={currentWork.image}
-                                    className="md:block hidden object-contain md:w-1/2 lg:w-full 2xl:w-1/2 "
-                                /> */}
+
                                 <div className="w-full text-base leading-8 md:px-2 lg:px-8">
                                     {currentWork.description}
                                 </div>
@@ -279,30 +268,7 @@ export default function PreviousWork() {
                     )}
                 </ModalContent>
             </Modal>
-            <Modal
-                isOpen={isImageOpen}
-                onOpenChange={onImageOpenChange}
-                className=" bg-transparent"
-                size="full"
-                classNames={{
-                    backdrop: 'bg-gradient-to-t from-[#e7bbb1]/60 to-[#94aac1]/60 backdrop-opacity-40',
-                }}
-            >
-                <ModalContent>
-                    {(onClose) => (
-                        <div className="flex items-center justify-center h-full">
-                            <Image
-                                src={selectedImage ?? ''}
-                                layout="fill"
-                                objectFit="contain"
-                                alt="Full screen image"
-                                onClick={onClose}
-                                className="cursor-pointer"
-                            />
-                        </div>
-                    )}
-                </ModalContent>
-            </Modal>
+
             <div id="members"></div>
         </>
     )
